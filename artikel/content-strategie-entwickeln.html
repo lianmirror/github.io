@@ -462,6 +462,68 @@ header {
 }
 
 
+/* WEITERLESEN */
+
+.next-article {
+  padding: 110px 24px;
+  background: var(--lavender-light);
+}
+
+.next-inner {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  gap: 80px;
+}
+
+.next-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.next-card {
+  display: block;
+  border-top: 1px solid var(--brown);
+  border-bottom: 1px solid var(--brown);
+  padding: 35px 0;
+  transition: .25s;
+}
+
+.next-card:hover {
+  padding-left: 15px;
+}
+
+.next-small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.next-card h2 {
+  max-width: 700px;
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 4.5vw, 58px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.next-arrow {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: var(--terracotta);
+  font-size: 18px;
+}
+
+
 /* BACK */
 
 .back {
@@ -586,6 +648,15 @@ footer {
     gap: 30px;
   }
 
+  .next-article {
+    padding: 80px 20px;
+  }
+
+  .next-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
@@ -618,14 +689,13 @@ footer {
 
       <a href="../index.html#liora">Liora</a>
 
-      <a href="#">Über uns</a>
+      <a href="../ueber-uns.html">Über uns</a>
 
     </nav>
 
   </div>
 
 </header>
-
 
 
 <main>
@@ -675,7 +745,6 @@ footer {
 </section>
 
 
-
 <!-- VISUAL -->
 
 <section class="hero-visual">
@@ -705,13 +774,10 @@ footer {
 </section>
 
 
-
 <!-- ARTICLE -->
 
 <div class="article-layout">
 
-
-  <!-- INHALTSVERZEICHNIS -->
 
   <aside class="toc">
 
@@ -719,32 +785,14 @@ footer {
       In diesem Guide
     </div>
 
-    <a href="#ziel">
-      01 · Ziel
-    </a>
-
-    <a href="#angebot">
-      02 · Angebot
-    </a>
-
-    <a href="#zielgruppe">
-      03 · Zielgruppe
-    </a>
-
-    <a href="#themen">
-      04 · Content-Themen
-    </a>
-
-    <a href="#formate">
-      05 · Formate
-    </a>
-
-    <a href="#system">
-      06 · Dein System
-    </a>
+    <a href="#ziel">01 · Ziel</a>
+    <a href="#angebot">02 · Angebot</a>
+    <a href="#zielgruppe">03 · Zielgruppe</a>
+    <a href="#themen">04 · Content-Themen</a>
+    <a href="#formate">05 · Formate</a>
+    <a href="#system">06 · Dein System</a>
 
   </aside>
-
 
 
   <article class="article-content">
@@ -771,7 +819,6 @@ footer {
 
 
     <div class="highlight">
-
       <div class="highlight-label">
         Der Unterschied ✦
       </div>
@@ -780,20 +827,15 @@ footer {
         Content sagt: „Das könnten wir posten.“
         Strategie sagt: „Das posten wir aus diesem Grund.“
       </p>
-
     </div>
-
 
 
     <!-- 01 -->
 
     <h2 id="ziel">
-
       <span>01 / Ziel</span>
-
       Was soll dein Content
       eigentlich erreichen?
-
     </h2>
 
     <p>
@@ -819,9 +861,7 @@ footer {
         <div class="step-number">01</div>
         <div>
           <h3>Aufmerksamkeit</h3>
-          <p>
-            Neue Menschen entdecken deine Marke oder dein Thema.
-          </p>
+          <p>Neue Menschen entdecken deine Marke oder dein Thema.</p>
         </div>
       </div>
 
@@ -829,9 +869,7 @@ footer {
         <div class="step-number">02</div>
         <div>
           <h3>Verständnis</h3>
-          <p>
-            Menschen verstehen, was du machst und warum es relevant ist.
-          </p>
+          <p>Menschen verstehen, was du machst und warum es relevant ist.</p>
         </div>
       </div>
 
@@ -839,9 +877,7 @@ footer {
         <div class="step-number">03</div>
         <div>
           <h3>Vertrauen</h3>
-          <p>
-            Deine Inhalte zeigen Perspektive, Erfahrung und Kompetenz.
-          </p>
+          <p>Deine Inhalte zeigen Perspektive, Erfahrung und Kompetenz.</p>
         </div>
       </div>
 
@@ -849,25 +885,19 @@ footer {
         <div class="step-number">04</div>
         <div>
           <h3>Handlung</h3>
-          <p>
-            Menschen wissen, welchen nächsten Schritt sie gehen können.
-          </p>
+          <p>Menschen wissen, welchen nächsten Schritt sie gehen können.</p>
         </div>
       </div>
 
     </div>
 
 
-
     <!-- 02 -->
 
     <h2 id="angebot">
-
       <span>02 / Angebot</span>
-
       Beginne nicht bei Instagram.
       Beginne bei dem, was du verkaufst.
-
     </h2>
 
     <p>
@@ -882,7 +912,6 @@ footer {
 
 
     <div class="example">
-
       <small>Beispiel</small>
 
       <p>
@@ -891,7 +920,6 @@ footer {
         Du kannst über Chaos, Prioritäten, Zeit,
         Überforderung und einfachere Arbeitsabläufe sprechen.
       </p>
-
     </div>
 
     <p>
@@ -901,16 +929,12 @@ footer {
     </p>
 
 
-
     <!-- 03 -->
 
     <h2 id="zielgruppe">
-
       <span>03 / Zielgruppe</span>
-
       Gute Inhalte beginnen
       bei echten Situationen.
-
     </h2>
 
     <p>
@@ -930,9 +954,7 @@ footer {
         <div class="step-number">01</div>
         <div>
           <h3>Was beschäftigt sie?</h3>
-          <p>
-            Welche Probleme oder Wünsche tauchen immer wieder auf?
-          </p>
+          <p>Welche Probleme oder Wünsche tauchen immer wieder auf?</p>
         </div>
       </div>
 
@@ -940,9 +962,7 @@ footer {
         <div class="step-number">02</div>
         <div>
           <h3>Was haben sie schon versucht?</h3>
-          <p>
-            Und warum hat es möglicherweise nicht funktioniert?
-          </p>
+          <p>Und warum hat es möglicherweise nicht funktioniert?</p>
         </div>
       </div>
 
@@ -950,9 +970,7 @@ footer {
         <div class="step-number">03</div>
         <div>
           <h3>Welche Fragen stellen sie?</h3>
-          <p>
-            Jede echte Frage kann Ausgangspunkt für Content sein.
-          </p>
+          <p>Jede echte Frage kann Ausgangspunkt für Content sein.</p>
         </div>
       </div>
 
@@ -960,9 +978,7 @@ footer {
         <div class="step-number">04</div>
         <div>
           <h3>Was wünschen sie sich?</h3>
-          <p>
-            Welches Ergebnis oder Gefühl wollen sie erreichen?
-          </p>
+          <p>Welches Ergebnis oder Gefühl wollen sie erreichen?</p>
         </div>
       </div>
 
@@ -970,7 +986,6 @@ footer {
 
 
     <div class="highlight">
-
       <div class="highlight-label">
         Merksatz
       </div>
@@ -979,20 +994,15 @@ footer {
         Je konkreter die Situation,
         desto leichter wird daraus ein konkreter Post.
       </p>
-
     </div>
-
 
 
     <!-- 04 -->
 
     <h2 id="themen">
-
       <span>04 / Content-Themen</span>
-
       Jetzt entstehen deine
       wiederkehrenden Themen.
-
     </h2>
 
     <p>
@@ -1013,41 +1023,31 @@ footer {
       <div class="system-item">
         <div class="system-label">Thema 01</div>
         <h3>Problem & Situation</h3>
-        <p>
-          Inhalte, in denen sich deine Zielgruppe wiedererkennt.
-        </p>
+        <p>Inhalte, in denen sich deine Zielgruppe wiedererkennt.</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Thema 02</div>
         <h3>Wissen & Hilfe</h3>
-        <p>
-          Tipps, Erklärungen, kleine Guides und Antworten.
-        </p>
+        <p>Tipps, Erklärungen, kleine Guides und Antworten.</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Thema 03</div>
         <h3>Perspektive & Marke</h3>
-        <p>
-          Deine Sichtweise, Erfahrungen und Gedanken hinter der Marke.
-        </p>
+        <p>Deine Sichtweise, Erfahrungen und Gedanken hinter der Marke.</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Thema 04</div>
         <h3>Angebot & Anwendung</h3>
-        <p>
-          Zeige, wie dein Produkt oder deine Dienstleistung hilft.
-        </p>
+        <p>Zeige, wie dein Produkt oder deine Dienstleistung hilft.</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Thema 05</div>
         <h3>Vertrauen & Beweise</h3>
-        <p>
-          Erfahrungen, Ergebnisse, Einblicke und konkrete Beispiele.
-        </p>
+        <p>Erfahrungen, Ergebnisse, Einblicke und konkrete Beispiele.</p>
       </div>
 
     </div>
@@ -1059,16 +1059,12 @@ footer {
     </p>
 
 
-
     <!-- 05 -->
 
     <h2 id="formate">
-
       <span>05 / Formate</span>
-
       Thema und Format
       sind nicht dasselbe.
-
     </h2>
 
     <p>
@@ -1088,14 +1084,12 @@ footer {
 
 
     <div class="example">
-
       <small>Eine Idee</small>
 
       <p>
         „Drei Fehler, die Menschen machen,
         bevor sie unser Produkt brauchen.“
       </p>
-
     </div>
 
 
@@ -1105,9 +1099,7 @@ footer {
         <div class="step-number">01</div>
         <div>
           <h3>Als Reel</h3>
-          <p>
-            Drei kurze Szenen mit Text im Video.
-          </p>
+          <p>Drei kurze Szenen mit Text im Video.</p>
         </div>
       </div>
 
@@ -1115,9 +1107,7 @@ footer {
         <div class="step-number">02</div>
         <div>
           <h3>Als Carousel</h3>
-          <p>
-            Eine Folie pro Fehler plus Lösung.
-          </p>
+          <p>Eine Folie pro Fehler plus Lösung.</p>
         </div>
       </div>
 
@@ -1125,9 +1115,7 @@ footer {
         <div class="step-number">03</div>
         <div>
           <h3>Als Story</h3>
-          <p>
-            Frage, Umfrage und anschließend deine Erklärung.
-          </p>
+          <p>Frage, Umfrage und anschließend deine Erklärung.</p>
         </div>
       </div>
 
@@ -1135,9 +1123,7 @@ footer {
         <div class="step-number">04</div>
         <div>
           <h3>Als kurzer Post</h3>
-          <p>
-            Ein starker Einstieg plus deine drei Punkte im Text.
-          </p>
+          <p>Ein starker Einstieg plus deine drei Punkte im Text.</p>
         </div>
       </div>
 
@@ -1150,16 +1136,12 @@ footer {
     </p>
 
 
-
     <!-- 06 -->
 
     <h2 id="system">
-
       <span>06 / Dein System</span>
-
       Aus Ideen wird jetzt
       eine Content-Strategie.
-
     </h2>
 
     <p>
@@ -1172,56 +1154,43 @@ footer {
       <div class="system-item">
         <div class="system-label">Schritt 01</div>
         <h3>Dein Angebot</h3>
-        <p>
-          Was möchtest du sichtbar machen oder verkaufen?
-        </p>
+        <p>Was möchtest du sichtbar machen oder verkaufen?</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Schritt 02</div>
         <h3>Deine Positionierung</h3>
-        <p>
-          Warum ist das Angebot für bestimmte Menschen relevant?
-        </p>
+        <p>Warum ist das Angebot für bestimmte Menschen relevant?</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Schritt 03</div>
         <h3>Deine Content-Themen</h3>
-        <p>
-          Worüber musst du regelmäßig sprechen?
-        </p>
+        <p>Worüber musst du regelmäßig sprechen?</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Schritt 04</div>
         <h3>Deine Ideen</h3>
-        <p>
-          Welche konkreten Situationen, Fragen und Gedanken werden daraus?
-        </p>
+        <p>Welche konkreten Situationen, Fragen und Gedanken werden daraus?</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Schritt 05</div>
         <h3>Deine Formate</h3>
-        <p>
-          Wird daraus ein Reel, Carousel, Post oder eine Story?
-        </p>
+        <p>Wird daraus ein Reel, Carousel, Post oder eine Story?</p>
       </div>
 
       <div class="system-item">
         <div class="system-label">Schritt 06</div>
         <h3>Dein nächster Schritt</h3>
-        <p>
-          Was soll ein Mensch nach diesem Inhalt verstehen oder tun?
-        </p>
+        <p>Was soll ein Mensch nach diesem Inhalt verstehen oder tun?</p>
       </div>
 
     </div>
 
 
     <div class="highlight">
-
       <div class="highlight-label">
         Das System ✦
       </div>
@@ -1230,7 +1199,6 @@ footer {
         Angebot → Positionierung → Themen →
         Ideen → Formate → Content.
       </p>
-
     </div>
 
     <p>
@@ -1246,7 +1214,6 @@ footer {
   </article>
 
 </div>
-
 
 
 <!-- LIORA -->
@@ -1288,13 +1255,46 @@ footer {
 </section>
 
 
+<!-- WEITERLESEN -->
+
+<section class="next-article">
+
+  <div class="next-inner">
+
+    <div class="next-label">
+      Weiterlesen ✦
+    </div>
+
+    <a
+      href="/artikel/zielgruppe-auf-instagram-finden.html"
+      class="next-card">
+
+      <span class="next-small">
+        Als Nächstes / Zielgruppe
+      </span>
+
+      <h2>
+        Wie finde ich meine
+        Zielgruppe auf Instagram?
+      </h2>
+
+      <span class="next-arrow">
+        Zum nächsten Guide →
+      </span>
+
+    </a>
+
+  </div>
+
+</section>
+
 
 <!-- BACK -->
 
 <section class="back">
 
   <p>
-    weiterdenken?
+    oder lieber stöbern?
   </p>
 
   <a href="../blog.html">
@@ -1305,7 +1305,6 @@ footer {
 
 
 </main>
-
 
 
 <!-- FOOTER -->
