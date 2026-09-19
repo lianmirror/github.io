@@ -11,10 +11,6 @@ content="Strategien, Guides und Ideen rund um Instagram, Content, Positionierung
 
 <style>
 
-/* =========================================
-   FARBEN & BASIS
-========================================= */
-
 :root {
   --cream: #f5f0ea;
   --cream-dark: #ebe1da;
@@ -47,6 +43,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  font-family: inherit;
 }
 
 .container {
@@ -111,28 +111,23 @@ header {
 
 .mini-label {
   color: var(--terracotta);
-
   text-transform: uppercase;
   letter-spacing: 2.5px;
-
   font-size: 10px;
   font-weight: 800;
 }
 
 .hero h1 {
   max-width: 850px;
-
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(62px, 8vw, 115px);
   line-height: .87;
   letter-spacing: -5px;
-
   font-weight: 400;
 }
 
 .hero h1 em {
   display: block;
-
   color: var(--terracotta);
   font-weight: 400;
 }
@@ -141,16 +136,13 @@ header {
   display: grid;
   grid-template-columns: .65fr 1.35fr;
   gap: 80px;
-
   margin-top: 60px;
 }
 
 .hero-copy {
   max-width: 590px;
-
   border-left: 2px solid var(--terracotta);
   padding-left: 22px;
-
   font-family: Georgia, serif;
   font-size: 20px;
   line-height: 1.45;
@@ -172,26 +164,23 @@ header {
 
 .category-row {
   min-height: 75px;
-
   display: flex;
   align-items: center;
   gap: 12px;
-
   overflow-x: auto;
 }
 
 .category {
   white-space: nowrap;
-
   border: 1px solid var(--brown);
   border-radius: 100px;
-
   padding: 9px 17px;
-
+  background: transparent;
+  color: var(--brown);
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+  cursor: pointer;
   transition: .2s;
 }
 
@@ -217,62 +206,45 @@ header {
 .featured-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   min-height: 540px;
-
   background: var(--lavender-light);
 }
 
 .featured-art {
   position: relative;
   overflow: hidden;
-
   background: var(--lavender);
   min-height: 540px;
 }
 
 .featured-word {
   position: absolute;
-
   top: 25px;
   left: -10px;
-
   font-family: Georgia, serif;
   font-style: italic;
-
   font-size: 105px;
-
   color: rgba(255,255,255,.28);
 }
 
 .paper {
   position: absolute;
-
   background: var(--white);
-
   width: 72%;
-
   padding: 32px;
-
   top: 125px;
   left: 12%;
-
   transform: rotate(-4deg);
-
   box-shadow: 0 25px 50px rgba(45,33,29,.12);
 }
 
 .paper small {
   display: block;
-
   color: var(--terracotta);
-
   text-transform: uppercase;
   letter-spacing: 2px;
-
   font-size: 9px;
   font-weight: 800;
-
   margin-bottom: 15px;
 }
 
@@ -284,22 +256,17 @@ header {
 
 .paper-note {
   position: absolute;
-
   right: 8%;
   bottom: 75px;
-
   color: var(--brown);
-
   font-family: Georgia, serif;
   font-style: italic;
   font-size: 18px;
-
   transform: rotate(4deg);
 }
 
 .featured-content {
   padding: 65px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,48 +274,35 @@ header {
 
 .article-category {
   color: var(--terracotta);
-
   text-transform: uppercase;
   letter-spacing: 2px;
-
   font-size: 9px;
   font-weight: 800;
-
   margin-bottom: 25px;
 }
 
 .featured-content h2 {
   font-family: Georgia, serif;
-
   font-size: clamp(38px, 4vw, 56px);
   line-height: 1.03;
-
   font-weight: 400;
-
   margin-bottom: 28px;
 }
 
 .featured-content p {
   max-width: 470px;
-
   color: #675b55;
-
   font-size: 14px;
-
   margin-bottom: 35px;
 }
 
 .read-link {
   display: inline-block;
   align-self: flex-start;
-
   color: var(--terracotta);
-
   font-family: Georgia, serif;
   font-style: italic;
-
   border-bottom: 1px solid var(--terracotta);
-
   padding-bottom: 3px;
 }
 
@@ -365,16 +319,13 @@ header {
   display: grid;
   grid-template-columns: .65fr 1.35fr;
   gap: 80px;
-
   margin-bottom: 65px;
 }
 
 .section-head h2 {
   font-family: Georgia, serif;
-
   font-size: clamp(45px, 5vw, 70px);
   line-height: 1;
-
   font-weight: 400;
 }
 
@@ -386,20 +337,15 @@ header {
 .article-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   border-top: 1px solid var(--line);
 }
 
 .article {
   min-height: 390px;
-
   padding: 38px;
-
   border-bottom: 1px solid var(--line);
-
   display: flex;
   flex-direction: column;
-
   transition: .25s;
 }
 
@@ -418,61 +364,46 @@ header {
 .article-number {
   display: flex;
   justify-content: space-between;
-
   color: #96877f;
-
   font-size: 10px;
-
   margin-bottom: 65px;
 }
 
 .article h3 {
   max-width: 480px;
-
   font-family: Georgia, serif;
   font-size: 34px;
   line-height: 1.1;
-
   font-weight: 400;
-
   margin-bottom: 22px;
 }
 
 .article p {
   max-width: 430px;
-
   color: #6c5f59;
-
   font-size: 13px;
-
   margin-bottom: 30px;
 }
 
 .article-footer {
   margin-top: auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding-top: 20px;
-
   border-top: 1px solid var(--line);
-
   color: var(--terracotta);
-
   font-size: 11px;
 }
 
 
 /* =========================================
-   LIORA BREAK
+   LIORA
 ========================================= */
 
 .liora-break {
   background: var(--brown);
   color: var(--cream);
-
   padding: 120px 0;
 }
 
@@ -488,13 +419,10 @@ header {
 
 .liora-break h2 {
   max-width: 850px;
-
   font-family: Georgia, serif;
   font-size: clamp(45px, 6vw, 80px);
   line-height: 1;
-
   font-weight: 400;
-
   margin-bottom: 35px;
 }
 
@@ -505,28 +433,20 @@ header {
 
 .liora-break p {
   max-width: 570px;
-
   color: #d8cec8;
-
   font-size: 14px;
-
   margin-bottom: 35px;
 }
 
 .liora-button {
   display: inline-block;
-
   background: var(--lavender);
   color: var(--brown);
-
   padding: 15px 23px;
-
   text-transform: uppercase;
   letter-spacing: 1px;
-
   font-size: 10px;
   font-weight: 800;
-
   transition: .2s;
 }
 
@@ -545,12 +465,9 @@ footer {
 
 .footer-logo {
   font-family: Georgia, serif;
-
   font-size: clamp(55px, 9vw, 125px);
   line-height: .9;
-
   padding-bottom: 50px;
-
   border-bottom: 1px solid var(--line);
 }
 
@@ -561,10 +478,8 @@ footer {
 
 .footer-bottom {
   padding-top: 25px;
-
   display: flex;
   justify-content: space-between;
-
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -686,9 +601,7 @@ footer {
 <body>
 
 
-<!-- =====================================
-     NAVIGATION
-===================================== -->
+<!-- NAVIGATION -->
 
 <header>
 
@@ -700,21 +613,13 @@ footer {
 
     <nav class="nav-links">
 
-      <a href="blog.html" class="active">
-        Blog
-      </a>
+      <a href="blog.html" class="active">Blog</a>
 
-      <a href="index.html#start">
-        Guides
-      </a>
+      <a href="index.html#start">Guides</a>
 
-      <a href="index.html#liora">
-        Liora
-      </a>
+      <a href="index.html#liora">Liora</a>
 
-      <a href="#">
-        Über uns
-      </a>
+      <a href="#">Über uns</a>
 
     </nav>
 
@@ -723,13 +628,10 @@ footer {
 </header>
 
 
-
 <main>
 
 
-<!-- =====================================
-     HERO
-===================================== -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -747,7 +649,6 @@ footer {
       </h1>
 
     </div>
-
 
     <div class="hero-bottom">
 
@@ -770,10 +671,7 @@ footer {
 </section>
 
 
-
-<!-- =====================================
-     KATEGORIEN
-===================================== -->
+<!-- KATEGORIEN -->
 
 <section class="categories">
 
@@ -812,10 +710,7 @@ footer {
 </section>
 
 
-
-<!-- =====================================
-     FEATURED
-===================================== -->
+<!-- FEATURED -->
 
 <section class="featured">
 
@@ -825,9 +720,7 @@ footer {
       ✦ Start here
     </div>
 
-
-   <a href="/artikel/instagram-produkt-vermarkten.html" class="featured-card">
-
+    <a href="/artikel/instagram-produkt-vermarkten.html" class="featured-card">
 
       <div class="featured-art">
 
@@ -855,7 +748,6 @@ footer {
       </div>
 
 
-
       <div class="featured-content">
 
         <div class="article-category">
@@ -879,7 +771,6 @@ footer {
 
       </div>
 
-
     </a>
 
   </div>
@@ -887,10 +778,7 @@ footer {
 </section>
 
 
-
-<!-- =====================================
-     ARTIKEL
-===================================== -->
+<!-- ARTIKEL -->
 
 <section class="articles-section">
 
@@ -913,7 +801,12 @@ footer {
     <div class="article-grid">
 
 
-      <a href="/artikel/was-posten-wenn-ich-etwas-verkaufen-will.html" class="article">
+      <!-- ARTIKEL 01 -->
+
+      <a
+        href="/artikel/was-posten-wenn-ich-etwas-verkaufen-will.html"
+        class="article"
+        data-category="content produkte">
 
         <div class="article-number">
 
@@ -941,8 +834,12 @@ footer {
       </a>
 
 
+      <!-- ARTIKEL 02 -->
 
-    <a href="/artikel/content-strategie-entwickeln.html" class="article lavender">
+      <a
+        href="/artikel/content-strategie-entwickeln.html"
+        class="article lavender"
+        data-category="content positionierung">
 
         <div class="article-number">
 
@@ -970,8 +867,12 @@ footer {
       </a>
 
 
+      <!-- ARTIKEL 03 -->
 
-      <a href="/artikel/warum-gute-produkte-uebersehen-werden.html" class="article">" class="article lavender">
+      <a
+        href="/artikel/warum-gute-produkte-uebersehen-werden.html"
+        class="article lavender"
+        data-category="produkte positionierung">
 
         <div class="article-number">
 
@@ -999,9 +900,13 @@ footer {
       </a>
 
 
+      <!-- ARTIKEL 04 -->
 
-     <a href="/artikel/instagram-strategie.html" class="article">
-        
+      <a
+        href="/artikel/instagram-strategie.html"
+        class="article"
+        data-category="instagram content">
+
         <div class="article-number">
 
           <span>04</span>
@@ -1028,8 +933,12 @@ footer {
       </a>
 
 
+      <!-- ARTIKEL 05 -->
 
-      <a href="/artikel/reels-fuer-produkte.html" class="article">
+      <a
+        href="/artikel/reels-fuer-produkte.html"
+        class="article"
+        data-category="instagram content produkte">
 
         <div class="article-number">
 
@@ -1057,8 +966,12 @@ footer {
       </a>
 
 
+      <!-- ARTIKEL 06 -->
 
-      <a href="/artikel/ki-fuer-content-nutzen.html" class="article lavender">
+      <a
+        href="/artikel/ki-fuer-content-nutzen.html"
+        class="article lavender"
+        data-category="content ki">
 
         <div class="article-number">
 
@@ -1085,33 +998,40 @@ footer {
 
       </a>
 
-   <a href="/artikel/zielgruppe-auf-instagram-finden.html" class="article">
 
-  <div class="article-number">
+      <!-- ARTIKEL 07 -->
 
-    <span>07</span>
-    <span>ZIELGRUPPE & POSITIONIERUNG</span>
+      <a
+        href="/artikel/zielgruppe-auf-instagram-finden.html"
+        class="article"
+        data-category="instagram positionierung">
 
-  </div>
+        <div class="article-number">
 
-  <h3>
-    Wie finde ich meine Zielgruppe auf Instagram?
-  </h3>
+          <span>07</span>
+          <span>ZIELGRUPPE & POSITIONIERUNG</span>
 
-  <p>
-    Vergiss komplizierte Personas für einen Moment.
-    Entscheidend ist, wann und warum dein Angebot
-    für Menschen relevant wird.
-  </p>
+        </div>
 
-  <div class="article-footer">
+        <h3>
+          Wie finde ich meine Zielgruppe auf Instagram?
+        </h3>
 
-    <span>Guide lesen</span>
-    <span>↗</span>
+        <p>
+          Vergiss komplizierte Personas für einen Moment.
+          Entscheidend ist, wann und warum dein Angebot
+          für Menschen relevant wird.
+        </p>
 
-  </div>
+        <div class="article-footer">
 
-</a>
+          <span>Guide lesen</span>
+          <span>↗</span>
+
+        </div>
+
+      </a>
+
 
     </div>
 
@@ -1120,10 +1040,7 @@ footer {
 </section>
 
 
-
-<!-- =====================================
-     LIORA
-===================================== -->
+<!-- LIORA -->
 
 <section class="liora-break">
 
@@ -1166,10 +1083,7 @@ footer {
 </main>
 
 
-
-<!-- =====================================
-     FOOTER
-===================================== -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1194,7 +1108,10 @@ footer {
   </div>
 
 </footer>
-   
+
+
+<!-- KATEGORIE-FILTER -->
+
 <script>
 
 const categoryButtons = document.querySelectorAll('.category-row .category');
@@ -1217,7 +1134,7 @@ categoryButtons.forEach(button => {
       const categories = article.dataset.category.split(' ');
 
       if (filter === 'alle' || categories.includes(filter)) {
-        article.style.display = '';
+        article.style.display = 'flex';
       } else {
         article.style.display = 'none';
       }
@@ -1229,6 +1146,7 @@ categoryButtons.forEach(button => {
 });
 
 </script>
+
 
 </body>
 </html>
