@@ -1,509 +1,1474 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Creatorbase – Marketing, Content & Wachstum</title>
+<title>Creatorbase – Marketing, Content & Wachstum</title>
 
-  <meta name="description" content="Strategien, Guides und Tools für Produkte, Unternehmen und Marken, die auf Social Media sichtbar werden wollen.">
+<meta name="description"
+content="Creatorbase – Strategien, Wissen und Tools für Produkte, Dienstleistungen und Unternehmen, die online sichtbar werden wollen.">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
 
-    html {
-      scroll-behavior: smooth;
-    }
+/* =========================================
+   FARBEN
+========================================= */
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #171717;
-      background: #faf9f6;
-      line-height: 1.6;
-    }
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+}
 
-    .container {
-      width: min(1120px, 90%);
-      margin: auto;
-    }
+/* =========================================
+   BASIS
+========================================= */
 
-    /* NAVIGATION */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    header {
-      border-bottom: 1px solid #e8e5df;
-      background: rgba(250, 249, 246, 0.95);
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    nav {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
 
-    .logo {
-      font-size: 21px;
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 28px;
-    }
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
 
-    .nav-links a {
-      color: #171717;
-      text-decoration: none;
-      font-size: 14px;
-    }
 
-    .nav-links a:hover {
-      opacity: 0.55;
-    }
+/* =========================================
+   NAVIGATION
+========================================= */
 
-    /* HERO */
+header {
+  border-bottom: 1px solid var(--line);
+}
 
-    .hero {
-      padding: 120px 0 110px;
-      text-align: center;
-    }
+.nav {
+  min-height: 82px;
 
-    .eyebrow {
-      color: #6c655d;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 25px;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    h1 {
-      max-width: 900px;
-      margin: auto;
-      font-size: clamp(48px, 8vw, 92px);
-      line-height: 0.98;
-      letter-spacing: -4px;
-    }
+.logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
 
-    .hero-text {
-      max-width: 650px;
-      margin: 30px auto 38px;
-      color: #66615a;
-      font-size: 19px;
-    }
+.logo span {
+  color: var(--terracotta);
+}
 
-    .button {
-      display: inline-block;
-      background: #171717;
-      color: white;
-      padding: 15px 24px;
-      border-radius: 100px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-    }
+.nav-links {
+  display: flex;
+  gap: 32px;
 
-    .button:hover {
-      background: #383838;
-    }
+  font-size: 13px;
+}
 
-    /* BLOG */
+.nav-links a:hover {
+  color: var(--terracotta);
+}
 
-    .section {
-      padding: 100px 0;
-    }
 
-    .section-title {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 35px;
-    }
+/* =========================================
+   HERO
+========================================= */
 
-    .articles {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
+.hero {
+  padding: 110px 0 130px;
+}
 
-    .card {
-      min-height: 340px;
-      padding: 30px;
-      border: 1px solid #dedbd5;
-      border-radius: 20px;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 80px;
+  align-items: center;
+}
 
-    .category {
-      color: #77716a;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
+.mini-label {
+  color: var(--terracotta);
 
-    .card h2 {
-      margin-top: 15px;
-      font-size: 27px;
-      line-height: 1.15;
-      letter-spacing: -1px;
-    }
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 
-    .read-more {
-      color: #171717;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 14px;
-    }
+  font-size: 10px;
+  font-weight: 800;
 
-    /* LIORA */
+  margin-bottom: 22px;
+}
 
-    .liora {
-      background: #171717;
-      color: white;
-      border-radius: 32px;
-      padding: 80px;
-    }
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 6.4vw, 94px);
+  line-height: .94;
+  letter-spacing: -4px;
+  font-weight: 400;
 
-    .liora-label {
-      color: #aaa49d;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 13px;
-    }
+  margin-bottom: 28px;
+}
 
-    .liora h2 {
-      max-width: 800px;
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.02;
-      letter-spacing: -3px;
-      margin: 25px 0;
-    }
+.hero h1 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
 
-    .liora p {
-      color: #bbb7b1;
-      max-width: 650px;
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
+.hero-intro {
+  max-width: 550px;
 
-    .liora .button {
-      background: white;
-      color: #171717;
-    }
+  border-left: 2px solid var(--terracotta);
+  padding-left: 20px;
 
-    /* PROCESS */
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.45;
 
-    .process {
-      margin-top: 60px;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-    }
+  margin-bottom: 28px;
+}
 
-    .process div {
-      padding: 18px 10px;
-      border-top: 1px solid #494949;
-      color: #d7d4cf;
-      font-size: 13px;
-    }
+.hero-intro span {
+  color: var(--terracotta);
+}
 
-    /* TOPICS */
+.hero-copy {
+  max-width: 540px;
 
-    .topics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+  font-size: 13px;
+  line-height: 1.8;
+  color: #645751;
 
-    .topic {
-      padding: 12px 18px;
-      border: 1px solid #d8d4cd;
-      border-radius: 100px;
-      font-size: 14px;
-    }
+  margin-bottom: 28px;
+}
 
-    /* FOOTER */
+.handwriting {
+  font-family: Georgia, serif;
+  font-style: italic;
 
-    footer {
-      border-top: 1px solid #dedbd5;
-      padding: 45px 0;
-      margin-top: 50px;
-    }
+  color: var(--terracotta);
 
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      color: #77716a;
-      font-size: 13px;
-    }
+  font-size: 20px;
+  line-height: 1.2;
 
-    /* HANDY */
+  margin-bottom: 38px;
+}
 
-    @media (max-width: 750px) {
+.button {
+  display: inline-block;
 
-      .nav-links {
-        gap: 13px;
-      }
+  background: var(--brown);
+  color: white;
 
-      .nav-links a:nth-child(2),
-      .nav-links a:nth-child(4) {
-        display: none;
-      }
+  padding: 15px 23px;
 
-      .hero {
-        padding: 90px 0 80px;
-      }
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
-      h1 {
-        letter-spacing: -2px;
-      }
+  font-size: 10px;
+  font-weight: 800;
 
-      .articles {
-        grid-template-columns: 1fr;
-      }
+  transition: .2s ease;
+}
 
-      .liora {
-        padding: 45px 25px;
-        border-radius: 24px;
-      }
+.button:hover {
+  background: var(--terracotta);
+}
 
-      .liora h2 {
-        letter-spacing: -2px;
-      }
 
-      .process {
-        grid-template-columns: 1fr;
-      }
+/* =========================================
+   HERO COLLAGE
+========================================= */
 
-      .footer {
-        flex-direction: column;
-      }
-    }
-  </style>
+.hero-art {
+  min-height: 590px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--cream-dark),
+      var(--lavender-light)
+    );
+
+  position: relative;
+  overflow: hidden;
+}
+
+.background-word {
+  position: absolute;
+
+  top: 35px;
+  left: 20px;
+
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  font-size: 90px;
+
+  color: rgba(181, 123, 103, .14);
+
+  white-space: nowrap;
+}
+
+.note {
+  position: absolute;
+
+  padding: 28px 32px;
+
+  box-shadow: 0 20px 40px rgba(45,33,29,.08);
+}
+
+.note small {
+  display: block;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+.note p {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.note-one {
+  width: 65%;
+
+  background: var(--white);
+
+  top: 120px;
+  left: 7%;
+
+  transform: rotate(-4deg);
+}
+
+.note-one small {
+  color: var(--terracotta);
+}
+
+.note-two {
+  width: 64%;
+
+  background: var(--brown);
+  color: white;
+
+  right: 5%;
+  bottom: 85px;
+
+  transform: rotate(3deg);
+}
+
+.note-two small {
+  color: var(--terracotta-light);
+}
+
+.note-two p {
+  font-size: 27px;
+}
+
+.art-star {
+  position: absolute;
+
+  color: var(--terracotta);
+
+  font-size: 25px;
+}
+
+.star-one {
+  right: 25%;
+  top: 53%;
+}
+
+.star-two {
+  left: 18%;
+  bottom: 12%;
+  color: var(--lavender);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro {
+  background: var(--brown);
+  color: var(--cream);
+
+  padding: 115px 0;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 100px;
+}
+
+.intro .mini-label {
+  color: var(--terracotta-light);
+}
+
+.intro h2 {
+  max-width: 780px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(43px, 5vw, 70px);
+  line-height: 1.05;
+
+  font-weight: 400;
+}
+
+.intro h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.intro-text {
+  max-width: 560px;
+
+  margin-top: 35px;
+
+  color: #d9d0ca;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   STARTPUNKTE
+========================================= */
+
+.start {
+  padding: 130px 0;
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 100px;
+
+  margin-bottom: 80px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(46px, 5vw, 72px);
+  line-height: 1.05;
+  font-weight: 400;
+}
+
+.section-heading h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.path-list {
+  border-top: 1px solid var(--line);
+}
+
+.path {
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr 50px;
+  gap: 30px;
+
+  align-items: center;
+
+  padding: 38px 15px;
+
+  border-bottom: 1px solid var(--line);
+
+  transition: .25s;
+}
+
+.path:hover {
+  background: var(--lavender-light);
+  padding-left: 28px;
+}
+
+.path-number {
+  color: var(--terracotta);
+
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.path h3 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.path p {
+  max-width: 390px;
+
+  color: #6c5f59;
+
+  font-size: 13px;
+}
+
+.path-arrow {
+  font-size: 22px;
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   LAVENDEL BREAK
+========================================= */
+
+.lavender-break {
+  background: var(--lavender);
+  padding: 110px 0;
+}
+
+.lavender-content {
+  max-width: 920px;
+}
+
+.lavender-break .mini-label {
+  color: var(--brown);
+}
+
+.lavender-break h2 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(48px, 6vw, 83px);
+  line-height: 1;
+
+  font-weight: 400;
+
+  margin-bottom: 35px;
+}
+
+.lavender-break h2 em {
+  font-weight: 400;
+  color: var(--white);
+}
+
+.lavender-break p {
+  max-width: 560px;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   BLOG
+========================================= */
+
+.blog {
+  padding: 130px 0;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  gap: 40px;
+
+  margin-bottom: 65px;
+}
+
+.blog h2 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(50px, 6vw, 80px);
+  line-height: 1;
+
+  font-weight: 400;
+}
+
+.blog h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.all-posts {
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  color: var(--terracotta);
+
+  border-bottom: 1px solid var(--terracotta);
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.post {
+  min-height: 430px;
+
+  border: 1px solid var(--line);
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--white);
+
+  transition: .25s;
+}
+
+.post:nth-child(2) {
+  background: var(--lavender-light);
+}
+
+.post:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(45,33,29,.07);
+}
+
+.post-category {
+  color: var(--terracotta);
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.post h3 {
+  margin-top: auto;
+  margin-bottom: 35px;
+
+  font-family: Georgia, serif;
+  font-size: 31px;
+  line-height: 1.12;
+
+  font-weight: 400;
+}
+
+.post-bottom {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 20px;
+
+  border-top: 1px solid var(--line);
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   LIORA
+========================================= */
+
+.liora {
+  background: var(--cream-dark);
+  padding: 140px 0;
+}
+
+.liora-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+
+  align-items: center;
+}
+
+.liora h2 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(50px, 5.7vw, 78px);
+  line-height: 1;
+
+  font-weight: 400;
+
+  margin-bottom: 30px;
+}
+
+.liora h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.liora-copy {
+  max-width: 520px;
+
+  border-left: 2px solid var(--terracotta);
+  padding-left: 20px;
+
+  font-family: Georgia, serif;
+  font-size: 19px;
+
+  margin-bottom: 35px;
+}
+
+.liora-small {
+  max-width: 510px;
+
+  font-size: 13px;
+  color: #665852;
+
+  margin-bottom: 35px;
+}
+
+.liora-art {
+  min-height: 550px;
+
+  background: var(--lavender-light);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.liora-art-word {
+  position: absolute;
+
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  font-size: 110px;
+
+  color: rgba(181,123,103,.13);
+
+  top: 20px;
+  left: 25px;
+}
+
+.liora-card {
+  position: absolute;
+
+  padding: 30px;
+
+  box-shadow: 0 20px 40px rgba(45,33,29,.09);
+}
+
+.liora-card.one {
+  width: 68%;
+
+  background: white;
+
+  top: 125px;
+  left: 8%;
+
+  transform: rotate(-3deg);
+}
+
+.liora-card.two {
+  width: 67%;
+
+  background: var(--brown);
+  color: white;
+
+  right: 6%;
+  bottom: 75px;
+
+  transform: rotate(3deg);
+}
+
+.liora-card small {
+  display: block;
+
+  color: var(--terracotta);
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-size: 8px;
+  font-weight: bold;
+
+  margin-bottom: 12px;
+}
+
+.liora-card p {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  line-height: 1.15;
+}
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.process {
+  background: var(--brown);
+  color: var(--cream);
+
+  padding: 110px 0;
+}
+
+.process-title {
+  margin-bottom: 55px;
+
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.process-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 40px;
+
+  padding: 23px 0;
+
+  align-items: center;
+
+  border-top: 1px solid rgba(255,255,255,.18);
+}
+
+.process-row:last-child {
+  border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.process-number {
+  color: var(--terracotta-light);
+  font-size: 10px;
+}
+
+.process-name {
+  font-family: Georgia, serif;
+  font-size: 32px;
+}
+
+.process-arrow {
+  color: var(--lavender);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 90px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+
+  font-size: clamp(55px, 9vw, 125px);
+  line-height: .9;
+
+  padding-bottom: 50px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   HANDY
+========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(4) {
+    display: none;
+  }
+
+  .hero {
+    padding: 75px 0 80px;
+  }
+
+  .hero-grid,
+  .intro-grid,
+  .section-heading,
+  .liora-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .hero-art {
+    min-height: 460px;
+  }
+
+  .background-word {
+    font-size: 60px;
+  }
+
+  .note-one {
+    width: 78%;
+  }
+
+  .note-two {
+    width: 76%;
+  }
+
+  .intro {
+    padding: 80px 0;
+  }
+
+  .start {
+    padding: 85px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 50px;
+  }
+
+  .path {
+    grid-template-columns: 40px 1fr 30px;
+    gap: 10px;
+  }
+
+  .path p {
+    display: none;
+  }
+
+  .path h3 {
+    font-size: 28px;
+  }
+
+  .lavender-break {
+    padding: 80px 0;
+  }
+
+  .blog {
+    padding: 85px 0;
+  }
+
+  .blog-header {
+    display: block;
+  }
+
+  .all-posts {
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post {
+    min-height: 320px;
+  }
+
+  .liora {
+    padding: 85px 0;
+  }
+
+  .liora-art {
+    min-height: 460px;
+  }
+
+  .process {
+    padding: 80px 0;
+  }
+
+  .process-row {
+    grid-template-columns: 45px 1fr 25px;
+  }
+
+  .process-name {
+    font-size: 25px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+</style>
 </head>
+
 
 <body>
 
+
+<!-- NAVIGATION -->
+
 <header>
-  <nav class="container">
 
-    <div class="logo">
-      CREATORBASE
-    </div>
+  <div class="container nav">
 
-    <div class="nav-links">
+    <a href="index.html" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
       <a href="#blog">Blog</a>
-      <a href="#themen">Guides</a>
+      <a href="#start">Guides</a>
       <a href="#liora">Liora</a>
       <a href="#">Über uns</a>
-    </div>
+    </nav>
 
-  </nav>
+  </div>
+
 </header>
+
 
 
 <main>
 
-  <!-- HERO -->
 
-  <section class="hero">
+<!-- HERO -->
 
-    <div class="container">
+<section class="hero">
 
-      <div class="eyebrow">
-        Marketing · Content · Wachstum
+  <div class="container hero-grid">
+
+
+    <div>
+
+      <div class="mini-label">
+        Hi, das ist Creatorbase ✦
       </div>
 
       <h1>
-        Mach deine Idee sichtbar.
+        Da ist etwas,<br>
+        das du zeigen willst.
+        <em>Mach es sichtbar.</em>
       </h1>
 
-      <p class="hero-text">
-        Strategien, Wissen und Tools für Menschen, die Produkte,
-        Dienstleistungen und Unternehmen online sichtbar machen wollen.
+      <div class="hero-intro">
+        Aus deinem Angebot wird eine Marke,
+        <span>die Menschen verstehen</span> —
+        und nicht einfach weiterscrollen.
+      </div>
+
+      <p class="hero-copy">
+        Creatorbase zeigt dir, wie du Produkte,
+        Dienstleistungen und Unternehmen mit klarer
+        Positionierung, Content und Social Media sichtbar machst.
+        Praktisch, verständlich und ohne Marketing-Blabla.
       </p>
 
-      <a class="button" href="#blog">
-        Artikel entdecken
+      <div class="handwriting">
+        Du bringst das Angebot.<br>
+        Wir kümmern uns ums Wie. ↓
+      </div>
+
+      <a href="#start" class="button">
+        Zeig mir, wie →
       </a>
 
     </div>
 
-  </section>
 
 
-  <!-- BLOG -->
+    <div class="hero-art">
 
-  <section class="section" id="blog">
-
-    <div class="container">
-
-      <div class="section-title">
-        Neu auf Creatorbase
+      <div class="background-word">
+        what if...?
       </div>
 
-      <div class="articles">
+      <div class="note note-one">
 
-        <article class="card">
+        <small>Du</small>
 
-          <div>
-            <div class="category">
-              Instagram
-            </div>
+        <p>
+          „Ich hab da so ein
+          Produkt ... aber wie
+          zeige ich es?“
+        </p>
 
-            <h2>
-              Wie vermarktest du ein Produkt auf Instagram?
-            </h2>
-          </div>
+      </div>
 
-          <a class="read-more" href="#">
-            Weiterlesen →
-          </a>
+      <div class="art-star star-one">✦</div>
+      <div class="art-star star-two">✦</div>
 
-        </article>
+      <div class="note note-two">
 
+        <small>Creatorbase</small>
 
-        <article class="card">
-
-          <div>
-            <div class="category">
-              Content
-            </div>
-
-            <h2>
-              Content erstellen, der dein Produkt wirklich verkauft.
-            </h2>
-          </div>
-
-          <a class="read-more" href="#">
-            Weiterlesen →
-          </a>
-
-        </article>
-
-
-        <article class="card">
-
-          <div>
-            <div class="category">
-              Strategie
-            </div>
-
-            <h2>
-              Von der Idee zur klaren Social-Media-Strategie.
-            </h2>
-          </div>
-
-          <a class="read-more" href="#">
-            Weiterlesen →
-          </a>
-
-        </article>
+        <p>
+          Okay.<br>
+          Lass uns schauen,
+          wie wir es sichtbar machen. ✦
+        </p>
 
       </div>
 
     </div>
 
-  </section>
+
+  </div>
+
+</section>
 
 
-  <!-- LIORA -->
 
-  <section class="section" id="liora">
+<!-- WAS IST CREATORBASE -->
 
-    <div class="container">
+<section class="intro">
 
-      <div class="liora">
+  <div class="container intro-grid">
 
-        <div class="liora-label">
-          Liora
+    <div class="mini-label">
+      Creatorbase / 01
+    </div>
+
+    <div>
+
+      <h2>
+        Gute Ideen brauchen
+        nicht mehr Content.
+        <em>Sie brauchen Richtung.</em>
+      </h2>
+
+      <p class="intro-text">
+        Hier findest du Strategien, Guides und Ideen,
+        die dir helfen, dein Angebot klar zu positionieren
+        und daraus Content zu machen, der zu dir,
+        deiner Marke und deinem Ziel passt.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- STARTPUNKT -->
+
+<section class="start" id="start">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="mini-label">
+        Wo starten wir? ✦
+      </div>
+
+      <h2>
+        Was möchtest du
+        <em>sichtbar machen?</em>
+      </h2>
+
+    </div>
+
+
+    <div class="path-list">
+
+
+      <a href="#" class="path">
+
+        <span class="path-number">
+          01
+        </span>
+
+        <h3>
+          Ein Produkt
+        </h3>
+
+        <p>
+          Positionierung, Content und Marketing
+          für digitale und physische Produkte.
+        </p>
+
+        <span class="path-arrow">
+          ↗
+        </span>
+
+      </a>
+
+
+      <a href="#" class="path">
+
+        <span class="path-number">
+          02
+        </span>
+
+        <h3>
+          Eine Dienstleistung
+        </h3>
+
+        <p>
+          Zeig deine Expertise so, dass Menschen
+          verstehen, warum sie sie brauchen.
+        </p>
+
+        <span class="path-arrow">
+          ↗
+        </span>
+
+      </a>
+
+
+      <a href="#" class="path">
+
+        <span class="path-number">
+          03
+        </span>
+
+        <h3>
+          Ein Unternehmen
+        </h3>
+
+        <p>
+          Entwickle eine erkennbare Marke
+          und einen klaren Social-Media-Auftritt.
+        </p>
+
+        <span class="path-arrow">
+          ↗
+        </span>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- LAVENDEL -->
+
+<section class="lavender-break">
+
+  <div class="container">
+
+    <div class="lavender-content">
+
+      <div class="mini-label">
+        kleiner reminder ✦
+      </div>
+
+      <h2>
+        Du musst nicht ständig
+        posten.
+        <em>Du musst wissen, warum.</em>
+      </h2>
+
+      <p>
+        Gute Sichtbarkeit beginnt nicht mit dem nächsten Reel.
+        Sie beginnt damit, zu verstehen, was du sagen willst,
+        wem du es sagen willst und warum es relevant ist.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- BLOG -->
+
+<section class="blog" id="blog">
+
+  <div class="container">
+
+    <div class="blog-header">
+
+      <div>
+
+        <div class="mini-label">
+          Neu auf Creatorbase ✦
         </div>
 
         <h2>
-          Du weißt, was du verkaufen willst.
-          Liora weiß, wie du es zeigst.
+          Lesen. Lernen.<br>
+          <em>Ausprobieren.</em>
         </h2>
 
-        <p>
-          Liora entwickelt passend zu deinem Produkt, deiner
-          Dienstleistung oder deinem Unternehmen eine Instagram-Strategie
-          und macht daraus Content-Ideen, Inhalte und Videos für deinen
-          Social-Media-Auftritt.
-        </p>
+      </div>
 
-        <a class="button" href="#">
-          Liora entdecken →
-        </a>
+      <a href="#" class="all-posts">
+        alle Artikel ansehen →
+      </a>
+
+    </div>
 
 
-        <div class="process">
+    <div class="posts">
 
-          <div>01 · Dein Angebot</div>
-          <div>02 · Positionierung</div>
-          <div>03 · Strategie</div>
-          <div>04 · Content</div>
-          <div>05 · Videos</div>
 
+      <a href="#" class="post">
+
+        <div class="post-category">
+          Instagram
         </div>
 
+        <h3>
+          Wie vermarktest du ein Produkt auf Instagram?
+        </h3>
+
+        <div class="post-bottom">
+          <span>Guide</span>
+          <span>↗</span>
+        </div>
+
+      </a>
+
+
+      <a href="#" class="post">
+
+        <div class="post-category">
+          Content
+        </div>
+
+        <h3>
+          Was soll ich eigentlich posten, wenn ich etwas verkaufen will?
+        </h3>
+
+        <div class="post-bottom">
+          <span>Guide</span>
+          <span>↗</span>
+        </div>
+
+      </a>
+
+
+      <a href="#" class="post">
+
+        <div class="post-category">
+          Strategie
+        </div>
+
+        <h3>
+          Von „Ich hab eine Idee“ zur klaren Content-Strategie.
+        </h3>
+
+        <div class="post-bottom">
+          <span>Guide</span>
+          <span>↗</span>
+        </div>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- LIORA -->
+
+<section class="liora" id="liora">
+
+  <div class="container liora-grid">
+
+
+    <div>
+
+      <div class="mini-label">
+        Und dann ist da Liora ✦
+      </div>
+
+      <h2>
+        Du weißt, was du
+        verkaufen willst.
+        <em>Liora weiß, wie du es zeigst.</em>
+      </h2>
+
+      <div class="liora-copy">
+        Creatorbase gibt dir das Wissen.
+        Liora hilft dir, daraus etwas zu machen.
+      </div>
+
+      <p class="liora-small">
+        Du bringst dein Produkt, deine Dienstleistung
+        oder dein Unternehmen mit. Liora entwickelt daraus
+        eine passende Instagram-Strategie und hilft dir
+        bei Content-Ideen, Inhalten und Videos.
+      </p>
+
+      <a
+        href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
+        target="_blank"
+        rel="noopener"
+        class="button"
+      >
+        Liora kennenlernen →
+      </a>
+
+    </div>
+
+
+
+    <div class="liora-art">
+
+      <div class="liora-art-word">
+        okay...
+      </div>
+
+
+      <div class="liora-card one">
+
+        <small>Du</small>
+
+        <p>
+          „Okay, ich weiß,
+          was ich verkaufen will.“
+        </p>
+
+      </div>
+
+
+      <div class="liora-card two">
+
+        <small>Liora</small>
+
+        <p>
+          Perfekt.<br>
+          Jetzt machen wir
+          Content daraus. ✦
+        </p>
+
       </div>
 
     </div>
 
-  </section>
+
+  </div>
+
+</section>
 
 
-  <!-- THEMEN -->
 
-  <section class="section" id="themen">
+<!-- LIORA ABLAUF -->
 
-    <div class="container">
+<section class="process">
 
-      <div class="section-title">
-        Entdecke Creatorbase
-      </div>
+  <div class="container">
 
-      <div class="topics">
-
-        <div class="topic">Instagram Marketing</div>
-        <div class="topic">Content & Reels</div>
-        <div class="topic">Produkte vermarkten</div>
-        <div class="topic">Unternehmen</div>
-        <div class="topic">Positionierung</div>
-        <div class="topic">KI & Tools</div>
-
-      </div>
-
+    <div class="mini-label">
+      So denkt Liora ✦
     </div>
 
-  </section>
+    <h2 class="process-title">
+      Von deinem Angebot bis zum Content.
+    </h2>
+
+
+    <div class="process-row">
+      <span class="process-number">01</span>
+      <span class="process-name">Dein Angebot</span>
+      <span class="process-arrow">↓</span>
+    </div>
+
+    <div class="process-row">
+      <span class="process-number">02</span>
+      <span class="process-name">Positionierung</span>
+      <span class="process-arrow">↓</span>
+    </div>
+
+    <div class="process-row">
+      <span class="process-number">03</span>
+      <span class="process-name">Strategie</span>
+      <span class="process-arrow">↓</span>
+    </div>
+
+    <div class="process-row">
+      <span class="process-number">04</span>
+      <span class="process-name">Content</span>
+      <span class="process-arrow">↓</span>
+    </div>
+
+    <div class="process-row">
+      <span class="process-number">05</span>
+      <span class="process-name">Videos</span>
+      <span class="process-arrow">✦</span>
+    </div>
+
+  </div>
+
+</section>
+
 
 </main>
 
 
+
+<!-- FOOTER -->
+
 <footer>
 
-  <div class="container footer">
+  <div class="container">
 
-    <strong>CREATORBASE</strong>
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
 
-    <span>
-      Wissen für Marken, Produkte und Unternehmen.
-    </span>
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
 
   </div>
 
 </footer>
+
 
 </body>
 </html>
