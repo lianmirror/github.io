@@ -1194,7 +1194,41 @@ footer {
   </div>
 
 </footer>
+   
+<script>
 
+const categoryButtons = document.querySelectorAll('.category-row .category');
+const articles = document.querySelectorAll('.article[data-category]');
+
+categoryButtons.forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    const filter = button.dataset.filter;
+
+    categoryButtons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    button.classList.add('active');
+
+    articles.forEach(article => {
+
+      const categories = article.dataset.category.split(' ');
+
+      if (filter === 'alle' || categories.includes(filter)) {
+        article.style.display = '';
+      } else {
+        article.style.display = 'none';
+      }
+
+    });
+
+  });
+
+});
+
+</script>
 
 </body>
 </html>
