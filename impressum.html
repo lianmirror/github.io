@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Impressum | Creatorbase</title>
+
+  <meta name="description"
+        content="Impressum und Anbieterinformationen von Creatorbase.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://lianmirror.github.io/impressum.html">
+
+  <style>
+    :root {
+      --cream: #f5f0ea;
+      --cream-dark: #ebe1da;
+      --brown: #2d211d;
+      --terracotta: #b57b67;
+      --terracotta-light: #d9b7aa;
+      --lavender: #c8b9e8;
+      --lavender-light: #e5ddf3;
+      --white: #fffdfb;
+      --line: #d9cec7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--brown);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: var(--cream);
+    }
+
+    .nav {
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--terracotta);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 105px 0 90px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 10px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(60px, 9vw, 115px);
+      line-height: .92;
+      font-weight: 400;
+      letter-spacing: -5px;
+    }
+
+    .hero h1 em {
+      color: var(--terracotta);
+      font-weight: 400;
+    }
+
+    .hero-text {
+      max-width: 610px;
+      margin-top: 35px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.5;
+    }
+
+    /* CONTENT */
+
+    .legal {
+      padding: 100px 0 120px;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: .55fr 1.45fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+    .side-label {
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .legal-content {
+      max-width: 720px;
+    }
+
+    .legal-block {
+      padding: 0 0 45px;
+      margin-bottom: 45px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .legal-block:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .legal-block h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(31px, 4vw, 46px);
+      line-height: 1.08;
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
+
+    .legal-block p {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .legal-block a {
+      color: var(--terracotta);
+      border-bottom: 1px solid var(--terracotta-light);
+    }
+
+    .legal-block a:hover {
+      color: var(--brown);
+    }
+
+    /* SMALL NOTE */
+
+    .note {
+      margin-top: 70px;
+      background: var(--lavender-light);
+      padding: 35px;
+      max-width: 720px;
+      transform: rotate(-1deg);
+    }
+
+    .note p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.5;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 45px 0;
+      background: var(--cream);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+    }
+
+    .footer-links a:hover {
+      color: var(--terracotta);
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .container {
+        width: min(100% - 36px, 1180px);
+      }
+
+      .nav {
+        min-height: auto;
+        padding: 18px 0 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: clamp(54px, 16vw, 75px);
+        letter-spacing: -3px;
+      }
+
+      .hero-text {
+        font-size: 19px;
+      }
+
+      .legal {
+        padding: 75px 0 90px;
+      }
+
+      .legal-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .note {
+        margin-top: 55px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 430px) {
+
+      .container {
+        width: calc(100% - 30px);
+      }
+
+      .nav-links {
+        font-size: 10px;
+      }
+
+      .hero h1 {
+        font-size: 52px;
+        letter-spacing: -2px;
+      }
+
+      .legal-block h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="/index.html" class="logo">
+        CREATORBASE ✦
+      </a>
+
+      <nav class="nav-links">
+        <a href="/blog.html">Blog</a>
+        <a href="/index.html#start">Guides</a>
+        <a href="/index.html#liora">Liora</a>
+        <a href="/ueber-uns.html">Über uns</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+
+        <div class="eyebrow">
+          Creatorbase · Rechtliches
+        </div>
+
+        <h1>
+          Impressum<em>.</em>
+        </h1>
+
+        <p class="hero-text">
+          Angaben zur verantwortlichen Person hinter Creatorbase.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- IMPRESSUM -->
+
+    <section class="legal">
+      <div class="container legal-grid">
+
+        <div class="side-label">
+          Die Details ✦
+        </div>
+
+        <div class="legal-content">
+
+          <div class="legal-block">
+
+            <h2>
+              Verantwortlich für den Inhalt dieser Website
+            </h2>
+
+            <p>
+              Kimberly Bont<br>
+              Höhenweg 5<br>
+              5432 Neuenhof<br>
+              Schweiz
+            </p>
+
+          </div>
+
+
+          <div class="legal-block">
+
+            <h2>
+              Kontakt
+            </h2>
+
+            <p>
+              E-Mail:
+              <a href="mailto:elynagoes@outlook.com">
+                elynagoes@outlook.com
+              </a>
+            </p>
+
+          </div>
+
+
+          <div class="legal-block">
+
+            <h2>
+              Tätigkeit
+            </h2>
+
+            <p>
+              Digitalmarketing / Online-Marketing
+            </p>
+
+          </div>
+
+
+          <div class="note">
+            <p>
+              Creatorbase ist eine Plattform rund um Marketing,
+              Content, Positionierung und digitale Sichtbarkeit.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container footer-bottom">
+
+      <div class="footer-brand">
+        CREATORBASE ✦
+      </div>
+
+      <div class="footer-links">
+        <a href="/index.html">Startseite</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
