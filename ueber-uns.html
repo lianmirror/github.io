@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Über Creatorbase – Marketing verständlich machen</title>
+
+<meta name="description"
+content="Creatorbase macht Marketing, Content und Sichtbarkeit verständlicher. Für Produkte, Dienstleistungen, Unternehmen und Ideen, die gesehen werden sollen.">
+
+<style>
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* NAVIGATION */
+
+header {
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 13px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--terracotta);
+}
+
+
+/* ALLGEMEIN */
+
+.mini-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.button {
+  display: inline-block;
+  background: var(--brown);
+  color: var(--white);
+  padding: 15px 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.button:hover {
+  background: var(--terracotta);
+}
+
+
+/* HERO */
+
+.hero {
+  padding: 120px 0 130px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 90px;
+}
+
+.hero h1 {
+  max-width: 900px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 7vw, 105px);
+  line-height: .92;
+  letter-spacing: -4px;
+  font-weight: 400;
+}
+
+.hero h1 em {
+  display: block;
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.hero-bottom {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 90px;
+  margin-top: 65px;
+}
+
+.hero-intro {
+  max-width: 620px;
+  border-left: 2px solid var(--terracotta);
+  padding-left: 24px;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.hero-intro em {
+  color: var(--terracotta);
+}
+
+
+/* WARUM */
+
+.why {
+  background: var(--brown);
+  color: var(--cream);
+  padding: 120px 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 90px;
+}
+
+.why .mini-label {
+  color: var(--terracotta-light);
+}
+
+.why h2 {
+  max-width: 850px;
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 5.5vw, 76px);
+  line-height: 1.02;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.why h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.why-copy {
+  max-width: 650px;
+  color: #d8cec8;
+  font-size: 15px;
+}
+
+.why-copy p + p {
+  margin-top: 22px;
+}
+
+
+/* CREATORBASE + LIORA */
+
+.two-worlds {
+  padding: 135px 0;
+}
+
+.world-heading {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 90px;
+  margin-bottom: 75px;
+}
+
+.world-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 1.05;
+  font-weight: 400;
+}
+
+.world-heading h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.world-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.world-card {
+  min-height: 500px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.creatorbase-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.liora-card {
+  background: var(--lavender-light);
+}
+
+.world-number {
+  color: var(--terracotta);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+}
+
+.world-card h3 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.world-card p {
+  max-width: 460px;
+  color: #665852;
+  font-size: 14px;
+}
+
+.world-note {
+  margin-top: auto;
+  padding-top: 35px;
+  border-top: 1px solid var(--line);
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--terracotta);
+}
+
+
+/* FÜR WEN */
+
+.for-who {
+  background: var(--lavender);
+  padding: 120px 0;
+}
+
+.for-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 90px;
+}
+
+.for-who .mini-label {
+  color: var(--brown);
+}
+
+.for-who h2 {
+  max-width: 800px;
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 5.5vw, 76px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.for-who h2 em {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.for-list {
+  border-top: 1px solid rgba(45,33,29,.25);
+}
+
+.for-row {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 25px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(45,33,29,.25);
+}
+
+.for-number {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.for-text {
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+
+/* HALTUNG */
+
+.principles {
+  padding: 135px 0;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 90px;
+}
+
+.principles h2 {
+  max-width: 800px;
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+
+.principles h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.principle {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 25px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.principle:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.principle-number {
+  color: var(--terracotta);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.principle h3 {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.principle p {
+  max-width: 570px;
+  color: #6c5f59;
+  font-size: 13px;
+}
+
+
+/* CTA */
+
+.cta {
+  background: var(--cream-dark);
+  padding: 120px 0;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 90px;
+}
+
+.cta h2 {
+  max-width: 850px;
+  font-family: Georgia, serif;
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.cta h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.cta p {
+  max-width: 570px;
+  color: #665852;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.cta-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.secondary-button {
+  display: inline-block;
+  border: 1px solid var(--brown);
+  padding: 14px 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.secondary-button:hover {
+  background: var(--brown);
+  color: var(--cream);
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 90px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 125px);
+  line-height: .9;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* HANDY */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(3) {
+    display: none;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero-grid,
+  .hero-bottom,
+  .why-grid,
+  .world-heading,
+  .for-grid,
+  .principles-grid,
+  .cta-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .hero-bottom {
+    margin-top: 45px;
+  }
+
+  .why,
+  .for-who,
+  .cta {
+    padding: 85px 0;
+  }
+
+  .two-worlds,
+  .principles {
+    padding: 90px 0;
+  }
+
+  .world-heading {
+    margin-bottom: 45px;
+  }
+
+  .world-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .world-card {
+    min-height: 410px;
+    padding: 32px;
+  }
+
+  .world-number {
+    margin-bottom: 45px;
+  }
+
+  .world-card h3 {
+    font-size: 40px;
+  }
+
+  .for-text {
+    font-size: 21px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="/index.html" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="/blog.html">
+        Blog
+      </a>
+
+      <a href="/index.html#start">
+        Guides
+      </a>
+
+      <a href="/index.html#liora">
+        Liora
+      </a>
+
+      <a href="/ueber-uns.html" class="active">
+        Über uns
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-grid">
+
+      <div class="mini-label">
+        Über Creatorbase ✦
+      </div>
+
+      <h1>
+        Marketing fühlt sich oft
+        komplizierter an,
+        <em>als es sein müsste.</em>
+      </h1>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+      <div></div>
+
+      <div class="hero-intro">
+        Creatorbase ist für Menschen,
+        die etwas Gutes haben —
+        aber noch herausfinden,
+        <em>wie sie es sichtbar machen.</em>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WARUM -->
+
+<section class="why">
+
+  <div class="container why-grid">
+
+    <div class="mini-label">
+      Warum Creatorbase? / 01
+    </div>
+
+    <div>
+
+      <h2>
+        Nicht noch mehr Marketing-Tipps.
+        <em>Mehr Klarheit.</em>
+      </h2>
+
+      <div class="why-copy">
+
+        <p>
+          Im Internet gibt es mehr als genug Ratschläge:
+          mehr posten, mehr Reels machen, Trends nutzen,
+          einen Funnel bauen und am besten überall gleichzeitig sein.
+        </p>
+
+        <p>
+          Das Problem ist nur: Mehr zu machen hilft wenig,
+          wenn nicht klar ist, was du eigentlich sagen willst,
+          für wen dein Angebot relevant ist und wie daraus
+          ein erkennbarer Auftritt entsteht.
+        </p>
+
+        <p>
+          Creatorbase setzt deshalb früher an.
+          Bei Positionierung, Strategie und der Frage,
+          wie aus deinem Angebot Content wird,
+          den Menschen verstehen können.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CREATORBASE + LIORA -->
+
+<section class="two-worlds">
+
+  <div class="container">
+
+    <div class="world-heading">
+
+      <div class="mini-label">
+        Zwei Teile / ein Ziel ✦
+      </div>
+
+      <h2>
+        Erst verstehen.
+        <em>Dann umsetzen.</em>
+      </h2>
+
+    </div>
+
+
+    <div class="world-grid">
+
+
+      <div class="world-card creatorbase-card">
+
+        <div class="world-number">
+          01 / CREATORBASE
+        </div>
+
+        <h3>
+          Der Ort zum
+          Verstehen.
+        </h3>
+
+        <p>
+          Creatorbase gibt dir Strategien, Guides,
+          Beispiele und Ideen rund um Marketing,
+          Instagram, Content, Positionierung
+          und Sichtbarkeit.
+        </p>
+
+        <div class="world-note">
+          Warum funktioniert etwas —
+          und wie kannst du es für dich nutzen?
+        </div>
+
+      </div>
+
+
+      <div class="world-card liora-card">
+
+        <div class="world-number">
+          02 / LIORA
+        </div>
+
+        <h3>
+          Der Ort zum
+          Umsetzen.
+        </h3>
+
+        <p>
+          Du bringst dein Produkt, deine Dienstleistung,
+          dein Unternehmen oder deine Idee mit.
+          Liora hilft dir daraus Positionierung,
+          Instagram-Strategie, Content-Ideen
+          und Videos zu entwickeln.
+        </p>
+
+        <div class="world-note">
+          Du weißt, was du verkaufen willst.
+          Liora weiß, wie du es zeigst.
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FÜR WEN -->
+
+<section class="for-who">
+
+  <div class="container for-grid">
+
+    <div class="mini-label">
+      Für wen? / 02
+    </div>
+
+    <div>
+
+      <h2>
+        Für Menschen,
+        die etwas haben,
+        <em>das gesehen werden soll.</em>
+      </h2>
+
+
+      <div class="for-list">
+
+        <div class="for-row">
+          <span class="for-number">01</span>
+          <span class="for-text">
+            Ein digitales oder physisches Produkt.
+          </span>
+        </div>
+
+        <div class="for-row">
+          <span class="for-number">02</span>
+          <span class="for-text">
+            Eine Dienstleistung oder Expertise.
+          </span>
+        </div>
+
+        <div class="for-row">
+          <span class="for-number">03</span>
+          <span class="for-text">
+            Ein Unternehmen oder Startup.
+          </span>
+        </div>
+
+        <div class="for-row">
+          <span class="for-number">04</span>
+          <span class="for-text">
+            Eine Marke oder Personal Brand.
+          </span>
+        </div>
+
+        <div class="for-row">
+          <span class="for-number">05</span>
+          <span class="for-text">
+            Oder einfach eine Idee, die gerade beginnt.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WIE CREATORBASE DENKT -->
+
+<section class="principles">
+
+  <div class="container principles-grid">
+
+    <div class="mini-label">
+      Woran wir glauben ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Sichtbarkeit beginnt
+        nicht beim Algorithmus.
+        <em>Sondern bei Klarheit.</em>
+      </h2>
+
+
+      <div class="principle">
+
+        <span class="principle-number">
+          01
+        </span>
+
+        <div>
+          <h3>
+            Erst verstehen, dann posten.
+          </h3>
+
+          <p>
+            Content wird einfacher, wenn klar ist,
+            was dein Angebot besonders macht und
+            welche Geschichte du darum erzählen kannst.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="principle">
+
+        <span class="principle-number">
+          02
+        </span>
+
+        <div>
+          <h3>
+            Strategie soll dir Arbeit abnehmen.
+          </h3>
+
+          <p>
+            Eine gute Strategie gibt dir Orientierung.
+            Sie soll nicht aus hundert Regeln bestehen,
+            die du jeden Tag erfüllen musst.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="principle">
+
+        <span class="principle-number">
+          03
+        </span>
+
+        <div>
+          <h3>
+            Menschen müssen dein Angebot verstehen.
+          </h3>
+
+          <p>
+            Bevor jemand kaufen kann, muss klar sein,
+            was du anbietest, warum es relevant ist
+            und welchen Unterschied es macht.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="principle">
+
+        <span class="principle-number">
+          04
+        </span>
+
+        <div>
+          <h3>
+            Marketing darf verständlich sein.
+          </h3>
+
+          <p>
+            Keine unnötig komplizierten Begriffe.
+            Keine Strategie nur um der Strategie willen.
+            Sondern Dinge, die du tatsächlich anwenden kannst.
+          </p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NÄCHSTER SCHRITT -->
+
+<section class="cta">
+
+  <div class="container cta-grid">
+
+    <div class="mini-label">
+      Und jetzt? ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Genug über uns.
+        <em>Was möchtest du sichtbar machen?</em>
+      </h2>
+
+      <p>
+        Starte mit einem Guide und finde heraus,
+        was dein nächster sinnvoller Schritt ist.
+        Wenn du bereits weißt, was du verkaufen möchtest
+        und direkt an der Umsetzung arbeiten willst,
+        ist Liora für dich da.
+      </p>
+
+
+      <div class="cta-links">
+
+        <a href="/blog.html" class="button">
+          Zu den Guides →
+        </a>
+
+        <a
+          href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
+          target="_blank"
+          rel="noopener"
+          class="secondary-button">
+          Liora kennenlernen →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
