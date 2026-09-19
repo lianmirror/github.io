@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Content-Strategie entwickeln: Von der Idee zum System | Creatorbase</title>
+
+<meta name="description"
+content="Wie entwickelst du eine Content-Strategie für Instagram? Ein praktischer Guide von Angebot und Positionierung bis zu Content-Säulen, Formaten und konkreten Posts.">
+
+<style>
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* NAVIGATION */
+
+header {
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: var(--terracotta);
+}
+
+
+/* HERO */
+
+.hero {
+  padding: 95px 0 85px;
+}
+
+.breadcrumb {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 55px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 80px;
+}
+
+.category {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.hero h1 {
+  max-width: 900px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(52px, 7vw, 94px);
+  line-height: .95;
+  letter-spacing: -4px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.hero h1 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.lead {
+  max-width: 680px;
+  border-left: 2px solid var(--terracotta);
+  padding-left: 22px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.meta {
+  display: flex;
+  gap: 25px;
+  color: #7b6c65;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+  background: var(--lavender-light);
+  padding: 95px 24px;
+}
+
+.visual-inner {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.visual-word {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: clamp(60px, 10vw, 130px);
+  color: rgba(181,123,103,.16);
+}
+
+.visual-card {
+  max-width: 570px;
+  margin: -45px auto 0;
+  position: relative;
+  background: var(--white);
+  padding: 45px;
+  transform: rotate(-2deg);
+  box-shadow: 0 25px 50px rgba(45,33,29,.1);
+}
+
+.visual-card small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.visual-card p {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  line-height: 1.2;
+}
+
+
+/* ARTICLE */
+
+.article-layout {
+  max-width: 1050px;
+  margin: auto;
+  padding: 110px 24px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 90px;
+}
+
+.toc {
+  position: sticky;
+  top: 40px;
+  align-self: start;
+}
+
+.toc-title {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.toc a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: Georgia, serif;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.toc a:hover {
+  color: var(--terracotta);
+  padding-left: 5px;
+}
+
+.article-content {
+  max-width: 700px;
+}
+
+.article-content > p {
+  margin-bottom: 25px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.article-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(37px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.article-content h2 span {
+  display: block;
+  color: var(--terracotta);
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.article-content h3 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 45px 0 18px;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight {
+  background: var(--lavender-light);
+  margin: 55px 0;
+  padding: 40px;
+}
+
+.highlight-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.highlight p {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+
+/* STEPS */
+
+.steps {
+  margin: 45px 0 60px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 22px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.step:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.step-number {
+  color: var(--terracotta);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.step h3 {
+  margin: 0 0 8px;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.step p {
+  color: #6c5f59;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* EXAMPLE */
+
+.example {
+  border-top: 1px solid var(--terracotta);
+  margin: 50px 0;
+  padding: 35px 0 0;
+}
+
+.example small {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.example p {
+  margin-top: 15px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+
+/* CONTENT SYSTEM */
+
+.system {
+  margin: 45px 0 60px;
+}
+
+.system-item {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.system-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.system-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+.system-item h3 {
+  margin: 0 0 8px;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.system-item p {
+  color: #6c5f59;
+  font-size: 14px;
+}
+
+
+/* LIORA */
+
+.liora {
+  background: var(--brown);
+  color: var(--cream);
+  padding: 110px 24px;
+}
+
+.liora-inner {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  gap: 80px;
+}
+
+.liora-label {
+  color: var(--terracotta-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.liora h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(43px, 5vw, 67px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.liora h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.liora p {
+  max-width: 570px;
+  color: #d9d0ca;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.liora-button {
+  display: inline-block;
+  background: var(--lavender);
+  color: var(--brown);
+  padding: 15px 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.liora-button:hover {
+  background: var(--terracotta-light);
+}
+
+
+/* BACK */
+
+.back {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.back p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--terracotta);
+  margin-bottom: 20px;
+}
+
+.back a {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  border-bottom: 1px solid var(--brown);
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 80px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 125px);
+  line-height: .9;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(4) {
+    display: none;
+  }
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .visual-card {
+    padding: 30px;
+  }
+
+  .visual-card p {
+    font-size: 24px;
+  }
+
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 75px 20px;
+  }
+
+  .toc {
+    position: static;
+  }
+
+  .article-content h2 {
+    margin-top: 70px;
+  }
+
+  .highlight {
+    padding: 28px;
+  }
+
+  .highlight p {
+    font-size: 21px;
+  }
+
+  .liora {
+    padding: 80px 20px;
+  }
+
+  .liora-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="../index.html" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="../blog.html">Blog</a>
+
+      <a href="../index.html#start">Guides</a>
+
+      <a href="../index.html#liora">Liora</a>
+
+      <a href="#">Über uns</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="breadcrumb">
+      Creatorbase / Strategie / Guide
+    </div>
+
+    <div class="hero-grid">
+
+      <div class="category">
+        Content-Strategie ✦
+      </div>
+
+      <div>
+
+        <h1>
+          Von „Ich hab eine Idee“
+          zur klaren
+          <em>Content-Strategie.</em>
+        </h1>
+
+        <p class="lead">
+          Eine gute Content-Strategie beginnt nicht mit der Frage,
+          wie oft du posten solltest. Sie beginnt damit, zu verstehen,
+          was dein Content für dein Angebot eigentlich tun soll.
+        </p>
+
+        <div class="meta">
+          <span>Creatorbase Guide</span>
+          <span>Strategie in 6 Schritten</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- VISUAL -->
+
+<section class="hero-visual">
+
+  <div class="visual-inner">
+
+    <div class="visual-word">
+      direction
+    </div>
+
+    <div class="visual-card">
+
+      <small>
+        nicht mehr content. mehr klarheit.
+      </small>
+
+      <p>
+        „Ich habe hundert Ideen —
+        aber keine Ahnung, welche davon
+        meine Marke wirklich voranbringen.“
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ARTICLE -->
+
+<div class="article-layout">
+
+
+  <!-- INHALTSVERZEICHNIS -->
+
+  <aside class="toc">
+
+    <div class="toc-title">
+      In diesem Guide
+    </div>
+
+    <a href="#ziel">
+      01 · Ziel
+    </a>
+
+    <a href="#angebot">
+      02 · Angebot
+    </a>
+
+    <a href="#zielgruppe">
+      03 · Zielgruppe
+    </a>
+
+    <a href="#themen">
+      04 · Content-Themen
+    </a>
+
+    <a href="#formate">
+      05 · Formate
+    </a>
+
+    <a href="#system">
+      06 · Dein System
+    </a>
+
+  </aside>
+
+
+
+  <article class="article-content">
+
+    <p>
+      Du hast ein Produkt, eine Dienstleistung, ein Unternehmen oder
+      vielleicht einfach eine Idee, die du sichtbarer machen möchtest.
+    </p>
+
+    <p>
+      Also öffnest du Instagram und überlegst:
+      Was könnte ich posten?
+    </p>
+
+    <p>
+      Ein Reel vielleicht. Ein Tipp. Ein Produktfoto.
+      Eine Story. Irgendetwas, damit der Account nicht stillsteht.
+    </p>
+
+    <p>
+      Genau hier liegt häufig das Problem:
+      Einzelne Content-Ideen sind noch keine Content-Strategie.
+    </p>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Der Unterschied ✦
+      </div>
+
+      <p>
+        Content sagt: „Das könnten wir posten.“
+        Strategie sagt: „Das posten wir aus diesem Grund.“
+      </p>
+
+    </div>
+
+
+
+    <!-- 01 -->
+
+    <h2 id="ziel">
+
+      <span>01 / Ziel</span>
+
+      Was soll dein Content
+      eigentlich erreichen?
+
+    </h2>
+
+    <p>
+      Bevor du über Reels, Hooks oder einen Postingplan nachdenkst,
+      brauchst du eine einfache Antwort auf diese Frage.
+    </p>
+
+    <p>
+      Soll dein Content neue Menschen auf dich aufmerksam machen?
+      Soll er erklären, was du anbietest? Vertrauen aufbauen?
+      Menschen zu deinem Shop, deiner Website oder deinem Angebot führen?
+    </p>
+
+    <p>
+      Natürlich kann dein Account mehrere dieser Aufgaben erfüllen.
+      Aber nicht jeder einzelne Beitrag muss alles gleichzeitig schaffen.
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div>
+          <h3>Aufmerksamkeit</h3>
+          <p>
+            Neue Menschen entdecken deine Marke oder dein Thema.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div>
+          <h3>Verständnis</h3>
+          <p>
+            Menschen verstehen, was du machst und warum es relevant ist.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div>
+          <h3>Vertrauen</h3>
+          <p>
+            Deine Inhalte zeigen Perspektive, Erfahrung und Kompetenz.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div>
+          <h3>Handlung</h3>
+          <p>
+            Menschen wissen, welchen nächsten Schritt sie gehen können.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- 02 -->
+
+    <h2 id="angebot">
+
+      <span>02 / Angebot</span>
+
+      Beginne nicht bei Instagram.
+      Beginne bei dem, was du verkaufst.
+
+    </h2>
+
+    <p>
+      Content wird deutlich einfacher, wenn du nicht zuerst fragst,
+      was gerade auf Instagram funktioniert.
+    </p>
+
+    <p>
+      Frag zuerst: Was muss ein Mensch verstehen, damit mein Angebot
+      überhaupt interessant für ihn wird?
+    </p>
+
+
+    <div class="example">
+
+      <small>Beispiel</small>
+
+      <p>
+        Wenn du ein Organisationstool verkaufst,
+        musst du nicht ständig über das Tool sprechen.
+        Du kannst über Chaos, Prioritäten, Zeit,
+        Überforderung und einfachere Arbeitsabläufe sprechen.
+      </p>
+
+    </div>
+
+    <p>
+      Dein Angebot ist also nicht nur das,
+      was du am Ende verkaufen möchtest.
+      Es ist auch eine Quelle für deine Content-Themen.
+    </p>
+
+
+
+    <!-- 03 -->
+
+    <h2 id="zielgruppe">
+
+      <span>03 / Zielgruppe</span>
+
+      Gute Inhalte beginnen
+      bei echten Situationen.
+
+    </h2>
+
+    <p>
+      „Meine Zielgruppe sind Frauen zwischen 25 und 40“
+      hilft dir beim Erstellen eines Reels nur begrenzt.
+    </p>
+
+    <p>
+      Viel hilfreicher ist es zu wissen,
+      welche Situationen, Fragen und Gedanken diese Menschen haben.
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div>
+          <h3>Was beschäftigt sie?</h3>
+          <p>
+            Welche Probleme oder Wünsche tauchen immer wieder auf?
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div>
+          <h3>Was haben sie schon versucht?</h3>
+          <p>
+            Und warum hat es möglicherweise nicht funktioniert?
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div>
+          <h3>Welche Fragen stellen sie?</h3>
+          <p>
+            Jede echte Frage kann Ausgangspunkt für Content sein.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div>
+          <h3>Was wünschen sie sich?</h3>
+          <p>
+            Welches Ergebnis oder Gefühl wollen sie erreichen?
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Merksatz
+      </div>
+
+      <p>
+        Je konkreter die Situation,
+        desto leichter wird daraus ein konkreter Post.
+      </p>
+
+    </div>
+
+
+
+    <!-- 04 -->
+
+    <h2 id="themen">
+
+      <span>04 / Content-Themen</span>
+
+      Jetzt entstehen deine
+      wiederkehrenden Themen.
+
+    </h2>
+
+    <p>
+      Statt jeden Beitrag komplett neu zu erfinden,
+      kannst du einige Themenbereiche definieren,
+      auf die dein Content immer wieder zurückkommt.
+    </p>
+
+    <p>
+      Oft werden diese Bereiche auch Content-Säulen genannt.
+      Der Begriff ist aber weniger wichtig als die Idee dahinter:
+      Du baust dir feste Richtungen für deinen Content.
+    </p>
+
+
+    <div class="system">
+
+      <div class="system-item">
+        <div class="system-label">Thema 01</div>
+        <h3>Problem & Situation</h3>
+        <p>
+          Inhalte, in denen sich deine Zielgruppe wiedererkennt.
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Thema 02</div>
+        <h3>Wissen & Hilfe</h3>
+        <p>
+          Tipps, Erklärungen, kleine Guides und Antworten.
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Thema 03</div>
+        <h3>Perspektive & Marke</h3>
+        <p>
+          Deine Sichtweise, Erfahrungen und Gedanken hinter der Marke.
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Thema 04</div>
+        <h3>Angebot & Anwendung</h3>
+        <p>
+          Zeige, wie dein Produkt oder deine Dienstleistung hilft.
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Thema 05</div>
+        <h3>Vertrauen & Beweise</h3>
+        <p>
+          Erfahrungen, Ergebnisse, Einblicke und konkrete Beispiele.
+        </p>
+      </div>
+
+    </div>
+
+    <p>
+      Du brauchst nicht zwingend genau fünf Themen.
+      Drei klare Bereiche können besser funktionieren
+      als acht Themen, die du selbst kaum auseinanderhalten kannst.
+    </p>
+
+
+
+    <!-- 05 -->
+
+    <h2 id="formate">
+
+      <span>05 / Formate</span>
+
+      Thema und Format
+      sind nicht dasselbe.
+
+    </h2>
+
+    <p>
+      Ein Thema beantwortet die Frage:
+      Worüber sprechen wir?
+    </p>
+
+    <p>
+      Ein Format beantwortet:
+      Wie zeigen wir es?
+    </p>
+
+    <p>
+      Genau deshalb kann eine einzige Content-Idee
+      auf mehrere Arten umgesetzt werden.
+    </p>
+
+
+    <div class="example">
+
+      <small>Eine Idee</small>
+
+      <p>
+        „Drei Fehler, die Menschen machen,
+        bevor sie unser Produkt brauchen.“
+      </p>
+
+    </div>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div>
+          <h3>Als Reel</h3>
+          <p>
+            Drei kurze Szenen mit Text im Video.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div>
+          <h3>Als Carousel</h3>
+          <p>
+            Eine Folie pro Fehler plus Lösung.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div>
+          <h3>Als Story</h3>
+          <p>
+            Frage, Umfrage und anschließend deine Erklärung.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div>
+          <h3>Als kurzer Post</h3>
+          <p>
+            Ein starker Einstieg plus deine drei Punkte im Text.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <p>
+      Du brauchst also nicht jeden Tag eine neue Idee.
+      Du kannst gute Ideen aus verschiedenen Blickwinkeln
+      und in unterschiedlichen Formaten weiterentwickeln.
+    </p>
+
+
+
+    <!-- 06 -->
+
+    <h2 id="system">
+
+      <span>06 / Dein System</span>
+
+      Aus Ideen wird jetzt
+      eine Content-Strategie.
+
+    </h2>
+
+    <p>
+      Jetzt kannst du die einzelnen Teile zusammensetzen.
+    </p>
+
+
+    <div class="system">
+
+      <div class="system-item">
+        <div class="system-label">Schritt 01</div>
+        <h3>Dein Angebot</h3>
+        <p>
+          Was möchtest du sichtbar machen oder verkaufen?
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Schritt 02</div>
+        <h3>Deine Positionierung</h3>
+        <p>
+          Warum ist das Angebot für bestimmte Menschen relevant?
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Schritt 03</div>
+        <h3>Deine Content-Themen</h3>
+        <p>
+          Worüber musst du regelmäßig sprechen?
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Schritt 04</div>
+        <h3>Deine Ideen</h3>
+        <p>
+          Welche konkreten Situationen, Fragen und Gedanken werden daraus?
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Schritt 05</div>
+        <h3>Deine Formate</h3>
+        <p>
+          Wird daraus ein Reel, Carousel, Post oder eine Story?
+        </p>
+      </div>
+
+      <div class="system-item">
+        <div class="system-label">Schritt 06</div>
+        <h3>Dein nächster Schritt</h3>
+        <p>
+          Was soll ein Mensch nach diesem Inhalt verstehen oder tun?
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Das System ✦
+      </div>
+
+      <p>
+        Angebot → Positionierung → Themen →
+        Ideen → Formate → Content.
+      </p>
+
+    </div>
+
+    <p>
+      Genau dadurch verschwindet ein großer Teil des täglichen
+      „Was soll ich posten?“-Problems.
+    </p>
+
+    <p>
+      Du beginnst nicht mehr jeden Morgen bei null.
+      Du hast eine Richtung, aus der neue Inhalte entstehen können.
+    </p>
+
+  </article>
+
+</div>
+
+
+
+<!-- LIORA -->
+
+<section class="liora">
+
+  <div class="liora-inner">
+
+    <div class="liora-label">
+      Von der Theorie zur Umsetzung ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Du weißt, was du verkaufen willst.
+        <em>Liora weiß, wie du es zeigst.</em>
+      </h2>
+
+      <p>
+        Bring Liora dein Produkt, deine Dienstleistung
+        oder dein Unternehmen. Liora hilft dir,
+        daraus eine passende Instagram-Strategie,
+        Content-Ideen und Videos zu entwickeln.
+      </p>
+
+      <a
+        href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
+        target="_blank"
+        rel="noopener"
+        class="liora-button">
+        Liora entdecken →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- BACK -->
+
+<section class="back">
+
+  <p>
+    weiterdenken?
+  </p>
+
+  <a href="../blog.html">
+    ← Zurück zum Creatorbase Blog
+  </a>
+
+</section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
