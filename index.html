@@ -668,9 +668,37 @@ footer {
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+
+/* RECHTLICHE LINKS */
+
+.legal-links {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--terracotta);
+}
+
+.legal-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.legal-links a:hover {
+  color: var(--brown);
 }
 
 
@@ -910,6 +938,10 @@ footer {
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .legal-links {
+    margin-top: 22px;
   }
 }
 
@@ -1471,6 +1503,12 @@ footer {
         Für Ideen, die gesehen werden sollen.
       </span>
 
+    </div>
+
+    <div class="legal-links">
+      <a href="/impressum.html">Impressum</a>
+      <span>·</span>
+      <a href="/datenschutz.html">Datenschutz</a>
     </div>
 
   </div>
