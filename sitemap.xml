@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
@@ -15,6 +14,14 @@
   </url>
 
   <url>
+    <loc>https://lianmirror.github.io/impressum.html</loc>
+  </url>
+
+  <url>
+    <loc>https://lianmirror.github.io/datenschutz.html</loc>
+  </url>
+
+  <url>
     <loc>https://lianmirror.github.io/artikel/instagram-produkt-vermarkten.html</loc>
   </url>
 
@@ -27,7 +34,7 @@
   </url>
 
   <url>
-    <loc>https://lianmirror.github.io/artikel/warum-gute-produkte-uebersehen-werden.html</loc>
+    <loc>https://lianmirror.github.io/artikel/zielgruppe-auf-instagram-finden.html</loc>
   </url>
 
   <url>
@@ -39,11 +46,11 @@
   </url>
 
   <url>
-    <loc>https://lianmirror.github.io/artikel/ki-fuer-content-nutzen.html</loc>
+    <loc>https://lianmirror.github.io/artikel/warum-gute-produkte-uebersehen-werden.html</loc>
   </url>
 
   <url>
-    <loc>https://lianmirror.github.io/artikel/zielgruppe-auf-instagram-finden.html</loc>
+    <loc>https://lianmirror.github.io/artikel/ki-fuer-content-nutzen.html</loc>
   </url>
 
 </urlset>
