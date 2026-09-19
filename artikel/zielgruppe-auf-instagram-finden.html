@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zielgruppe auf Instagram finden: So wird dein Content klarer | Creatorbase</title>
+
+<meta name="description"
+content="Wie findest du deine Zielgruppe auf Instagram? Ein praktischer Guide für Produkte, Dienstleistungen und Unternehmen – ohne komplizierte Personas.">
+
+<style>
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* NAVIGATION */
+
+header {
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: var(--terracotta);
+}
+
+
+/* HERO */
+
+.hero {
+  padding: 95px 0 85px;
+}
+
+.breadcrumb {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 55px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 80px;
+}
+
+.category {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.hero h1 {
+  max-width: 920px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(52px, 7vw, 94px);
+  line-height: .95;
+  letter-spacing: -4px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.hero h1 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.lead {
+  max-width: 680px;
+  border-left: 2px solid var(--terracotta);
+  padding-left: 22px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  color: #7b6c65;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+  background: var(--terracotta-light);
+  padding: 95px 24px;
+  overflow: hidden;
+}
+
+.visual-inner {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.visual-word {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: clamp(60px, 10vw, 130px);
+  line-height: 1;
+  color: rgba(45,33,29,.10);
+}
+
+.visual-card {
+  max-width: 570px;
+  margin: -35px auto 0;
+  position: relative;
+  background: var(--white);
+  padding: 45px;
+  transform: rotate(-2deg);
+  box-shadow: 0 25px 50px rgba(45,33,29,.1);
+}
+
+.visual-card small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.visual-card p {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  line-height: 1.2;
+}
+
+
+/* ARTICLE */
+
+.article-layout {
+  max-width: 1050px;
+  margin: auto;
+  padding: 110px 24px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 90px;
+}
+
+.toc {
+  position: sticky;
+  top: 40px;
+  align-self: start;
+}
+
+.toc-title {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.toc a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: Georgia, serif;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.toc a:hover {
+  color: var(--terracotta);
+  padding-left: 5px;
+}
+
+.article-content {
+  max-width: 700px;
+}
+
+.article-content > p {
+  margin-bottom: 25px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.article-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(37px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.article-content h2 span {
+  display: block;
+  color: var(--terracotta);
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight {
+  background: var(--lavender-light);
+  margin: 55px 0;
+  padding: 40px;
+}
+
+.highlight-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.highlight p {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+
+/* STEPS */
+
+.steps {
+  margin: 45px 0 60px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 22px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.step:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.step-number {
+  color: var(--terracotta);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.step h3 {
+  margin: 0 0 8px;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.step p {
+  color: #6c5f59;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* EXAMPLES */
+
+.example {
+  border-top: 1px solid var(--terracotta);
+  margin: 50px 0;
+  padding: 35px 0 0;
+}
+
+.example small {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.example p {
+  margin-top: 15px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+
+/* QUESTION CARDS */
+
+.questions {
+  margin: 45px 0 60px;
+}
+
+.question {
+  background: var(--white);
+  padding: 30px;
+  margin-bottom: 14px;
+}
+
+.question small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.question h3 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+
+/* SYSTEM */
+
+.system {
+  background: var(--cream-dark);
+  margin: 55px 0;
+  padding: 40px;
+}
+
+.system-title {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.system-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.system-box {
+  background: var(--white);
+  padding: 12px 15px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+.system-arrow {
+  color: var(--terracotta);
+  font-weight: 800;
+}
+
+
+/* LIORA */
+
+.liora {
+  background: var(--brown);
+  color: var(--cream);
+  padding: 110px 24px;
+}
+
+.liora-inner {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  gap: 80px;
+}
+
+.liora-label {
+  color: var(--terracotta-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.liora h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(43px, 5vw, 67px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.liora h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.liora p {
+  max-width: 570px;
+  color: #d9d0ca;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.liora-button {
+  display: inline-block;
+  background: var(--lavender);
+  color: var(--brown);
+  padding: 15px 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.liora-button:hover {
+  background: var(--terracotta-light);
+}
+
+
+/* BACK */
+
+.back {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.back p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--terracotta);
+  margin-bottom: 20px;
+}
+
+.back a {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  border-bottom: 1px solid var(--brown);
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 80px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 125px);
+  line-height: .9;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(4) {
+    display: none;
+  }
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .visual-card {
+    padding: 30px;
+  }
+
+  .visual-card p {
+    font-size: 24px;
+  }
+
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 75px 20px;
+  }
+
+  .toc {
+    position: static;
+  }
+
+  .article-content h2 {
+    margin-top: 70px;
+  }
+
+  .highlight,
+  .system {
+    padding: 28px;
+  }
+
+  .highlight p {
+    font-size: 21px;
+  }
+
+  .liora {
+    padding: 80px 20px;
+  }
+
+  .liora-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="../index.html" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="../blog.html">Blog</a>
+      <a href="../index.html#start">Guides</a>
+      <a href="../index.html#liora">Liora</a>
+      <a href="#">Über uns</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="breadcrumb">
+      Creatorbase / Instagram Marketing / Zielgruppe
+    </div>
+
+    <div class="hero-grid">
+
+      <div class="category">
+        Zielgruppe & Positionierung ✦
+      </div>
+
+      <div>
+
+        <h1>
+          Wie finde ich meine
+          <em>Zielgruppe auf Instagram?</em>
+        </h1>
+
+        <p class="lead">
+          Du musst nicht jede Person erreichen.
+          Du musst verstehen, für wen dein Angebot relevant ist –
+          und welche Situationen diese Menschen bereits kennen.
+        </p>
+
+        <div class="meta">
+          <span>Creatorbase Guide</span>
+          <span>Instagram · Zielgruppe · Content</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- VISUAL -->
+
+<section class="hero-visual">
+
+  <div class="visual-inner">
+
+    <div class="visual-word">
+      who?
+    </div>
+
+    <div class="visual-card">
+
+      <small>
+        nicht besonders hilfreich
+      </small>
+
+      <p>
+        „Meine Zielgruppe?
+        Eigentlich alle,
+        die mein Produkt gebrauchen könnten.“
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE -->
+
+<div class="article-layout">
+
+
+  <!-- INHALTSVERZEICHNIS -->
+
+  <aside class="toc">
+
+    <div class="toc-title">
+      In diesem Guide
+    </div>
+
+    <a href="#zielgruppe">
+      01 · Was Zielgruppe bedeutet
+    </a>
+
+    <a href="#produkt">
+      02 · Beim Angebot starten
+    </a>
+
+    <a href="#situation">
+      03 · Situationen verstehen
+    </a>
+
+    <a href="#sprache">
+      04 · Sprache finden
+    </a>
+
+    <a href="#instagram">
+      05 · Auf Instagram lernen
+    </a>
+
+    <a href="#content">
+      06 · Daraus Content machen
+    </a>
+
+  </aside>
+
+
+  <!-- ARTIKEL -->
+
+  <article class="article-content">
+
+    <p>
+      Vielleicht hast du schon einmal versucht,
+      deine Zielgruppe zu definieren.
+    </p>
+
+    <p>
+      Und plötzlich solltest du wissen,
+      wie alt diese Person ist,
+      welchen Beruf sie hat,
+      wo sie wohnt,
+      was sie am Wochenende macht
+      und vielleicht sogar,
+      welchen Kaffee sie bestellt.
+    </p>
+
+    <p>
+      Solche Informationen können manchmal nützlich sein.
+    </p>
+
+    <p>
+      Für guten Content ist aber häufig eine andere Frage wichtiger:
+    </p>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Die bessere Frage ✦
+      </div>
+
+      <p>
+        In welcher Situation wird mein Angebot
+        für einen Menschen relevant?
+      </p>
+
+    </div>
+
+    <p>
+      Genau dort beginnt eine Zielgruppe,
+      mit der du tatsächlich arbeiten kannst.
+    </p>
+
+
+    <!-- 01 -->
+
+    <h2 id="zielgruppe">
+
+      <span>01 / Zielgruppe</span>
+
+      Deine Zielgruppe ist mehr
+      als Alter und Wohnort.
+
+    </h2>
+
+    <p>
+      Stell dir vor,
+      zwei Menschen sind beide 32 Jahre alt,
+      wohnen in derselben Stadt
+      und haben einen ähnlichen Beruf.
+    </p>
+
+    <p>
+      Trotzdem kann dein Produkt für eine Person
+      gerade extrem relevant sein
+      und für die andere überhaupt nicht.
+    </p>
+
+    <p>
+      Warum?
+    </p>
+
+    <p>
+      Weil Kaufentscheidungen nicht nur
+      aus demografischen Daten entstehen.
+    </p>
+
+    <p>
+      Sie entstehen aus Problemen,
+      Wünschen, Situationen,
+      Prioritäten und Bedürfnissen.
+    </p>
+
+
+    <div class="example">
+
+      <small>Sehr breit</small>
+
+      <p>
+        „Frauen zwischen 25 und 40,
+        die sich für Beauty interessieren.“
+      </p>
+
+    </div>
+
+
+    <div class="example">
+
+      <small>Für Content hilfreicher</small>
+
+      <p>
+        „Menschen, deren Haut sich nach dem Schminken
+        schnell trocken anfühlt und die deshalb
+        nach einer leichteren Routine suchen.“
+      </p>
+
+    </div>
+
+    <p>
+      Die zweite Beschreibung gibt dir sofort
+      deutlich mehr Ideen für Content.
+    </p>
+
+
+    <!-- 02 -->
+
+    <h2 id="produkt">
+
+      <span>02 / Angebot</span>
+
+      Beginne bei dem,
+      was du verkaufen möchtest.
+
+    </h2>
+
+    <p>
+      Bevor du nach deiner Zielgruppe suchst,
+      solltest du dein eigenes Angebot verstehen.
+    </p>
+
+    <p>
+      Nicht nur:
+      „Ich verkaufe eine Creme.“
+    </p>
+
+    <p>
+      Sondern:
+      Welche Veränderung,
+      Erleichterung oder Möglichkeit
+      bietet diese Creme?
+    </p>
+
+    <p>
+      Dasselbe gilt für Dienstleistungen,
+      digitale Produkte,
+      Unternehmen und Marken.
+    </p>
+
+
+    <div class="questions">
+
+      <div class="question">
+        <small>Frage 01</small>
+        <h3>
+          Was genau verkaufe ich?
+        </h3>
+      </div>
+
+      <div class="question">
+        <small>Frage 02</small>
+        <h3>
+          Welches Problem wird dadurch leichter?
+        </h3>
+      </div>
+
+      <div class="question">
+        <small>Frage 03</small>
+        <h3>
+          Welcher Wunsch steckt dahinter?
+        </h3>
+      </div>
+
+      <div class="question">
+        <small>Frage 04</small>
+        <h3>
+          Wann merkt jemand:
+          „Das könnte ich brauchen“?
+        </h3>
+      </div>
+
+    </div>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Wichtig
+      </div>
+
+      <p>
+        Deine Zielgruppe wird klarer,
+        wenn dein Angebot klarer wird.
+      </p>
+
+    </div>
+
+
+    <!-- 03 -->
+
+    <h2 id="situation">
+
+      <span>03 / Situationen</span>
+
+      Suche nicht nur nach Personen.
+      Suche nach Momenten.
+
+    </h2>
+
+    <p>
+      Für Content sind konkrete Situationen Gold wert.
+    </p>
+
+    <p>
+      Denn Situationen lassen sich erzählen,
+      filmen, erklären und wiedererkennen.
+    </p>
+
+    <p>
+      Frage dich deshalb:
+      Was passiert kurz bevor jemand
+      nach meinem Produkt sucht?
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+
+        <div class="step-number">
+          01
+        </div>
+
+        <div>
+          <h3>Was nervt die Person?</h3>
+          <p>
+            Welches Problem taucht immer wieder
+            im Alltag auf?
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          02
+        </div>
+
+        <div>
+          <h3>Was hat sie schon versucht?</h3>
+          <p>
+            Welche Lösungen funktionieren
+            bisher nicht richtig?
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          03
+        </div>
+
+        <div>
+          <h3>Was möchte sie stattdessen?</h3>
+          <p>
+            Beschreibe nicht nur das Problem,
+            sondern auch das gewünschte Ergebnis.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          04
+        </div>
+
+        <div>
+          <h3>Was hält sie vom Kauf ab?</h3>
+          <p>
+            Preis, Unsicherheit, fehlendes Vertrauen
+            oder vielleicht die Frage,
+            ob dein Angebot wirklich zu ihr passt?
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <p>
+      Genau aus diesen Antworten entstehen später
+      starke Content-Themen.
+    </p>
+
+
+    <!-- 04 -->
+
+    <h2 id="sprache">
+
+      <span>04 / Sprache</span>
+
+      Hör darauf,
+      wie deine Zielgruppe selbst spricht.
+
+    </h2>
+
+    <p>
+      Unternehmen beschreiben Probleme häufig
+      anders als Kund:innen.
+    </p>
+
+    <p>
+      Auf einer Website steht vielleicht:
+      „Optimierung ineffizienter Workflows.“
+    </p>
+
+    <p>
+      Die Kundin sagt dagegen:
+      „Ich verliere jeden Morgen eine Stunde,
+      weil ich alles doppelt machen muss.“
+    </p>
+
+    <p>
+      Für Content ist die zweite Formulierung
+      oft viel stärker.
+    </p>
+
+
+    <div class="example">
+
+      <small>Unternehmenssprache</small>
+
+      <p>
+        „Unsere Lösung steigert
+        die Effizienz deiner Prozesse.“
+      </p>
+
+    </div>
+
+
+    <div class="example">
+
+      <small>Alltagssprache</small>
+
+      <p>
+        „Du kopierst dieselben Daten
+        jeden Tag von einer Tabelle
+        in die nächste.“
+      </p>
+
+    </div>
+
+    <p>
+      Je besser du die echte Sprache
+      deiner Zielgruppe kennst,
+      desto leichter kannst du Content erstellen,
+      in dem Menschen sich wiedererkennen.
+    </p>
+
+
+    <!-- 05 -->
+
+    <h2 id="instagram">
+
+      <span>05 / Instagram</span>
+
+      Nutze Instagram
+      nicht nur zum Posten,
+      sondern auch zum Zuhören.
+
+    </h2>
+
+    <p>
+      Du musst deine Zielgruppe
+      nicht vollständig am Schreibtisch erfinden.
+    </p>
+
+    <p>
+      Viele Hinweise findest du bereits
+      in echten Gesprächen und Reaktionen.
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+
+        <div class="step-number">
+          01
+        </div>
+
+        <div>
+          <h3>Kommentare</h3>
+          <p>
+            Welche Fragen tauchen unter Beiträgen
+            zu deinem Thema immer wieder auf?
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          02
+        </div>
+
+        <div>
+          <h3>Nachrichten</h3>
+          <p>
+            Welche Fragen stellen Interessierte
+            vor einem Kauf?
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          03
+        </div>
+
+        <div>
+          <h3>Kundengespräche</h3>
+          <p>
+            Welche Sätze hörst du
+            von Kund:innen immer wieder?
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          04
+        </div>
+
+        <div>
+          <h3>Deine eigenen Posts</h3>
+          <p>
+            Welche Themen führen zu Fragen,
+            Antworten, gespeicherten Beiträgen
+            oder echten Gesprächen?
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Nicht vergessen ✦
+      </div>
+
+      <p>
+        Zielgruppenarbeit ist keine Aufgabe,
+        die du einmal erledigst.
+        Du lernst deine Zielgruppe weiter kennen,
+        während du mit ihr kommunizierst.
+      </p>
+
+    </div>
+
+
+    <!-- 06 -->
+
+    <h2 id="content">
+
+      <span>06 / Content</span>
+
+      Verwandle deine Zielgruppe
+      in konkrete Content-Ideen.
+
+    </h2>
+
+    <p>
+      Jetzt kommt der wichtigste Schritt:
+      Die Informationen dürfen nicht
+      in einem Dokument verschwinden.
+    </p>
+
+    <p>
+      Sie sollen deinen Content verändern.
+    </p>
+
+
+    <div class="system">
+
+      <div class="system-title">
+        Vom Menschen zum Content ✦
+      </div>
+
+      <div class="system-flow">
+
+        <div class="system-box">
+          Situation
+        </div>
+
+        <div class="system-arrow">
+          →
+        </div>
+
+        <div class="system-box">
+          Problem
+        </div>
+
+        <div class="system-arrow">
+          →
+        </div>
+
+        <div class="system-box">
+          Wunsch
+        </div>
+
+        <div class="system-arrow">
+          →
+        </div>
+
+        <div class="system-box">
+          Botschaft
+        </div>
+
+        <div class="system-arrow">
+          →
+        </div>
+
+        <div class="system-box">
+          Content
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="example">
+
+      <small>Beispiel für ein Reel</small>
+
+      <p>
+        „Wenn du dein Produkt ständig postest,
+        aber Menschen trotzdem nicht verstehen,
+        warum sie es brauchen,
+        fehlt dir wahrscheinlich nicht mehr Content –
+        sondern eine klarere Botschaft.“
+      </p>
+
+    </div>
+
+    <p>
+      Dieser Content spricht nicht einfach
+      „Unternehmer:innen zwischen 25 und 45“ an.
+    </p>
+
+    <p>
+      Er spricht eine konkrete Situation an.
+    </p>
+
+    <p>
+      Und genau dadurch kann sich die richtige Person
+      selbst darin erkennen.
+    </p>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Merksatz ✦
+      </div>
+
+      <p>
+        Gute Zielgruppenarbeit bedeutet nicht,
+        möglichst viele Eigenschaften über Menschen
+        aufzuschreiben. Sie bedeutet zu verstehen,
+        wann und warum dein Angebot für sie relevant wird.
+      </p>
+
+    </div>
+
+    <p>
+      Wenn du das verstanden hast,
+      werden Positionierung,
+      Content-Ideen und Reels deutlich einfacher.
+    </p>
+
+    <p>
+      Denn du musst nicht mehr überlegen,
+      was du irgendwie posten könntest.
+    </p>
+
+    <p>
+      Du kannst darüber sprechen,
+      was deine Zielgruppe tatsächlich beschäftigt.
+    </p>
+
+  </article>
+
+</div>
+
+
+<!-- LIORA -->
+
+<section class="liora">
+
+  <div class="liora-inner">
+
+    <div class="liora-label">
+      Von deiner Zielgruppe zum Content ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Du weißt, was du verkaufen willst.
+        <em>Liora weiß, wie du es zeigst.</em>
+      </h2>
+
+      <p>
+        Bring Liora dein Produkt, deine Dienstleistung
+        oder dein Unternehmen. Liora hilft dir dabei,
+        daraus Positionierung, Instagram-Strategie,
+        Content-Ideen und Videos für dein Angebot
+        zu entwickeln.
+      </p>
+
+      <a
+        href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
+        target="_blank"
+        rel="noopener"
+        class="liora-button">
+        Liora entdecken →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ZURÜCK -->
+
+<section class="back">
+
+  <p>
+    mehr über Marketing & Content?
+  </p>
+
+  <a href="../blog.html">
+    ← Zurück zum Creatorbase Blog
+  </a>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
