@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog – Creatorbase</title>
+
+<meta name="description"
+content="Strategien, Guides und Ideen rund um Instagram, Content, Positionierung und die Vermarktung von Produkten, Dienstleistungen und Unternehmen.">
+
+<style>
+
+/* =========================================
+   FARBEN & BASIS
+========================================= */
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header {
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: var(--terracotta);
+}
+
+.nav-links .active {
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  padding: 115px 0 100px;
+}
+
+.hero-top {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 80px;
+}
+
+.mini-label {
+  color: var(--terracotta);
+
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.hero h1 {
+  max-width: 850px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(62px, 8vw, 115px);
+  line-height: .87;
+  letter-spacing: -5px;
+
+  font-weight: 400;
+}
+
+.hero h1 em {
+  display: block;
+
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.hero-bottom {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 80px;
+
+  margin-top: 60px;
+}
+
+.hero-copy {
+  max-width: 590px;
+
+  border-left: 2px solid var(--terracotta);
+  padding-left: 22px;
+
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.hero-copy em {
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   KATEGORIEN
+========================================= */
+
+.categories {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.category-row {
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  overflow-x: auto;
+}
+
+.category {
+  white-space: nowrap;
+
+  border: 1px solid var(--brown);
+  border-radius: 100px;
+
+  padding: 9px 17px;
+
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  transition: .2s;
+}
+
+.category:hover,
+.category.active {
+  background: var(--brown);
+  color: var(--cream);
+}
+
+
+/* =========================================
+   FEATURED ARTIKEL
+========================================= */
+
+.featured {
+  padding: 110px 0;
+}
+
+.featured-label {
+  margin-bottom: 35px;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 540px;
+
+  background: var(--lavender-light);
+}
+
+.featured-art {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--lavender);
+  min-height: 540px;
+}
+
+.featured-word {
+  position: absolute;
+
+  top: 25px;
+  left: -10px;
+
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  font-size: 105px;
+
+  color: rgba(255,255,255,.28);
+}
+
+.paper {
+  position: absolute;
+
+  background: var(--white);
+
+  width: 72%;
+
+  padding: 32px;
+
+  top: 125px;
+  left: 12%;
+
+  transform: rotate(-4deg);
+
+  box-shadow: 0 25px 50px rgba(45,33,29,.12);
+}
+
+.paper small {
+  display: block;
+
+  color: var(--terracotta);
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  margin-bottom: 15px;
+}
+
+.paper p {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.paper-note {
+  position: absolute;
+
+  right: 8%;
+  bottom: 75px;
+
+  color: var(--brown);
+
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 18px;
+
+  transform: rotate(4deg);
+}
+
+.featured-content {
+  padding: 65px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-category {
+  color: var(--terracotta);
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  margin-bottom: 25px;
+}
+
+.featured-content h2 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(38px, 4vw, 56px);
+  line-height: 1.03;
+
+  font-weight: 400;
+
+  margin-bottom: 28px;
+}
+
+.featured-content p {
+  max-width: 470px;
+
+  color: #675b55;
+
+  font-size: 14px;
+
+  margin-bottom: 35px;
+}
+
+.read-link {
+  display: inline-block;
+  align-self: flex-start;
+
+  color: var(--terracotta);
+
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  border-bottom: 1px solid var(--terracotta);
+
+  padding-bottom: 3px;
+}
+
+
+/* =========================================
+   ARTIKEL
+========================================= */
+
+.articles-section {
+  padding: 30px 0 130px;
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 80px;
+
+  margin-bottom: 65px;
+}
+
+.section-head h2 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 1;
+
+  font-weight: 400;
+}
+
+.section-head h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  border-top: 1px solid var(--line);
+}
+
+.article {
+  min-height: 390px;
+
+  padding: 38px;
+
+  border-bottom: 1px solid var(--line);
+
+  display: flex;
+  flex-direction: column;
+
+  transition: .25s;
+}
+
+.article:nth-child(odd) {
+  border-right: 1px solid var(--line);
+}
+
+.article:hover {
+  background: var(--white);
+}
+
+.article.lavender:hover {
+  background: var(--lavender-light);
+}
+
+.article-number {
+  display: flex;
+  justify-content: space-between;
+
+  color: #96877f;
+
+  font-size: 10px;
+
+  margin-bottom: 65px;
+}
+
+.article h3 {
+  max-width: 480px;
+
+  font-family: Georgia, serif;
+  font-size: 34px;
+  line-height: 1.1;
+
+  font-weight: 400;
+
+  margin-bottom: 22px;
+}
+
+.article p {
+  max-width: 430px;
+
+  color: #6c5f59;
+
+  font-size: 13px;
+
+  margin-bottom: 30px;
+}
+
+.article-footer {
+  margin-top: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 20px;
+
+  border-top: 1px solid var(--line);
+
+  color: var(--terracotta);
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   LIORA BREAK
+========================================= */
+
+.liora-break {
+  background: var(--brown);
+  color: var(--cream);
+
+  padding: 120px 0;
+}
+
+.liora-grid {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 80px;
+}
+
+.liora-break .mini-label {
+  color: var(--terracotta-light);
+}
+
+.liora-break h2 {
+  max-width: 850px;
+
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 6vw, 80px);
+  line-height: 1;
+
+  font-weight: 400;
+
+  margin-bottom: 35px;
+}
+
+.liora-break h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.liora-break p {
+  max-width: 570px;
+
+  color: #d8cec8;
+
+  font-size: 14px;
+
+  margin-bottom: 35px;
+}
+
+.liora-button {
+  display: inline-block;
+
+  background: var(--lavender);
+  color: var(--brown);
+
+  padding: 15px 23px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  transition: .2s;
+}
+
+.liora-button:hover {
+  background: var(--terracotta-light);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 90px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+
+  font-size: clamp(55px, 9vw, 125px);
+  line-height: .9;
+
+  padding-bottom: 50px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   HANDY
+========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(4) {
+    display: none;
+  }
+
+  .hero {
+    padding: 80px 0 70px;
+  }
+
+  .hero-top,
+  .hero-bottom,
+  .section-head,
+  .liora-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .hero-bottom {
+    margin-top: 40px;
+  }
+
+  .category-row {
+    padding: 15px 0;
+  }
+
+  .featured {
+    padding: 75px 0;
+  }
+
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-art {
+    min-height: 420px;
+  }
+
+  .featured-content {
+    padding: 40px 25px;
+  }
+
+  .featured-word {
+    font-size: 75px;
+  }
+
+  .paper {
+    width: 78%;
+    padding: 25px;
+  }
+
+  .paper p {
+    font-size: 25px;
+  }
+
+  .articles-section {
+    padding-bottom: 80px;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article {
+    min-height: 340px;
+    padding: 30px 5px;
+  }
+
+  .article:nth-child(odd) {
+    border-right: none;
+  }
+
+  .article-number {
+    margin-bottom: 45px;
+  }
+
+  .liora-break {
+    padding: 85px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     NAVIGATION
+===================================== -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="index.html" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="blog.html" class="active">
+        Blog
+      </a>
+
+      <a href="index.html#start">
+        Guides
+      </a>
+
+      <a href="index.html#liora">
+        Liora
+      </a>
+
+      <a href="#">
+        Über uns
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-top">
+
+      <div class="mini-label">
+        Creatorbase Journal / 01
+      </div>
+
+      <h1>
+        Ideen für deine
+        <em>Sichtbarkeit.</em>
+      </h1>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+      <div></div>
+
+      <div class="hero-copy">
+
+        Kein „poste einfach jeden Tag“.
+
+        Sondern Strategien, Ideen und praktische Guides
+        für Content, Marketing und Marken,
+        <em>die wirklich etwas zu zeigen haben.</em>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================
+     KATEGORIEN
+===================================== -->
+
+<section class="categories">
+
+  <div class="container category-row">
+
+    <a href="#" class="category active">
+      Alle
+    </a>
+
+    <a href="#" class="category">
+      Instagram
+    </a>
+
+    <a href="#" class="category">
+      Content
+    </a>
+
+    <a href="#" class="category">
+      Produkte
+    </a>
+
+    <a href="#" class="category">
+      Positionierung
+    </a>
+
+    <a href="#" class="category">
+      Unternehmen
+    </a>
+
+    <a href="#" class="category">
+      KI & Tools
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================
+     FEATURED
+===================================== -->
+
+<section class="featured">
+
+  <div class="container">
+
+    <div class="mini-label featured-label">
+      ✦ Start here
+    </div>
+
+
+    <a href="#" class="featured-card">
+
+
+      <div class="featured-art">
+
+        <div class="featured-word">
+          visibility
+        </div>
+
+        <div class="paper">
+
+          <small>
+            eine kleine frage
+          </small>
+
+          <p>
+            „Warum sieht eigentlich
+            niemand mein Produkt?“
+          </p>
+
+        </div>
+
+        <div class="paper-note">
+          let's fix that ↗
+        </div>
+
+      </div>
+
+
+
+      <div class="featured-content">
+
+        <div class="article-category">
+          Instagram Marketing
+        </div>
+
+        <h2>
+          Wie vermarktest du ein Produkt auf Instagram?
+        </h2>
+
+        <p>
+          Von der Positionierung bis zum Content:
+          Was du wirklich brauchst, damit aus einem
+          Produkt ein Angebot wird, das Menschen
+          verstehen und wahrnehmen.
+        </p>
+
+        <span class="read-link">
+          Guide lesen →
+        </span>
+
+      </div>
+
+
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================
+     ARTIKEL
+===================================== -->
+
+<section class="articles-section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="mini-label">
+        Zum Weiterlesen ✦
+      </div>
+
+      <h2>
+        Was beschäftigt
+        dich <em>gerade?</em>
+      </h2>
+
+    </div>
+
+
+    <div class="article-grid">
+
+
+      <a href="#" class="article">
+
+        <div class="article-number">
+
+          <span>01</span>
+          <span>CONTENT</span>
+
+        </div>
+
+        <h3>
+          Was soll ich posten, wenn ich etwas verkaufen will?
+        </h3>
+
+        <p>
+          Content-Ideen entwickeln, ohne jeden Morgen
+          wieder vor einem leeren Bildschirm zu sitzen.
+        </p>
+
+        <div class="article-footer">
+
+          <span>Guide lesen</span>
+          <span>↗</span>
+
+        </div>
+
+      </a>
+
+
+
+      <a href="#" class="article lavender">
+
+        <div class="article-number">
+
+          <span>02</span>
+          <span>STRATEGIE</span>
+
+        </div>
+
+        <h3>
+          Von „Ich hab eine Idee“ zur klaren Content-Strategie.
+        </h3>
+
+        <p>
+          Wie aus einzelnen Posts ein Auftritt entsteht,
+          der eine klare Richtung hat.
+        </p>
+
+        <div class="article-footer">
+
+          <span>Guide lesen</span>
+          <span>↗</span>
+
+        </div>
+
+      </a>
+
+
+
+      <a href="#" class="article lavender">
+
+        <div class="article-number">
+
+          <span>03</span>
+          <span>POSITIONIERUNG</span>
+
+        </div>
+
+        <h3>
+          Warum gute Produkte trotzdem übersehen werden.
+        </h3>
+
+        <p>
+          Ein gutes Produkt allein erklärt noch nicht,
+          warum Menschen gerade deins brauchen.
+        </p>
+
+        <div class="article-footer">
+
+          <span>Guide lesen</span>
+          <span>↗</span>
+
+        </div>
+
+      </a>
+
+
+
+      <a href="#" class="article">
+
+        <div class="article-number">
+
+          <span>04</span>
+          <span>INSTAGRAM</span>
+
+        </div>
+
+        <h3>
+          Eine Instagram-Strategie, die nicht bei „mehr posten“ endet.
+        </h3>
+
+        <p>
+          Welche Rolle Positionierung, Formate und
+          Wiedererkennbarkeit wirklich spielen.
+        </p>
+
+        <div class="article-footer">
+
+          <span>Guide lesen</span>
+          <span>↗</span>
+
+        </div>
+
+      </a>
+
+
+
+      <a href="#" class="article">
+
+        <div class="article-number">
+
+          <span>05</span>
+          <span>REELS</span>
+
+        </div>
+
+        <h3>
+          Reels für dein Produkt: Was soll im Video eigentlich passieren?
+        </h3>
+
+        <p>
+          Von der ersten Idee bis zum Video:
+          Content nicht nur planen, sondern sichtbar machen.
+        </p>
+
+        <div class="article-footer">
+
+          <span>Guide lesen</span>
+          <span>↗</span>
+
+        </div>
+
+      </a>
+
+
+
+      <a href="#" class="article lavender">
+
+        <div class="article-number">
+
+          <span>06</span>
+          <span>KI & TOOLS</span>
+
+        </div>
+
+        <h3>
+          KI für Content nutzen, ohne dass alles nach KI klingt.
+        </h3>
+
+        <p>
+          Wie Tools dir Arbeit abnehmen können,
+          ohne deine eigene Stimme zu ersetzen.
+        </p>
+
+        <div class="article-footer">
+
+          <span>Guide lesen</span>
+          <span>↗</span>
+
+        </div>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================
+     LIORA
+===================================== -->
+
+<section class="liora-break">
+
+  <div class="container liora-grid">
+
+    <div class="mini-label">
+      Genug gelesen? ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Wissen ist gut.
+        <em>Umsetzen ist besser.</em>
+      </h2>
+
+      <p>
+        Du weißt schon, was du verkaufen möchtest?
+        Liora entwickelt passend zu deinem Produkt,
+        deiner Dienstleistung oder deinem Unternehmen
+        eine Instagram-Strategie und hilft dir,
+        daraus Content und Videos zu machen.
+      </p>
+
+      <a
+        href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
+        target="_blank"
+        rel="noopener"
+        class="liora-button">
+        Liora entdecken →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
