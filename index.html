@@ -11,10 +11,6 @@ content="Creatorbase – Strategien, Wissen und Tools für Produkte, Dienstleist
 
 <style>
 
-/* =========================================
-   FARBEN
-========================================= */
-
 :root {
   --cream: #f5f0ea;
   --cream-dark: #ebe1da;
@@ -26,10 +22,6 @@ content="Creatorbase – Strategien, Wissen und Tools für Produkte, Dienstleist
   --white: #fffdfb;
   --line: #d9cec7;
 }
-
-/* =========================================
-   BASIS
-========================================= */
 
 * {
   box-sizing: border-box;
@@ -59,9 +51,7 @@ a {
 }
 
 
-/* =========================================
-   NAVIGATION
-========================================= */
+/* NAVIGATION */
 
 header {
   border-bottom: 1px solid var(--line);
@@ -69,7 +59,6 @@ header {
 
 .nav {
   min-height: 82px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,7 +77,6 @@ header {
 .nav-links {
   display: flex;
   gap: 32px;
-
   font-size: 13px;
 }
 
@@ -97,9 +85,7 @@ header {
 }
 
 
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero {
   padding: 110px 0 130px;
@@ -114,13 +100,10 @@ header {
 
 .mini-label {
   color: var(--terracotta);
-
   text-transform: uppercase;
   letter-spacing: 2.5px;
-
   font-size: 10px;
   font-weight: 800;
-
   margin-bottom: 22px;
 }
 
@@ -130,7 +113,6 @@ header {
   line-height: .94;
   letter-spacing: -4px;
   font-weight: 400;
-
   margin-bottom: 28px;
 }
 
@@ -141,14 +123,11 @@ header {
 
 .hero-intro {
   max-width: 550px;
-
   border-left: 2px solid var(--terracotta);
   padding-left: 20px;
-
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, serif;
   font-size: 21px;
   line-height: 1.45;
-
   margin-bottom: 28px;
 }
 
@@ -158,40 +137,30 @@ header {
 
 .hero-copy {
   max-width: 540px;
-
   font-size: 13px;
   line-height: 1.8;
   color: #645751;
-
   margin-bottom: 28px;
 }
 
 .handwriting {
   font-family: Georgia, serif;
   font-style: italic;
-
   color: var(--terracotta);
-
   font-size: 20px;
   line-height: 1.2;
-
   margin-bottom: 38px;
 }
 
 .button {
   display: inline-block;
-
   background: var(--brown);
   color: white;
-
   padding: 15px 23px;
-
   text-transform: uppercase;
   letter-spacing: 1px;
-
   font-size: 10px;
   font-weight: 800;
-
   transition: .2s ease;
 }
 
@@ -200,58 +169,42 @@ header {
 }
 
 
-/* =========================================
-   HERO COLLAGE
-========================================= */
+/* HERO COLLAGE */
 
 .hero-art {
   min-height: 590px;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--cream-dark),
-      var(--lavender-light)
-    );
-
+  background: linear-gradient(
+    135deg,
+    var(--cream-dark),
+    var(--lavender-light)
+  );
   position: relative;
   overflow: hidden;
 }
 
 .background-word {
   position: absolute;
-
   top: 35px;
   left: 20px;
-
   font-family: Georgia, serif;
   font-style: italic;
-
   font-size: 90px;
-
   color: rgba(181, 123, 103, .14);
-
   white-space: nowrap;
 }
 
 .note {
   position: absolute;
-
   padding: 28px 32px;
-
   box-shadow: 0 20px 40px rgba(45,33,29,.08);
 }
 
 .note small {
   display: block;
-
   text-transform: uppercase;
   letter-spacing: 2px;
-
-  font-family: Arial, sans-serif;
   font-size: 8px;
   font-weight: bold;
-
   margin-bottom: 10px;
 }
 
@@ -263,12 +216,9 @@ header {
 
 .note-one {
   width: 65%;
-
   background: var(--white);
-
   top: 120px;
   left: 7%;
-
   transform: rotate(-4deg);
 }
 
@@ -278,13 +228,10 @@ header {
 
 .note-two {
   width: 64%;
-
   background: var(--brown);
   color: white;
-
   right: 5%;
   bottom: 85px;
-
   transform: rotate(3deg);
 }
 
@@ -298,9 +245,7 @@ header {
 
 .art-star {
   position: absolute;
-
   color: var(--terracotta);
-
   font-size: 25px;
 }
 
@@ -316,14 +261,11 @@ header {
 }
 
 
-/* =========================================
-   INTRO
-========================================= */
+/* INTRO */
 
 .intro {
   background: var(--brown);
   color: var(--cream);
-
   padding: 115px 0;
 }
 
@@ -339,11 +281,9 @@ header {
 
 .intro h2 {
   max-width: 780px;
-
   font-family: Georgia, serif;
   font-size: clamp(43px, 5vw, 70px);
   line-height: 1.05;
-
   font-weight: 400;
 }
 
@@ -354,18 +294,13 @@ header {
 
 .intro-text {
   max-width: 560px;
-
   margin-top: 35px;
-
   color: #d9d0ca;
-
   font-size: 15px;
 }
 
 
-/* =========================================
-   STARTPUNKTE
-========================================= */
+/* WAS WILLST DU ERREICHEN */
 
 .start {
   padding: 130px 0;
@@ -375,7 +310,6 @@ header {
   display: grid;
   grid-template-columns: .65fr 1.35fr;
   gap: 100px;
-
   margin-bottom: 80px;
 }
 
@@ -399,13 +333,9 @@ header {
   display: grid;
   grid-template-columns: 90px 1fr 1fr 50px;
   gap: 30px;
-
   align-items: center;
-
   padding: 38px 15px;
-
   border-bottom: 1px solid var(--line);
-
   transition: .25s;
 }
 
@@ -416,7 +346,6 @@ header {
 
 .path-number {
   color: var(--terracotta);
-
   font-size: 11px;
   font-weight: bold;
 }
@@ -429,9 +358,7 @@ header {
 
 .path p {
   max-width: 390px;
-
   color: #6c5f59;
-
   font-size: 13px;
 }
 
@@ -441,9 +368,7 @@ header {
 }
 
 
-/* =========================================
-   LAVENDEL BREAK
-========================================= */
+/* LAVENDEL */
 
 .lavender-break {
   background: var(--lavender);
@@ -460,12 +385,9 @@ header {
 
 .lavender-break h2 {
   font-family: Georgia, serif;
-
   font-size: clamp(48px, 6vw, 83px);
   line-height: 1;
-
   font-weight: 400;
-
   margin-bottom: 35px;
 }
 
@@ -476,14 +398,11 @@ header {
 
 .lavender-break p {
   max-width: 560px;
-
   font-size: 15px;
 }
 
 
-/* =========================================
-   BLOG
-========================================= */
+/* BLOG */
 
 .blog {
   padding: 130px 0;
@@ -493,18 +412,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: end;
-
   gap: 40px;
-
   margin-bottom: 65px;
 }
 
 .blog h2 {
   font-family: Georgia, serif;
-
   font-size: clamp(50px, 6vw, 80px);
   line-height: 1;
-
   font-weight: 400;
 }
 
@@ -516,9 +431,7 @@ header {
 .all-posts {
   font-family: Georgia, serif;
   font-style: italic;
-
   color: var(--terracotta);
-
   border-bottom: 1px solid var(--terracotta);
 }
 
@@ -530,16 +443,11 @@ header {
 
 .post {
   min-height: 430px;
-
   border: 1px solid var(--line);
-
   padding: 30px;
-
   display: flex;
   flex-direction: column;
-
   background: var(--white);
-
   transition: .25s;
 }
 
@@ -554,10 +462,8 @@ header {
 
 .post-category {
   color: var(--terracotta);
-
   text-transform: uppercase;
   letter-spacing: 2px;
-
   font-size: 9px;
   font-weight: bold;
 }
@@ -565,29 +471,22 @@ header {
 .post h3 {
   margin-top: auto;
   margin-bottom: 35px;
-
   font-family: Georgia, serif;
   font-size: 31px;
   line-height: 1.12;
-
   font-weight: 400;
 }
 
 .post-bottom {
   display: flex;
   justify-content: space-between;
-
   padding-top: 20px;
-
   border-top: 1px solid var(--line);
-
   font-size: 11px;
 }
 
 
-/* =========================================
-   LIORA
-========================================= */
+/* LIORA */
 
 .liora {
   background: var(--cream-dark);
@@ -598,18 +497,14 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 90px;
-
   align-items: center;
 }
 
 .liora h2 {
   font-family: Georgia, serif;
-
   font-size: clamp(50px, 5.7vw, 78px);
   line-height: 1;
-
   font-weight: 400;
-
   margin-bottom: 30px;
 }
 
@@ -620,90 +515,67 @@ header {
 
 .liora-copy {
   max-width: 520px;
-
   border-left: 2px solid var(--terracotta);
   padding-left: 20px;
-
   font-family: Georgia, serif;
   font-size: 19px;
-
   margin-bottom: 35px;
 }
 
 .liora-small {
   max-width: 510px;
-
   font-size: 13px;
   color: #665852;
-
   margin-bottom: 35px;
 }
 
 .liora-art {
   min-height: 550px;
-
   background: var(--lavender-light);
-
   position: relative;
   overflow: hidden;
 }
 
 .liora-art-word {
   position: absolute;
-
   font-family: Georgia, serif;
   font-style: italic;
-
   font-size: 110px;
-
   color: rgba(181,123,103,.13);
-
   top: 20px;
   left: 25px;
 }
 
 .liora-card {
   position: absolute;
-
   padding: 30px;
-
   box-shadow: 0 20px 40px rgba(45,33,29,.09);
 }
 
 .liora-card.one {
   width: 68%;
-
   background: white;
-
   top: 125px;
   left: 8%;
-
   transform: rotate(-3deg);
 }
 
 .liora-card.two {
   width: 67%;
-
   background: var(--brown);
   color: white;
-
   right: 6%;
   bottom: 75px;
-
   transform: rotate(3deg);
 }
 
 .liora-card small {
   display: block;
-
   color: var(--terracotta);
-
   text-transform: uppercase;
   letter-spacing: 2px;
-
   font-size: 8px;
   font-weight: bold;
-
   margin-bottom: 12px;
 }
 
@@ -714,20 +586,16 @@ header {
 }
 
 
-/* =========================================
-   PROCESS
-========================================= */
+/* PROCESS */
 
 .process {
   background: var(--brown);
   color: var(--cream);
-
   padding: 110px 0;
 }
 
 .process-title {
   margin-bottom: 55px;
-
   font-family: Georgia, serif;
   font-size: 42px;
   font-weight: 400;
@@ -736,11 +604,8 @@ header {
 .process-row {
   display: grid;
   grid-template-columns: 70px 1fr 40px;
-
   padding: 23px 0;
-
   align-items: center;
-
   border-top: 1px solid rgba(255,255,255,.18);
 }
 
@@ -763,9 +628,7 @@ header {
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 
 footer {
   padding: 90px 0 30px;
@@ -773,12 +636,9 @@ footer {
 
 .footer-logo {
   font-family: Georgia, serif;
-
   font-size: clamp(55px, 9vw, 125px);
   line-height: .9;
-
   padding-bottom: 50px;
-
   border-bottom: 1px solid var(--line);
 }
 
@@ -789,19 +649,15 @@ footer {
 
 .footer-bottom {
   padding-top: 25px;
-
   display: flex;
   justify-content: space-between;
-
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 
-/* =========================================
-   HANDY
-========================================= */
+/* HANDY */
 
 @media (max-width: 800px) {
 
@@ -948,16 +804,17 @@ footer {
     </a>
 
     <nav class="nav-links">
+
       <a href="/blog.html">Blog</a>
       <a href="#start">Guides</a>
       <a href="#liora">Liora</a>
       <a href="#">Über uns</a>
+
     </nav>
 
   </div>
 
 </header>
-
 
 
 <main>
@@ -968,7 +825,6 @@ footer {
 <section class="hero">
 
   <div class="container hero-grid">
-
 
     <div>
 
@@ -1001,11 +857,10 @@ footer {
       </div>
 
       <a href="#start" class="button">
-        Zeig mir, wie →
+        Finde deinen nächsten Schritt →
       </a>
 
     </div>
-
 
 
     <div class="hero-art">
@@ -1043,11 +898,9 @@ footer {
 
     </div>
 
-
   </div>
 
 </section>
-
 
 
 <!-- WAS IST CREATORBASE -->
@@ -1082,8 +935,7 @@ footer {
 </section>
 
 
-
-<!-- STARTPUNKT -->
+<!-- WAS MÖCHTEST DU ERREICHEN -->
 
 <section class="start" id="start">
 
@@ -1092,12 +944,12 @@ footer {
     <div class="section-heading">
 
       <div class="mini-label">
-        Wo starten wir? ✦
+        Dein nächster Schritt ✦
       </div>
 
       <h2>
         Was möchtest du
-        <em>sichtbar machen?</em>
+        <em>gerade erreichen?</em>
       </h2>
 
     </div>
@@ -1106,19 +958,20 @@ footer {
     <div class="path-list">
 
 
-      <a href="#" class="path">
+      <a href="/artikel/instagram-produkt-vermarkten.html" class="path">
 
         <span class="path-number">
           01
         </span>
 
         <h3>
-          Ein Produkt
+          Mein Produkt vermarkten
         </h3>
 
         <p>
-          Positionierung, Content und Marketing
-          für digitale und physische Produkte.
+          Du hast bereits ein Angebot.
+          Jetzt willst du verstehen, wie du es auf
+          Instagram klar und interessant zeigst.
         </p>
 
         <span class="path-arrow">
@@ -1128,19 +981,19 @@ footer {
       </a>
 
 
-      <a href="#" class="path">
+      <a href="/artikel/was-posten-wenn-ich-etwas-verkaufen-will.html" class="path">
 
         <span class="path-number">
           02
         </span>
 
         <h3>
-          Eine Dienstleistung
+          Content-Ideen finden
         </h3>
 
         <p>
-          Zeig deine Expertise so, dass Menschen
-          verstehen, warum sie sie brauchen.
+          Du weißt, was du verkaufen möchtest,
+          aber nicht, was du dazu ständig posten sollst.
         </p>
 
         <span class="path-arrow">
@@ -1150,19 +1003,43 @@ footer {
       </a>
 
 
-      <a href="#" class="path">
+      <a href="/artikel/instagram-strategie.html" class="path">
 
         <span class="path-number">
           03
         </span>
 
         <h3>
-          Ein Unternehmen
+          Instagram strategisch angehen
         </h3>
 
         <p>
-          Entwickle eine erkennbare Marke
-          und einen klaren Social-Media-Auftritt.
+          Du willst nicht einfach mehr posten,
+          sondern einen Auftritt mit einer klaren
+          Richtung entwickeln.
+        </p>
+
+        <span class="path-arrow">
+          ↗
+        </span>
+
+      </a>
+
+
+      <a href="/artikel/reels-fuer-produkte.html" class="path">
+
+        <span class="path-number">
+          04
+        </span>
+
+        <h3>
+          Reels für mein Angebot erstellen
+        </h3>
+
+        <p>
+          Du möchtest dein Produkt oder Angebot
+          im Video zeigen, weißt aber nicht,
+          was im Reel eigentlich passieren soll.
         </p>
 
         <span class="path-arrow">
@@ -1177,7 +1054,6 @@ footer {
   </div>
 
 </section>
-
 
 
 <!-- LAVENDEL -->
@@ -1211,7 +1087,6 @@ footer {
 </section>
 
 
-
 <!-- BLOG -->
 
 <section class="blog" id="blog">
@@ -1233,7 +1108,7 @@ footer {
 
       </div>
 
-      <a href="#" class="all-posts">
+      <a href="/blog.html" class="all-posts">
         alle Artikel ansehen →
       </a>
 
@@ -1243,7 +1118,7 @@ footer {
     <div class="posts">
 
 
-      <a href="#" class="post">
+      <a href="/artikel/instagram-produkt-vermarkten.html" class="post">
 
         <div class="post-category">
           Instagram
@@ -1261,7 +1136,7 @@ footer {
       </a>
 
 
-      <a href="#" class="post">
+      <a href="/artikel/was-posten-wenn-ich-etwas-verkaufen-will.html" class="post">
 
         <div class="post-category">
           Content
@@ -1279,7 +1154,7 @@ footer {
       </a>
 
 
-      <a href="#" class="post">
+      <a href="/artikel/content-strategie-entwickeln.html" class="post">
 
         <div class="post-category">
           Strategie
@@ -1304,13 +1179,11 @@ footer {
 </section>
 
 
-
 <!-- LIORA -->
 
 <section class="liora" id="liora">
 
   <div class="container liora-grid">
-
 
     <div>
 
@@ -1348,13 +1221,11 @@ footer {
     </div>
 
 
-
     <div class="liora-art">
 
       <div class="liora-art-word">
         okay...
       </div>
-
 
       <div class="liora-card one">
 
@@ -1366,7 +1237,6 @@ footer {
         </p>
 
       </div>
-
 
       <div class="liora-card two">
 
@@ -1382,11 +1252,9 @@ footer {
 
     </div>
 
-
   </div>
 
 </section>
-
 
 
 <!-- LIORA ABLAUF -->
@@ -1440,7 +1308,6 @@ footer {
 
 
 </main>
-
 
 
 <!-- FOOTER -->
