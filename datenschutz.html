@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Datenschutz | Creatorbase</title>
+
+  <meta name="description"
+        content="Datenschutzerklärung von Creatorbase. Informationen zur Verarbeitung personenbezogener Daten beim Besuch der Website.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical"
+        href="https://lianmirror.github.io/datenschutz.html">
+
+  <style>
+    :root {
+      --cream: #f5f0ea;
+      --cream-dark: #ebe1da;
+      --brown: #2d211d;
+      --terracotta: #b57b67;
+      --terracotta-light: #d9b7aa;
+      --lavender: #c8b9e8;
+      --lavender-light: #e5ddf3;
+      --white: #fffdfb;
+      --line: #d9cec7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--brown);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: var(--cream);
+    }
+
+    .nav {
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--terracotta);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 105px 0 90px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 10px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(55px, 8vw, 105px);
+      line-height: .92;
+      font-weight: 400;
+      letter-spacing: -5px;
+    }
+
+    .hero h1 em {
+      color: var(--terracotta);
+      font-weight: 400;
+    }
+
+    .hero-text {
+      max-width: 650px;
+      margin-top: 35px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.5;
+    }
+
+    /* CONTENT */
+
+    .legal {
+      padding: 100px 0 120px;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: .55fr 1.45fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+    .side-label {
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .legal-content {
+      max-width: 760px;
+    }
+
+    .legal-block {
+      padding: 0 0 50px;
+      margin-bottom: 50px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .legal-block:last-of-type {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .legal-block h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 4vw, 45px);
+      line-height: 1.08;
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
+
+    .legal-block p {
+      font-size: 16px;
+      line-height: 1.85;
+      margin-bottom: 16px;
+    }
+
+    .legal-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-block a {
+      color: var(--terracotta);
+      border-bottom: 1px solid var(--terracotta-light);
+    }
+
+    .legal-block a:hover {
+      color: var(--brown);
+    }
+
+    /* INFO BOX */
+
+    .note {
+      margin-top: 65px;
+      background: var(--lavender-light);
+      padding: 35px;
+      transform: rotate(-1deg);
+    }
+
+    .note-label {
+      display: block;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 9px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .note p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 45px 0;
+      background: var(--cream);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .footer-brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+    }
+
+    .footer-links a:hover {
+      color: var(--terracotta);
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      .container {
+        width: min(100% - 36px, 1180px);
+      }
+
+      .nav {
+        min-height: auto;
+        padding: 18px 0 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        font-size: 11px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: clamp(48px, 14vw, 70px);
+        letter-spacing: -3px;
+      }
+
+      .hero-text {
+        font-size: 19px;
+      }
+
+      .legal {
+        padding: 75px 0 90px;
+      }
+
+      .legal-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .note {
+        margin-top: 50px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 430px) {
+
+      .container {
+        width: calc(100% - 30px);
+      }
+
+      .nav-links {
+        font-size: 10px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+        letter-spacing: -2px;
+      }
+
+      .legal-block h2 {
+        font-size: 31px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="/index.html" class="logo">
+        CREATORBASE ✦
+      </a>
+
+      <nav class="nav-links">
+        <a href="/blog.html">Blog</a>
+        <a href="/index.html#start">Guides</a>
+        <a href="/index.html#liora">Liora</a>
+        <a href="/ueber-uns.html">Über uns</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container">
+
+        <div class="eyebrow">
+          Creatorbase · Rechtliches
+        </div>
+
+        <h1>
+          Datenschutz<em>.</em>
+        </h1>
+
+        <p class="hero-text">
+          Hier erfährst du, welche personenbezogenen Daten
+          beim Besuch von Creatorbase verarbeitet werden können
+          und wie damit umgegangen wird.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- DATENSCHUTZ -->
+
+    <section class="legal">
+      <div class="container legal-grid">
+
+        <div class="side-label">
+          Deine Daten ✦
+        </div>
+
+        <div class="legal-content">
+
+
+          <!-- VERANTWORTLICHE -->
+
+          <div class="legal-block">
+
+            <h2>
+              Verantwortliche
+            </h2>
+
+            <p>
+              Kimberly Bont<br>
+              Höhenweg 5<br>
+              5432 Neuenhof<br>
+              Schweiz
+            </p>
+
+            <p>
+              E-Mail:
+              <a href="mailto:elynagoes@outlook.com">
+                elynagoes@outlook.com
+              </a>
+            </p>
+
+          </div>
+
+
+          <!-- WEBSITEBESUCH -->
+
+          <div class="legal-block">
+
+            <h2>
+              Daten beim Besuch der Website
+            </h2>
+
+            <p>
+              Beim Besuch dieser Website können aus technischen
+              Gründen Informationen wie die IP-Adresse, Datum und
+              Uhrzeit des Zugriffs, Browsertyp, Betriebssystem sowie
+              aufgerufene Seiten verarbeitet beziehungsweise in
+              Server-Logdateien gespeichert werden.
+            </p>
+
+            <p>
+              Diese Daten werden insbesondere benötigt, um die
+              Website technisch bereitzustellen sowie deren
+              Sicherheit und Stabilität zu gewährleisten.
+            </p>
+
+          </div>
+
+
+          <!-- HOSTING -->
+
+          <div class="legal-block">
+
+            <h2>
+              Hosting über GitHub Pages
+            </h2>
+
+            <p>
+              Creatorbase wird über GitHub Pages bereitgestellt,
+              einen Dienst von GitHub.
+            </p>
+
+            <p>
+              Beim Aufruf der Website können deshalb technische
+              Verbindungsdaten durch GitHub verarbeitet werden.
+              Auf die technische Verarbeitung dieser Daten durch
+              den Hosting-Anbieter habe ich nur begrenzten Einfluss.
+            </p>
+
+          </div>
+
+
+          <!-- KONTAKT -->
+
+          <div class="legal-block">
+
+            <h2>
+              Kontaktaufnahme
+            </h2>
+
+            <p>
+              Wenn du mich per E-Mail kontaktierst, werden die von
+              dir übermittelten Angaben zur Bearbeitung deiner
+              Anfrage verwendet.
+            </p>
+
+            <p>
+              Eine Weitergabe dieser Angaben erfolgt nicht ohne
+              entsprechenden Grund, sofern keine gesetzliche
+              Verpflichtung besteht oder die Bearbeitung der
+              Anfrage dies erforderlich macht.
+            </p>
+
+          </div>
+
+
+          <!-- KI -->
+
+          <div class="legal-block">
+
+            <h2>
+              Einsatz von Künstlicher Intelligenz
+            </h2>
+
+            <p>
+              Im Rahmen meiner Tätigkeit im Digitalmarketing können
+              KI-gestützte Werkzeuge zur Erstellung, Analyse oder
+              Optimierung von Inhalten eingesetzt werden.
+            </p>
+
+            <p>
+              Soweit dabei personenbezogene Daten verarbeitet werden,
+              erfolgt dies nur, soweit dies für den jeweiligen Zweck
+              erforderlich ist und unter Beachtung der anwendbaren
+              datenschutzrechtlichen Anforderungen.
+            </p>
+
+          </div>
+
+
+          <!-- COOKIES -->
+
+          <div class="legal-block">
+
+            <h2>
+              Cookies und Tracking
+            </h2>
+
+            <p>
+              Creatorbase setzt derzeit selbst keine Analyse- oder
+              Tracking-Dienste ein und verwendet keine eigenen
+              Marketing- oder Analyse-Cookies.
+            </p>
+
+            <p>
+              Sollten zukünftig entsprechende Dienste eingebunden
+              werden, wird diese Datenschutzerklärung entsprechend
+              angepasst.
+            </p>
+
+          </div>
+
+
+          <!-- EXTERNE LINKS -->
+
+          <div class="legal-block">
+
+            <h2>
+              Externe Links
+            </h2>
+
+            <p>
+              Creatorbase enthält Links zu externen Websites und
+              Angeboten, beispielsweise zu Liora.
+            </p>
+
+            <p>
+              Wenn du einem externen Link folgst, verlässt du
+              Creatorbase. Für die Verarbeitung personenbezogener
+              Daten auf der jeweiligen externen Website ist der
+              jeweilige Betreiber verantwortlich.
+            </p>
+
+          </div>
+
+
+          <!-- RECHTE -->
+
+          <div class="legal-block">
+
+            <h2>
+              Deine Rechte
+            </h2>
+
+            <p>
+              Du kannst im Rahmen der anwendbaren
+              datenschutzrechtlichen Bestimmungen Auskunft darüber
+              verlangen, ob und welche personenbezogenen Daten über
+              dich verarbeitet werden.
+            </p>
+
+            <p>
+              Soweit die gesetzlichen Voraussetzungen erfüllt sind,
+              kannst du außerdem die Berichtigung oder Löschung
+              personenbezogener Daten sowie weitere dir gesetzlich
+              zustehende Datenschutzrechte geltend machen.
+            </p>
+
+            <p>
+              Für entsprechende Anfragen kannst du dich über die
+              oben angegebene E-Mail-Adresse an mich wenden.
+            </p>
+
+          </div>
+
+
+          <!-- ÄNDERUNGEN -->
+
+          <div class="legal-block">
+
+            <h2>
+              Änderungen dieser Datenschutzerklärung
+            </h2>
+
+            <p>
+              Diese Datenschutzerklärung kann angepasst werden,
+              wenn sich die Website, die eingesetzten Dienste oder
+              die rechtlichen Anforderungen ändern.
+            </p>
+
+          </div>
+
+
+          <!-- STAND -->
+
+          <div class="legal-block">
+
+            <h2>
+              Stand
+            </h2>
+
+            <p>
+              Stand: 19. September 2026
+            </p>
+
+          </div>
+
+
+          <div class="note">
+
+            <span class="note-label">
+              Kurz gesagt ✦
+            </span>
+
+            <p>
+              Creatorbase ist aktuell bewusst schlank aufgebaut:
+              keine von Creatorbase eingebundene Webanalyse,
+              kein Werbetracking und kein Newsletter-Formular.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container footer-bottom">
+
+      <div class="footer-brand">
+        CREATORBASE ✦
+      </div>
+
+      <div class="footer-links">
+        <a href="/index.html">Startseite</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
