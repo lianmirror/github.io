@@ -455,6 +455,68 @@ header {
 }
 
 
+/* WEITERLESEN */
+
+.next-article {
+  padding: 110px 24px;
+  background: var(--lavender-light);
+}
+
+.next-inner {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  gap: 80px;
+}
+
+.next-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.next-card {
+  display: block;
+  border-top: 1px solid var(--brown);
+  border-bottom: 1px solid var(--brown);
+  padding: 35px 0;
+  transition: .25s;
+}
+
+.next-card:hover {
+  padding-left: 15px;
+}
+
+.next-small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.next-card h2 {
+  max-width: 700px;
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 4.5vw, 58px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.next-arrow {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: var(--terracotta);
+  font-size: 18px;
+}
+
+
 /* BACK */
 
 .back {
@@ -580,6 +642,15 @@ footer {
     gap: 30px;
   }
 
+  .next-article {
+    padding: 80px 20px;
+  }
+
+  .next-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
@@ -607,7 +678,7 @@ footer {
       <a href="../blog.html">Blog</a>
       <a href="../index.html#start">Guides</a>
       <a href="../index.html#liora">Liora</a>
-      <a href="#">Über uns</a>
+      <a href="../ueber-uns.html">Über uns</a>
     </nav>
 
   </div>
@@ -1351,12 +1422,46 @@ footer {
 </section>
 
 
+<!-- WEITERLESEN -->
+
+<section class="next-article">
+
+  <div class="next-inner">
+
+    <div class="next-label">
+      Weiterlesen ✦
+    </div>
+
+    <a
+      href="/artikel/warum-gute-produkte-uebersehen-werden.html"
+      class="next-card">
+
+      <span class="next-small">
+        Als Nächstes / Positionierung
+      </span>
+
+      <h2>
+        Warum gute Produkte
+        trotzdem übersehen werden.
+      </h2>
+
+      <span class="next-arrow">
+        Zum nächsten Guide →
+      </span>
+
+    </a>
+
+  </div>
+
+</section>
+
+
 <!-- BACK -->
 
 <section class="back">
 
   <p>
-    mehr Ideen für deinen Content?
+    oder lieber stöbern?
   </p>
 
   <a href="../blog.html">
