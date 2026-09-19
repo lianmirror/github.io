@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KI für Content nutzen, ohne dass alles nach KI klingt | Creatorbase</title>
+
+<meta name="description"
+content="Wie kannst du KI für Instagram und Content nutzen, ohne austauschbare Texte zu produzieren? Ein praktischer Guide für Ideen, Positionierung, Reels und authentischen Marken-Content.">
+
+<style>
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* NAVIGATION */
+
+header {
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: var(--terracotta);
+}
+
+
+/* HERO */
+
+.hero {
+  padding: 95px 0 85px;
+}
+
+.breadcrumb {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 55px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: .55fr 1.45fr;
+  gap: 80px;
+}
+
+.category {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.hero h1 {
+  max-width: 920px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(52px, 7vw, 94px);
+  line-height: .95;
+  letter-spacing: -4px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.hero h1 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.lead {
+  max-width: 680px;
+  border-left: 2px solid var(--terracotta);
+  padding-left: 22px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  color: #7b6c65;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* VISUAL */
+
+.hero-visual {
+  background: var(--lavender-light);
+  padding: 95px 24px;
+  overflow: hidden;
+}
+
+.visual-inner {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.visual-word {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: clamp(60px, 10vw, 130px);
+  line-height: 1;
+  color: rgba(181,123,103,.15);
+}
+
+.visual-card {
+  max-width: 570px;
+  margin: -35px auto 0;
+  position: relative;
+  background: var(--white);
+  padding: 45px;
+  transform: rotate(2deg);
+  box-shadow: 0 25px 50px rgba(45,33,29,.1);
+}
+
+.visual-card small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.visual-card p {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  line-height: 1.2;
+}
+
+
+/* ARTICLE */
+
+.article-layout {
+  max-width: 1050px;
+  margin: auto;
+  padding: 110px 24px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 90px;
+}
+
+.toc {
+  position: sticky;
+  top: 40px;
+  align-self: start;
+}
+
+.toc-title {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.toc a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: Georgia, serif;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.toc a:hover {
+  color: var(--terracotta);
+  padding-left: 5px;
+}
+
+.article-content {
+  max-width: 700px;
+}
+
+.article-content > p {
+  margin-bottom: 25px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.article-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(37px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.article-content h2 span {
+  display: block;
+  color: var(--terracotta);
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+
+/* HIGHLIGHT */
+
+.highlight {
+  background: var(--lavender-light);
+  margin: 55px 0;
+  padding: 40px;
+}
+
+.highlight-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.highlight p {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+
+/* EXAMPLE */
+
+.example {
+  border-top: 1px solid var(--terracotta);
+  margin: 50px 0;
+  padding: 35px 0 0;
+}
+
+.example small {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.example p {
+  margin-top: 15px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+
+/* STEPS */
+
+.steps {
+  margin: 45px 0 60px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 22px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.step:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.step-number {
+  color: var(--terracotta);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.step h3 {
+  margin: 0 0 8px;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.step p {
+  color: #6c5f59;
+  font-size: 14px;
+}
+
+
+/* PROMPT BOX */
+
+.prompt-box {
+  background: var(--brown);
+  color: var(--cream);
+  padding: 40px;
+  margin: 55px 0;
+}
+
+.prompt-box small {
+  display: block;
+  color: var(--lavender);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.prompt-box p {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+
+/* LIORA */
+
+.liora {
+  background: var(--brown);
+  color: var(--cream);
+  padding: 110px 24px;
+}
+
+.liora-inner {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  gap: 80px;
+}
+
+.liora-label {
+  color: var(--terracotta-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.liora h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(43px, 5vw, 67px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.liora h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.liora p {
+  max-width: 570px;
+  color: #d9d0ca;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.liora-button {
+  display: inline-block;
+  background: var(--lavender);
+  color: var(--brown);
+  padding: 15px 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.liora-button:hover {
+  background: var(--terracotta-light);
+}
+
+
+/* BACK */
+
+.back {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.back p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--terracotta);
+  margin-bottom: 20px;
+}
+
+.back a {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  border-bottom: 1px solid var(--brown);
+}
+
+
+/* FOOTER */
+
+footer {
+  padding: 80px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 125px);
+  line-height: .9;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .nav {
+    min-height: 70px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(4) {
+    display: none;
+  }
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .visual-card {
+    padding: 30px;
+  }
+
+  .visual-card p {
+    font-size: 24px;
+  }
+
+  .article-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 75px 20px;
+  }
+
+  .toc {
+    position: static;
+  }
+
+  .article-content h2 {
+    margin-top: 70px;
+  }
+
+  .highlight,
+  .prompt-box {
+    padding: 28px;
+  }
+
+  .highlight p {
+    font-size: 21px;
+  }
+
+  .liora {
+    padding: 80px 20px;
+  }
+
+  .liora-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="../index.html" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="../blog.html">Blog</a>
+      <a href="../index.html#start">Guides</a>
+      <a href="../index.html#liora">Liora</a>
+      <a href="#">Über uns</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="breadcrumb">
+      Creatorbase / KI & Tools / Content
+    </div>
+
+    <div class="hero-grid">
+
+      <div class="category">
+        KI & Content ✦
+      </div>
+
+      <div>
+
+        <h1>
+          KI für Content nutzen,
+          ohne dass alles
+          <em>nach KI klingt.</em>
+        </h1>
+
+        <p class="lead">
+          KI kann dir beim Denken, Strukturieren und Entwickeln
+          von Content helfen. Aber deine Marke sollte danach
+          immer noch nach deiner Marke klingen.
+        </p>
+
+        <div class="meta">
+          <span>Creatorbase Guide</span>
+          <span>KI · Content · Marketing</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- VISUAL -->
+
+<section class="hero-visual">
+
+  <div class="visual-inner">
+
+    <div class="visual-word">
+      human?
+    </div>
+
+    <div class="visual-card">
+
+      <small>
+        du kennst diese captions
+      </small>
+
+      <p>
+        „In der heutigen schnelllebigen
+        digitalen Welt ist es wichtiger
+        denn je …“
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE -->
+
+<div class="article-layout">
+
+
+  <aside class="toc">
+
+    <div class="toc-title">
+      In diesem Guide
+    </div>
+
+    <a href="#problem">
+      01 · Das Problem
+    </a>
+
+    <a href="#rolle">
+      02 · Die Rolle von KI
+    </a>
+
+    <a href="#input">
+      03 · Besserer Input
+    </a>
+
+    <a href="#ideen">
+      04 · Content-Ideen
+    </a>
+
+    <a href="#stimme">
+      05 · Deine Stimme
+    </a>
+
+    <a href="#workflow">
+      06 · Dein Workflow
+    </a>
+
+  </aside>
+
+
+  <article class="article-content">
+
+    <p>
+      KI kann in wenigen Sekunden zehn Hooks,
+      zwanzig Content-Ideen und eine komplette Caption schreiben.
+    </p>
+
+    <p>
+      Das ist praktisch.
+    </p>
+
+    <p>
+      Gleichzeitig entsteht schnell ein neues Problem:
+      Der Content ist korrekt – aber austauschbar.
+    </p>
+
+    <p>
+      Er könnte von einer Beauty-Marke,
+      einer Agentur, einem Coach oder einem Software-Unternehmen stammen.
+    </p>
+
+    <p>
+      Niemand erkennt mehr,
+      wer eigentlich spricht.
+    </p>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Der entscheidende Unterschied ✦
+      </div>
+
+      <p>
+        KI sollte deine Perspektive verstärken –
+        nicht deine Perspektive ersetzen.
+      </p>
+
+    </div>
+
+
+    <!-- 01 -->
+
+    <h2 id="problem">
+
+      <span>01 / Das Problem</span>
+
+      Warum KI-Content
+      oft nach KI klingt.
+
+    </h2>
+
+    <p>
+      Häufig liegt das Problem nicht daran,
+      dass KI grundsätzlich keine guten Texte schreiben kann.
+    </p>
+
+    <p>
+      Das Problem beginnt oft schon bei der Aufgabe,
+      die wir ihr geben.
+    </p>
+
+
+    <div class="example">
+
+      <small>Sehr allgemeiner Auftrag</small>
+
+      <p>
+        „Schreib mir einen Instagram-Post
+        über mein neues Produkt.“
+      </p>
+
+    </div>
+
+    <p>
+      Dafür fehlen fast alle Informationen,
+      die deine Marke besonders machen.
+    </p>
+
+    <p>
+      Wer ist deine Zielgruppe?
+      Was verkauft das Produkt?
+      Welche Situation kennt diese Person?
+      Wie sprichst du normalerweise?
+      Was willst du mit diesem Post erreichen?
+    </p>
+
+    <p>
+      Fehlen diese Informationen,
+      muss die KI die Lücken mit allgemeinen Formulierungen füllen.
+    </p>
+
+
+    <!-- 02 -->
+
+    <h2 id="rolle">
+
+      <span>02 / Die Rolle von KI</span>
+
+      Nutze KI nicht nur
+      als Textmaschine.
+
+    </h2>
+
+    <p>
+      Besonders nützlich wird KI,
+      wenn sie nicht erst beim fertigen Text ins Spiel kommt.
+    </p>
+
+    <p>
+      Sie kann bereits früher helfen:
+      beim Sortieren von Gedanken,
+      Entwickeln von Blickwinkeln
+      und Strukturieren einer Content-Idee.
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div>
+          <h3>Gedanken sortieren</h3>
+          <p>
+            Gib deine ungeordneten Notizen hinein
+            und lass daraus Themen oder Kategorien entwickeln.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div>
+          <h3>Blickwinkel finden</h3>
+          <p>
+            Lass dir verschiedene Perspektiven
+            auf dasselbe Produkt oder Problem zeigen.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div>
+          <h3>Ideen konkretisieren</h3>
+          <p>
+            Aus „Ich will etwas über mein Produkt posten“
+            kann eine konkrete Reel-Idee werden.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div>
+          <h3>Varianten entwickeln</h3>
+          <p>
+            Ein Gedanke kann als Reel,
+            Story, Carousel oder Caption weitergedacht werden.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- 03 -->
+
+    <h2 id="input">
+
+      <span>03 / Input</span>
+
+      Je konkreter dein Kontext,
+      desto weniger austauschbar das Ergebnis.
+
+    </h2>
+
+    <p>
+      Du musst keinen komplizierten „Super-Prompt“
+      auswendig lernen.
+    </p>
+
+    <p>
+      Viel wichtiger ist,
+      der KI die Informationen zu geben,
+      die sie für die Aufgabe wirklich braucht.
+    </p>
+
+
+    <div class="prompt-box">
+
+      <small>
+        Ein besserer Ausgangspunkt
+      </small>
+
+      <p>
+        „Ich verkaufe [ANGEBOT]. Meine Zielgruppe ist [ZIELGRUPPE].
+        Sie kennt besonders das Problem [PROBLEM].
+        Mein Angebot hilft dabei durch [LÖSUNG].
+        Ich möchte einen Instagram-Post entwickeln,
+        der zuerst die Alltagssituation beschreibt und erst danach
+        mein Produkt einführt. Der Ton soll klar, direkt und ruhig sein.
+        Gib mir zuerst fünf unterschiedliche Blickwinkel,
+        noch keine fertige Caption.“
+      </p>
+
+    </div>
+
+    <p>
+      Beachte den letzten Satz.
+    </p>
+
+    <p>
+      Du verlangst nicht sofort das Endprodukt.
+      Du nutzt KI zuerst als Partner für Ideen.
+    </p>
+
+    <p>
+      Danach kannst du auswählen,
+      welcher Gedanke tatsächlich zu deiner Marke passt.
+    </p>
+
+
+    <!-- 04 -->
+
+    <h2 id="ideen">
+
+      <span>04 / Ideen</span>
+
+      Lass KI mehr Varianten denken,
+      statt einfach mehr Content zu produzieren.
+
+    </h2>
+
+    <p>
+      Eine der sinnvollsten Anwendungen von KI
+      ist die Entwicklung unterschiedlicher Blickwinkel.
+    </p>
+
+    <p>
+      Nehmen wir an,
+      du möchtest dasselbe Produkt mehrfach auf Instagram zeigen.
+    </p>
+
+    <p>
+      Statt zehn fast identische Produktposts zu schreiben,
+      kannst du zehn unterschiedliche Perspektiven entwickeln.
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div>
+          <h3>Das Problem</h3>
+          <p>
+            Welche nervige Situation existiert,
+            bevor jemand dein Produkt nutzt?
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div>
+          <h3>Der Wunsch</h3>
+          <p>
+            Was möchte die Person stattdessen erleben?
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div>
+          <h3>Die Anwendung</h3>
+          <p>
+            Wie sieht dein Produkt im echten Alltag aus?
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div>
+          <h3>Der Unterschied</h3>
+          <p>
+            Was macht dein Ansatz oder Produkt anders?
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">05</div>
+        <div>
+          <h3>Die Geschichte</h3>
+          <p>
+            Warum wurde das Angebot überhaupt entwickelt?
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">06</div>
+        <div>
+          <h3>Die Frage</h3>
+          <p>
+            Welche Frage stellen Menschen häufig,
+            bevor sie dein Angebot kaufen?
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        So wird KI interessanter
+      </div>
+
+      <p>
+        Lass sie nicht nur Antworten schreiben.
+        Lass sie dir helfen,
+        bessere Fragen über dein Angebot zu stellen.
+      </p>
+
+    </div>
+
+
+    <!-- 05 -->
+
+    <h2 id="stimme">
+
+      <span>05 / Markenstimme</span>
+
+      Der letzte Text
+      braucht wieder dich.
+
+    </h2>
+
+    <p>
+      Selbst ein guter KI-Entwurf sollte nicht automatisch
+      dein fertiger Post sein.
+    </p>
+
+    <p>
+      Lies ihn noch einmal so,
+      als würdest du ihn einer echten Person sagen.
+    </p>
+
+    <p>
+      Würdest du diese Wörter benutzen?
+      Sind die Sätze zu glatt?
+      Gibt es konkrete Beispiele?
+      Fehlt eine eigene Beobachtung?
+    </p>
+
+
+    <div class="example">
+
+      <small>Klingt allgemein</small>
+
+      <p>
+        „In der heutigen digitalen Welt
+        ist authentischer Content wichtiger denn je.“
+      </p>
+
+    </div>
+
+
+    <div class="example">
+
+      <small>Klingt konkreter</small>
+
+      <p>
+        „Wenn deine Caption genauso gut
+        unter fünf andere Accounts passen würde,
+        fehlt wahrscheinlich noch etwas von dir.“
+      </p>
+
+    </div>
+
+    <p>
+      Der zweite Satz ist nicht automatisch
+      für jede Marke der richtige.
+    </p>
+
+    <p>
+      Aber er zeigt den Unterschied:
+      konkrete Sprache statt allgemeiner Aussagen.
+    </p>
+
+
+    <!-- 06 -->
+
+    <h2 id="workflow">
+
+      <span>06 / Workflow</span>
+
+      Ein einfacher KI-Workflow
+      für deinen Content.
+
+    </h2>
+
+    <p>
+      Statt KI erst ganz am Ende einzusetzen,
+      kannst du sie durch mehrere Schritte führen.
+    </p>
+
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div>
+          <h3>Ausgangspunkt</h3>
+          <p>
+            Definiere Angebot, Zielgruppe,
+            Problem und Ziel des Contents.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div>
+          <h3>Blickwinkel</h3>
+          <p>
+            Lass mehrere mögliche Content-Perspektiven entwickeln.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div>
+          <h3>Auswahl</h3>
+          <p>
+            Entscheide selbst,
+            welche Idee zu deiner Marke passt.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div>
+          <h3>Format</h3>
+          <p>
+            Verwandle die Idee in Reel,
+            Carousel, Story oder Caption.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">05</div>
+        <div>
+          <h3>Bearbeitung</h3>
+          <p>
+            Ergänze deine Sprache,
+            Erfahrungen und konkrete Beispiele.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">06</div>
+        <div>
+          <h3>Veröffentlichen</h3>
+          <p>
+            Erst jetzt wird aus der KI-Unterstützung
+            dein tatsächlicher Content.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="highlight">
+
+      <div class="highlight-label">
+        Der Kern ✦
+      </div>
+
+      <p>
+        Gute KI-Nutzung bedeutet nicht,
+        dass die KI möglichst viel übernimmt.
+        Sie sollte dir helfen,
+        deine eigene Idee schneller klar zu machen.
+      </p>
+
+    </div>
+
+    <p>
+      KI kann dir Geschwindigkeit geben.
+      Sie kann Ideen erweitern,
+      Strukturen entwickeln und Varianten erzeugen.
+    </p>
+
+    <p>
+      Aber Positionierung,
+      Perspektive und Entscheidung bleiben das,
+      was deine Marke unverwechselbar macht.
+    </p>
+
+  </article>
+
+</div>
+
+
+<!-- LIORA -->
+
+<section class="liora">
+
+  <div class="liora-inner">
+
+    <div class="liora-label">
+      KI mit Richtung ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Du weißt, was du verkaufen willst.
+        <em>Liora weiß, wie du es zeigst.</em>
+      </h2>
+
+      <p>
+        Bring Liora dein Produkt, deine Dienstleistung
+        oder dein Unternehmen. Liora hilft dir dabei,
+        daraus Positionierung, Instagram-Strategie,
+        Content-Ideen und Videos für dein Angebot
+        zu entwickeln.
+      </p>
+
+      <a
+        href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
+        target="_blank"
+        rel="noopener"
+        class="liora-button">
+        Liora entdecken →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BACK -->
+
+<section class="back">
+
+  <p>
+    mehr über Content & Marketing?
+  </p>
+
+  <a href="../blog.html">
+    ← Zurück zum Creatorbase Blog
+  </a>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
