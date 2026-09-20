@@ -7,7 +7,12 @@
 <title>Über Creatorbase – Marketing verständlich machen</title>
 
 <meta name="description"
-content="Creatorbase macht Marketing, Content und Sichtbarkeit verständlicher. Für Produkte, Dienstleistungen, Unternehmen und Ideen, die gesehen werden sollen.">
+content="Creatorbase macht Marketing, Content und Sichtbarkeit verständlicher – für Instagram, Pinterest, Produkte, Dienstleistungen, Unternehmen und Marken.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://lianmirror.github.io/ueber-uns.html">
 
 <style>
 
@@ -51,10 +56,13 @@ a {
 }
 
 
-/* NAVIGATION */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 header {
   border-bottom: 1px solid var(--line);
+  background: var(--cream);
 }
 
 .nav {
@@ -65,9 +73,11 @@ header {
 }
 
 .logo {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
   font-weight: 800;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .logo span {
@@ -76,17 +86,30 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 32px;
-  font-size: 13px;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: 0.2s ease;
 }
 
 .nav-links a:hover,
-.nav-links .active {
+.nav-links a.active {
   color: var(--terracotta);
 }
 
 
-/* ALLGEMEIN */
+/* =========================================
+   ALLGEMEIN
+========================================= */
 
 .mini-label {
   color: var(--terracotta);
@@ -113,8 +136,26 @@ header {
   background: var(--terracotta);
 }
 
+.secondary-button {
+  display: inline-block;
+  border: 1px solid var(--brown);
+  padding: 14px 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .2s;
+}
 
-/* HERO */
+.secondary-button:hover {
+  background: var(--brown);
+  color: var(--cream);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
   padding: 120px 0 130px;
@@ -162,7 +203,9 @@ header {
 }
 
 
-/* WARUM */
+/* =========================================
+   WARUM
+========================================= */
 
 .why {
   background: var(--brown);
@@ -205,9 +248,11 @@ header {
 }
 
 
-/* CREATORBASE + LIORA */
+/* =========================================
+   DREI WEGE
+========================================= */
 
-.two-worlds {
+.worlds {
   padding: 135px 0;
 }
 
@@ -232,13 +277,13 @@ header {
 
 .world-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 22px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .world-card {
-  min-height: 500px;
-  padding: 48px;
+  min-height: 520px;
+  padding: 38px;
   display: flex;
   flex-direction: column;
 }
@@ -252,24 +297,31 @@ header {
   background: var(--lavender-light);
 }
 
+.pina-card {
+  background: var(--terracotta-light);
+}
+
 .world-number {
   color: var(--terracotta);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 800;
   letter-spacing: 2px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
+}
+
+.pina-card .world-number {
+  color: var(--brown);
 }
 
 .world-card h3 {
   font-family: Georgia, serif;
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1;
   font-weight: 400;
   margin-bottom: 25px;
 }
 
 .world-card p {
-  max-width: 460px;
   color: #665852;
   font-size: 14px;
 }
@@ -277,15 +329,32 @@ header {
 .world-note {
   margin-top: auto;
   padding-top: 35px;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(45,33,29,.16);
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 1.4;
   color: var(--terracotta);
 }
 
+.pina-card .world-note {
+  color: var(--brown);
+}
 
-/* FÜR WEN */
+.world-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  border-bottom: 1px solid currentColor;
+}
+
+
+/* =========================================
+   FÜR WEN
+========================================= */
 
 .for-who {
   background: var(--lavender);
@@ -339,7 +408,9 @@ header {
 }
 
 
-/* HALTUNG */
+/* =========================================
+   PRINZIPIEN
+========================================= */
 
 .principles {
   padding: 135px 0;
@@ -397,7 +468,9 @@ header {
 }
 
 
-/* CTA */
+/* =========================================
+   CTA
+========================================= */
 
 .cta {
   background: var(--cream-dark);
@@ -425,7 +498,7 @@ header {
 }
 
 .cta p {
-  max-width: 570px;
+  max-width: 620px;
   color: #665852;
   font-size: 14px;
   margin-bottom: 35px;
@@ -437,24 +510,10 @@ header {
   flex-wrap: wrap;
 }
 
-.secondary-button {
-  display: inline-block;
-  border: 1px solid var(--brown);
-  padding: 14px 22px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 10px;
-  font-weight: 800;
-  transition: .2s;
-}
 
-.secondary-button:hover {
-  background: var(--brown);
-  color: var(--cream);
-}
-
-
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
   padding: 90px 0 30px;
@@ -477,13 +536,34 @@ footer {
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+.legal-links {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--terracotta);
+}
 
-/* HANDY */
+.legal-links a:hover {
+  color: var(--brown);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -491,18 +571,35 @@ footer {
     width: min(100% - 36px, 1180px);
   }
 
-  .nav {
-    min-height: 70px;
-  }
 
-  .nav-links {
+  /* NAVIGATION WIE AUF INDEX.HTML */
+
+  .nav {
+    min-height: auto;
+    padding: 18px 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
   }
 
-  .nav-links a:nth-child(2),
-  .nav-links a:nth-child(3) {
-    display: none;
+  .logo {
+    font-size: 17px;
   }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 10px;
+  }
+
+
+  /* HERO */
 
   .hero {
     padding: 80px 0;
@@ -527,13 +624,16 @@ footer {
     margin-top: 45px;
   }
 
+
+  /* SECTIONS */
+
   .why,
   .for-who,
   .cta {
     padding: 85px 0;
   }
 
-  .two-worlds,
+  .worlds,
   .principles {
     padding: 90px 0;
   }
@@ -541,6 +641,9 @@ footer {
   .world-heading {
     margin-bottom: 45px;
   }
+
+
+  /* CARDS */
 
   .world-grid {
     grid-template-columns: 1fr;
@@ -563,11 +666,38 @@ footer {
     font-size: 21px;
   }
 
+
+  /* FOOTER */
+
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
   }
+}
 
+
+/* =========================================
+   KLEINE HANDYS
+========================================= */
+
+@media (max-width: 430px) {
+
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero-intro {
+    font-size: 20px;
+  }
 }
 
 </style>
@@ -577,13 +707,15 @@ footer {
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================================
+     NAVIGATION
+========================================= -->
 
 <header>
 
   <div class="container nav">
 
-    <a href="/index.html" class="logo">
+    <a href="/" class="logo">
       CREATORBASE <span>✦</span>
     </a>
 
@@ -593,11 +725,15 @@ footer {
         Blog
       </a>
 
-      <a href="/index.html#start">
+      <a href="/#start">
         Guides
       </a>
 
-      <a href="/index.html#liora">
+      <a href="/pinterest.html">
+        Pinterest
+      </a>
+
+      <a href="/#liora">
         Liora
       </a>
 
@@ -615,7 +751,9 @@ footer {
 <main>
 
 
-<!-- HERO -->
+<!-- =========================================
+     HERO
+========================================= -->
 
 <section class="hero">
 
@@ -644,7 +782,7 @@ footer {
         Creatorbase ist für Menschen,
         die etwas Gutes haben —
         aber noch herausfinden,
-        <em>wie sie es sichtbar machen.</em>
+        <em>wie sie es sichtbar und auffindbar machen.</em>
       </div>
 
     </div>
@@ -654,7 +792,9 @@ footer {
 </section>
 
 
-<!-- WARUM -->
+<!-- =========================================
+     WARUM
+========================================= -->
 
 <section class="why">
 
@@ -676,21 +816,25 @@ footer {
         <p>
           Im Internet gibt es mehr als genug Ratschläge:
           mehr posten, mehr Reels machen, Trends nutzen,
-          einen Funnel bauen und am besten überall gleichzeitig sein.
+          Pinterest ausprobieren, einen Funnel bauen
+          und am besten überall gleichzeitig sein.
         </p>
 
         <p>
-          Das Problem ist nur: Mehr zu machen hilft wenig,
-          wenn nicht klar ist, was du eigentlich sagen willst,
-          für wen dein Angebot relevant ist und wie daraus
-          ein erkennbarer Auftritt entsteht.
+          Das Problem ist nur:
+          Mehr zu machen hilft wenig,
+          wenn nicht klar ist,
+          was du eigentlich sagen willst,
+          für wen dein Angebot relevant ist
+          und wie Menschen es entdecken sollen.
         </p>
 
         <p>
           Creatorbase setzt deshalb früher an.
-          Bei Positionierung, Strategie und der Frage,
+          Bei Positionierung, Strategie
+          und der Frage,
           wie aus deinem Angebot Content wird,
-          den Menschen verstehen können.
+          den Menschen verstehen und finden können.
         </p>
 
       </div>
@@ -702,21 +846,24 @@ footer {
 </section>
 
 
-<!-- CREATORBASE + LIORA -->
+<!-- =========================================
+     CREATORBASE + LIORA + PINA
+========================================= -->
 
-<section class="two-worlds">
+<section class="worlds">
 
   <div class="container">
 
     <div class="world-heading">
 
       <div class="mini-label">
-        Zwei Teile / ein Ziel ✦
+        Drei Teile / ein Ziel ✦
       </div>
 
       <h2>
         Erst verstehen.
-        <em>Dann umsetzen.</em>
+        Dann den passenden Weg
+        <em>umsetzen.</em>
       </h2>
 
     </div>
@@ -724,6 +871,8 @@ footer {
 
     <div class="world-grid">
 
+
+      <!-- CREATORBASE -->
 
       <div class="world-card creatorbase-card">
 
@@ -737,19 +886,26 @@ footer {
         </h3>
 
         <p>
-          Creatorbase gibt dir Strategien, Guides,
-          Beispiele und Ideen rund um Marketing,
-          Instagram, Content, Positionierung
+          Creatorbase gibt dir Strategien,
+          Guides, Beispiele und Ideen
+          rund um Marketing, Instagram,
+          Pinterest, Content, Positionierung
           und Sichtbarkeit.
         </p>
 
         <div class="world-note">
           Warum funktioniert etwas —
-          und wie kannst du es für dich nutzen?
+          und wie kannst du es für dein Angebot nutzen?
         </div>
+
+        <a href="/blog.html" class="world-link">
+          Guides entdecken →
+        </a>
 
       </div>
 
+
+      <!-- LIORA -->
 
       <div class="world-card liora-card">
 
@@ -758,22 +914,68 @@ footer {
         </div>
 
         <h3>
-          Der Ort zum
-          Umsetzen.
+          Dein Angebot
+          auf Instagram.
         </h3>
 
         <p>
-          Du bringst dein Produkt, deine Dienstleistung,
+          Du bringst dein Produkt,
+          deine Dienstleistung,
           dein Unternehmen oder deine Idee mit.
-          Liora hilft dir daraus Positionierung,
-          Instagram-Strategie, Content-Ideen
-          und Videos zu entwickeln.
+          Liora hilft dir dabei,
+          daraus Positionierung,
+          Instagram-Strategie,
+          Content-Ideen und Videos zu entwickeln.
         </p>
 
         <div class="world-note">
           Du weißt, was du verkaufen willst.
           Liora weiß, wie du es zeigst.
         </div>
+
+        <a
+          href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
+          target="_blank"
+          rel="noopener"
+          class="world-link">
+          Liora kennenlernen →
+        </a>
+
+      </div>
+
+
+      <!-- PINA -->
+
+      <div class="world-card pina-card">
+
+        <div class="world-number">
+          03 / PINA
+        </div>
+
+        <h3>
+          Dein Angebot
+          auf Pinterest.
+        </h3>
+
+        <p>
+          Pina ist für den nächsten Weg:
+          Pinterest praktisch aufbauen
+          und daraus ein System aus Pins,
+          Inhalten, Blog und deinem Angebot entwickeln.
+        </p>
+
+        <div class="world-note">
+          Mach dein Angebot nicht nur sichtbar.
+          Mach es auffindbar.
+        </div>
+
+        <a
+          href="https://livcherry.mytentary.com/p/V4AgeW?aref=80472"
+          target="_blank"
+          rel="sponsored noopener"
+          class="world-link">
+          Pina ansehen →
+        </a>
 
       </div>
 
@@ -785,7 +987,9 @@ footer {
 </section>
 
 
-<!-- FÜR WEN -->
+<!-- =========================================
+     FÜR WEN
+========================================= -->
 
 <section class="for-who">
 
@@ -837,7 +1041,8 @@ footer {
         <div class="for-row">
           <span class="for-number">05</span>
           <span class="for-text">
-            Oder einfach eine Idee, die gerade beginnt.
+            Oder einfach eine Idee,
+            die gerade beginnt.
           </span>
         </div>
 
@@ -850,7 +1055,9 @@ footer {
 </section>
 
 
-<!-- WIE CREATORBASE DENKT -->
+<!-- =========================================
+     PRINZIPIEN
+========================================= -->
 
 <section class="principles">
 
@@ -876,15 +1083,19 @@ footer {
         </span>
 
         <div>
+
           <h3>
-            Erst verstehen, dann posten.
+            Erst verstehen, dann veröffentlichen.
           </h3>
 
           <p>
-            Content wird einfacher, wenn klar ist,
-            was dein Angebot besonders macht und
-            welche Geschichte du darum erzählen kannst.
+            Content wird einfacher,
+            wenn klar ist,
+            was dein Angebot besonders macht,
+            für wen es relevant ist
+            und welche Themen dazu gehören.
           </p>
+
         </div>
 
       </div>
@@ -897,6 +1108,7 @@ footer {
         </span>
 
         <div>
+
           <h3>
             Strategie soll dir Arbeit abnehmen.
           </h3>
@@ -906,6 +1118,7 @@ footer {
             Sie soll nicht aus hundert Regeln bestehen,
             die du jeden Tag erfüllen musst.
           </p>
+
         </div>
 
       </div>
@@ -918,15 +1131,19 @@ footer {
         </span>
 
         <div>
+
           <h3>
             Menschen müssen dein Angebot verstehen.
           </h3>
 
           <p>
-            Bevor jemand kaufen kann, muss klar sein,
-            was du anbietest, warum es relevant ist
+            Bevor jemand kaufen kann,
+            muss klar sein,
+            was du anbietest,
+            warum es relevant ist
             und welchen Unterschied es macht.
           </p>
+
         </div>
 
       </div>
@@ -939,6 +1156,34 @@ footer {
         </span>
 
         <div>
+
+          <h3>
+            Sichtbarkeit und Auffindbarkeit
+            sind nicht dasselbe.
+          </h3>
+
+          <p>
+            Auf Plattformen wie Instagram
+            kannst du dein Angebot zeigen
+            und Beziehungen aufbauen.
+            Über Pinterest und hilfreiche Inhalte
+            kannst du zusätzlich Wege schaffen,
+            über die Menschen dein Angebot entdecken.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="principle">
+
+        <span class="principle-number">
+          05
+        </span>
+
+        <div>
+
           <h3>
             Marketing darf verständlich sein.
           </h3>
@@ -946,8 +1191,10 @@ footer {
           <p>
             Keine unnötig komplizierten Begriffe.
             Keine Strategie nur um der Strategie willen.
-            Sondern Dinge, die du tatsächlich anwenden kannst.
+            Sondern Dinge,
+            die du tatsächlich anwenden kannst.
           </p>
+
         </div>
 
       </div>
@@ -960,7 +1207,9 @@ footer {
 </section>
 
 
-<!-- NÄCHSTER SCHRITT -->
+<!-- =========================================
+     NÄCHSTER SCHRITT
+========================================= -->
 
 <section class="cta">
 
@@ -978,11 +1227,14 @@ footer {
       </h2>
 
       <p>
-        Starte mit einem Guide und finde heraus,
+        Starte mit einem Creatorbase-Guide
+        und finde heraus,
         was dein nächster sinnvoller Schritt ist.
-        Wenn du bereits weißt, was du verkaufen möchtest
-        und direkt an der Umsetzung arbeiten willst,
-        ist Liora für dich da.
+        Wenn du dein Angebot auf Instagram zeigen möchtest,
+        findest du mit Liora einen Weg zur Umsetzung.
+        Wenn du Pinterest und Blog als zusätzlichen
+        Entdeckungsweg aufbauen möchtest,
+        kannst du im Pinterest-Bereich starten.
       </p>
 
 
@@ -992,12 +1244,8 @@ footer {
           Zu den Guides →
         </a>
 
-        <a
-          href="https://aphroditepromt.mytentary.com/liora-2-0-mit-videospecials"
-          target="_blank"
-          rel="noopener"
-          class="secondary-button">
-          Liora kennenlernen →
+        <a href="/pinterest.html" class="secondary-button">
+          Pinterest entdecken →
         </a>
 
       </div>
@@ -1012,7 +1260,9 @@ footer {
 </main>
 
 
-<!-- FOOTER -->
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer>
 
@@ -1031,6 +1281,21 @@ footer {
       <span>
         Für Ideen, die gesehen werden sollen.
       </span>
+
+    </div>
+
+
+    <div class="legal-links">
+
+      <a href="/impressum.html">
+        Impressum
+      </a>
+
+      <span>·</span>
+
+      <a href="/datenschutz.html">
+        Datenschutz
+      </a>
 
     </div>
 
