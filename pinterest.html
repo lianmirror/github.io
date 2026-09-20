@@ -99,13 +99,13 @@
       gap: 30px;
     }
 
-    .logo {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
+  .logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
 
     .nav-links {
       display: flex;
@@ -233,7 +233,7 @@
     }
 
     .hero-visual {
-      min-height: 500px;
+      min-height: 650px;
       position: relative;
     }
 
@@ -260,32 +260,38 @@
       color: #665851;
     }
 
-    .card-one {
-      background: var(--lavender-light);
-      width: 78%;
-      top: 30px;
-      left: 0;
-      transform: rotate(-4deg);
-    }
+   .card-one {
+  background: var(--lavender-light);
+  width: 82%;
+  top: 35px;
+  left: 0;
+  transform: rotate(-2deg);
+  z-index: 2;
+}
 
-    .card-two {
-      background: var(--white);
-      width: 76%;
-      right: 0;
-      top: 220px;
-      transform: rotate(4deg);
-    }
+.card-two {
+  background: var(--white);
+  width: 82%;
+  right: 0;
+  top: 315px;
+  transform: rotate(2deg);
+  z-index: 2;
+}
 
-    .hero-note {
-      position: absolute;
-      bottom: 10px;
-      left: 45px;
-      font-family: Georgia, serif;
-      font-style: italic;
-      font-size: 25px;
-      color: var(--terracotta);
-      transform: rotate(-5deg);
-    }
+.hero-note {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  transform: none;
+  z-index: 1;
+}
 
 
     /* =========================================
