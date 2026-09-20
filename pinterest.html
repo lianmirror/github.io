@@ -7,26 +7,36 @@
 
   <title>Pinterest Marketing für Produkte & Marken | Creatorbase</title>
 
-  <meta name="description"
-        content="Wie funktioniert Pinterest Marketing? Erfahre, wie du Pinterest nutzen kannst, um Produkte, Dienstleistungen und Inhalte langfristig auffindbar zu machen.">
+  <meta
+    name="description"
+    content="Wie funktioniert Pinterest Marketing? Erfahre, wie du Pinterest nutzen kannst, um Produkte, Dienstleistungen und Inhalte langfristig auffindbar zu machen."
+  >
 
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical"
-        href="https://lianmirror.github.io/pinterest.html">
+  <link
+    rel="canonical"
+    href="https://lianmirror.github.io/pinterest.html"
+  >
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Creatorbase">
 
-  <meta property="og:title"
-        content="Pinterest Marketing für Produkte & Marken | Creatorbase">
+  <meta
+    property="og:title"
+    content="Pinterest Marketing für Produkte & Marken | Creatorbase"
+  >
 
-  <meta property="og:description"
-        content="Pinterest verstehen und strategisch nutzen: für Produkte, Dienstleistungen, Content und dein Business.">
+  <meta
+    property="og:description"
+    content="Pinterest verstehen und strategisch nutzen: für Produkte, Dienstleistungen, Content und dein Business."
+  >
 
-  <meta property="og:url"
-        content="https://lianmirror.github.io/pinterest.html">
+  <meta
+    property="og:url"
+    content="https://lianmirror.github.io/pinterest.html"
+  >
 
   <meta name="twitter:card" content="summary">
 
@@ -42,8 +52,6 @@
       --lavender-light: #e5ddf3;
       --white: #fffdfb;
       --line: #d9cec7;
-
-      --pinterest: #a94f45;
       --pinterest-light: #ead3cd;
     }
 
@@ -61,21 +69,17 @@
       background: var(--cream);
       color: var(--brown);
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     a {
       color: inherit;
+      text-decoration: none;
     }
 
     .container {
-      width: min(1120px, calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    .narrow {
-      width: min(760px, 100%);
-      margin: 0 auto;
+      width: min(1180px, calc(100% - 48px));
+      margin: auto;
     }
 
 
@@ -85,31 +89,27 @@
 
     header {
       border-bottom: 1px solid var(--line);
-      background: rgba(245, 240, 234, 0.96);
-      position: sticky;
-      top: 0;
-      z-index: 50;
+      background: var(--cream);
     }
 
-    nav {
-      min-height: 76px;
+    .nav {
+      min-height: 82px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 30px;
+      align-items: center;
     }
 
- .logo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-decoration: none;
-}
+    .logo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
 
-.logo-star {
-  color: var(--terracotta);
-}
+    .logo span {
+      color: var(--terracotta);
+    }
 
     .nav-links {
       display: flex;
@@ -121,9 +121,11 @@
     .nav-links a {
       text-decoration: none;
       text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 10px;
+      font-weight: 400;
       letter-spacing: 1.4px;
-      transition: 0.2s ease;
+      transition: .2s ease;
     }
 
     .nav-links a:hover,
@@ -133,59 +135,61 @@
 
 
     /* =========================================
-       GENERAL
+       ALLGEMEIN
     ========================================= */
 
     section {
-      padding: 100px 0;
+      padding: 115px 0;
     }
 
-    .eyebrow {
-      text-transform: uppercase;
-      font-size: 10px;
-      letter-spacing: 2px;
+    .mini-label {
       color: var(--terracotta);
-      margin-bottom: 20px;
-      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 10px;
+      font-weight: 800;
+      margin-bottom: 22px;
     }
 
     h1,
     h2,
     h3 {
       font-family: Georgia, "Times New Roman", serif;
-      font-weight: normal;
-      line-height: 1.05;
+      font-weight: 400;
     }
 
     h1 {
-      font-size: clamp(50px, 8vw, 98px);
+      font-size: clamp(58px, 6.4vw, 94px);
+      line-height: .94;
       letter-spacing: -4px;
     }
 
     h2 {
-      font-size: clamp(40px, 6vw, 70px);
-      letter-spacing: -2.5px;
+      font-size: clamp(43px, 5vw, 70px);
+      line-height: 1.05;
+      letter-spacing: -2px;
     }
 
     h3 {
-      font-size: 28px;
+      line-height: 1.12;
     }
 
     em {
       color: var(--terracotta);
+      font-weight: 400;
     }
 
     .button {
       display: inline-block;
-      padding: 16px 24px;
       background: var(--brown);
       color: var(--white);
-      text-decoration: none;
+      padding: 15px 23px;
       text-transform: uppercase;
+      letter-spacing: 1px;
       font-size: 10px;
-      letter-spacing: 1.5px;
+      font-weight: 800;
       border: 1px solid var(--brown);
-      transition: 0.2s ease;
+      transition: .2s ease;
     }
 
     .button:hover {
@@ -208,94 +212,150 @@
     ========================================= */
 
     .hero {
-      min-height: 82vh;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
+      padding: 110px 0 130px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr .85fr;
+      grid-template-columns: 1.05fr .95fr;
       gap: 80px;
       align-items: center;
     }
 
-    .hero-copy p:not(.eyebrow) {
-      max-width: 620px;
-      font-size: 18px;
+    .hero-intro {
+      max-width: 560px;
+      border-left: 2px solid var(--terracotta);
+      padding-left: 20px;
+      font-family: Georgia, serif;
+      font-size: 21px;
+      line-height: 1.45;
       margin-top: 30px;
-      color: #665851;
+    }
+
+    .hero-intro span {
+      color: var(--terracotta);
+    }
+
+    .hero-copy {
+      max-width: 540px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #645751;
+      margin-top: 28px;
     }
 
     .hero-actions {
-      margin-top: 35px;
       display: flex;
-      gap: 12px;
       flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 35px;
     }
 
-    .hero-visual {
-      min-height: 650px;
+
+    /* HERO COLLAGE */
+
+    .hero-art {
+      min-height: 590px;
+      background: linear-gradient(
+        135deg,
+        var(--cream-dark),
+        var(--lavender-light)
+      );
       position: relative;
+      overflow: hidden;
+    }
+
+    .background-word {
+      position: absolute;
+      top: 28px;
+      left: 20px;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 88px;
+      line-height: 1;
+      color: rgba(181, 123, 103, .14);
+      white-space: nowrap;
     }
 
     .hero-card {
       position: absolute;
-      padding: 34px;
-      box-shadow: 0 18px 45px rgba(45, 33, 29, .10);
+      padding: 28px 32px;
+      box-shadow: 0 20px 40px rgba(45, 33, 29, .08);
     }
 
     .hero-card small {
       display: block;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 9px;
-      margin-bottom: 14px;
+      letter-spacing: 2px;
+      font-size: 8px;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
     .hero-card h3 {
-      font-size: 34px;
+      font-size: 24px;
+      line-height: 1.15;
     }
 
     .hero-card p {
-      margin-top: 16px;
+      font-size: 12px;
+      line-height: 1.7;
+      margin-top: 15px;
       color: #665851;
     }
 
-   .card-one {
-  background: var(--lavender-light);
-  width: 82%;
-  top: 35px;
-  left: 0;
-  transform: rotate(-2deg);
-  z-index: 2;
-}
+    .card-one {
+      width: 65%;
+      background: var(--white);
+      top: 125px;
+      left: 7%;
+      transform: rotate(-3deg);
+      z-index: 2;
+    }
 
-.card-two {
-  background: var(--white);
-  width: 82%;
-  right: 0;
-  top: 315px;
-  transform: rotate(2deg);
-  z-index: 2;
-}
+    .card-one small {
+      color: var(--terracotta);
+    }
 
-.hero-note {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--terracotta);
-  transform: none;
-  z-index: 1;
-}
+    .card-two {
+      width: 66%;
+      background: var(--brown);
+      color: var(--white);
+      right: 5%;
+      bottom: 70px;
+      transform: rotate(3deg);
+      z-index: 3;
+    }
+
+    .card-two small {
+      color: var(--terracotta-light);
+    }
+
+    .card-two h3 {
+      font-size: 26px;
+    }
+
+    .card-two p {
+      color: #d9d0ca;
+    }
+
+    .art-star {
+      position: absolute;
+      color: var(--terracotta);
+      font-size: 25px;
+      z-index: 1;
+    }
+
+    .star-one {
+      right: 20%;
+      top: 51%;
+    }
+
+    .star-two {
+      left: 16%;
+      bottom: 9%;
+      color: var(--lavender);
+    }
 
 
     /* =========================================
@@ -304,15 +364,21 @@
 
     .intro {
       background: var(--brown);
-      color: var(--white);
+      color: var(--cream);
     }
 
-    .intro .eyebrow {
+    .intro-grid {
+      display: grid;
+      grid-template-columns: .65fr 1.35fr;
+      gap: 100px;
+    }
+
+    .intro .mini-label {
       color: var(--terracotta-light);
     }
 
     .intro h2 {
-      max-width: 850px;
+      max-width: 800px;
     }
 
     .intro h2 em {
@@ -320,10 +386,11 @@
     }
 
     .intro-text {
-      margin-top: 40px;
-      max-width: 760px;
-      color: #dfd5d0;
-      font-size: 18px;
+      max-width: 620px;
+      margin-top: 35px;
+      color: #d9d0ca;
+      font-size: 15px;
+      line-height: 1.8;
     }
 
     .intro-text p + p {
@@ -332,7 +399,7 @@
 
 
     /* =========================================
-       WHAT PINTEREST IS
+       PINTEREST SUCHE
     ========================================= */
 
     .search-section {
@@ -342,14 +409,16 @@
     .split {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      gap: 90px;
       align-items: center;
     }
 
-    .split-copy p:not(.eyebrow) {
+    .split-copy p:not(.mini-label) {
       color: #665851;
       margin-top: 24px;
-      font-size: 17px;
+      font-size: 14px;
+      line-height: 1.8;
+      max-width: 550px;
     }
 
     .search-box {
@@ -365,6 +434,7 @@
       border-radius: 30px;
       color: #7b6a62;
       margin-bottom: 30px;
+      font-size: 13px;
     }
 
     .search-results {
@@ -400,7 +470,7 @@
 
 
     /* =========================================
-       USE CASES
+       WAS KANNST DU VERMARKTEN?
     ========================================= */
 
     .use-cases {
@@ -409,14 +479,15 @@
 
     .section-head {
       max-width: 800px;
-      margin-bottom: 55px;
+      margin-bottom: 60px;
     }
 
-    .section-head p:not(.eyebrow) {
+    .section-head p:not(.mini-label) {
+      max-width: 650px;
       margin-top: 25px;
       color: #665851;
-      max-width: 650px;
-      font-size: 17px;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
     .case-grid {
@@ -426,7 +497,7 @@
     }
 
     .case-card {
-      min-height: 280px;
+      min-height: 300px;
       padding: 30px;
       border: 1px solid var(--line);
       background: var(--white);
@@ -448,18 +519,21 @@
     }
 
     .case-number {
-      font-size: 10px;
-      letter-spacing: 1.5px;
       color: var(--terracotta);
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
     }
 
     .case-card h3 {
+      font-size: 29px;
       margin-bottom: 15px;
     }
 
     .case-card p {
       color: #665851;
-      font-size: 14px;
+      font-size: 13px;
+      line-height: 1.7;
     }
 
 
@@ -468,29 +542,29 @@
     ========================================= */
 
     .difference {
-      background: var(--lavender-light);
+      background: var(--lavender);
     }
 
     .difference-head {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 60px;
+      max-width: 850px;
+      margin-bottom: 60px;
     }
 
-    .difference-head p:not(.eyebrow) {
-      color: #665851;
+    .difference-head p:not(.mini-label) {
+      max-width: 650px;
       margin-top: 25px;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
     .platform-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
-      max-width: 950px;
-      margin: 0 auto;
     }
 
     .platform {
+      min-height: 310px;
       padding: 45px;
       background: var(--white);
     }
@@ -503,7 +577,8 @@
     .platform small {
       text-transform: uppercase;
       font-size: 9px;
-      letter-spacing: 1.5px;
+      font-weight: bold;
+      letter-spacing: 2px;
       color: var(--terracotta);
     }
 
@@ -513,15 +588,18 @@
 
     .platform h3 {
       font-size: 38px;
-      margin: 14px 0 24px;
+      margin: 18px 0 25px;
     }
 
     .platform p {
+      max-width: 430px;
       color: #665851;
+      font-size: 13px;
+      line-height: 1.8;
     }
 
     .platform.pinterest p {
-      color: #dfd5d0;
+      color: #d9d0ca;
     }
 
 
@@ -537,15 +615,14 @@
       margin-top: 60px;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      align-items: stretch;
       gap: 10px;
     }
 
     .flow-item {
+      min-height: 170px;
       background: var(--cream);
       border: 1px solid var(--line);
-      padding: 30px 20px;
-      min-height: 160px;
+      padding: 28px 18px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -555,25 +632,26 @@
     .flow-item strong {
       font-family: Georgia, serif;
       font-size: 22px;
-      font-weight: normal;
+      font-weight: 400;
     }
 
     .flow-item span {
-      margin-top: 8px;
-      font-size: 12px;
+      margin-top: 9px;
       color: #76665e;
+      font-size: 11px;
+      line-height: 1.6;
     }
 
     .flow-arrow {
-      text-align: center;
-      font-size: 24px;
-      color: var(--terracotta);
       display: none;
+      text-align: center;
+      color: var(--terracotta);
+      font-size: 22px;
     }
 
 
     /* =========================================
-       BLOG + PINTEREST
+       PINTEREST + BLOG
     ========================================= */
 
     .blog-system {
@@ -586,38 +664,42 @@
 
     .blog-paper {
       background: var(--white);
-      padding: 50px;
-      box-shadow: 0 18px 50px rgba(45, 33, 29, .08);
+      padding: 45px;
+      box-shadow: 0 20px 40px rgba(45,33,29,.08);
       transform: rotate(2deg);
     }
 
     .blog-paper small {
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 9px;
       color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 8px;
+      font-weight: bold;
     }
 
     .blog-paper h3 {
       font-size: 35px;
-      margin: 18px 0;
+      margin: 18px 0 24px;
     }
 
     .blog-paper p {
       color: #665851;
+      font-size: 13px;
+      line-height: 1.8;
     }
 
-    .pin-arrow {
+    .blog-paper .pin-arrow {
       margin-top: 30px;
       font-family: Georgia, serif;
-      color: var(--terracotta);
-      font-size: 23px;
       font-style: italic;
+      color: var(--terracotta);
+      font-size: 21px;
+      line-height: 1.3;
     }
 
 
     /* =========================================
-       ARTICLES
+       ARTIKEL
     ========================================= */
 
     .articles {
@@ -627,18 +709,24 @@
     .article-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      gap: 22px;
       margin-top: 55px;
     }
 
     .article-card {
-      min-height: 360px;
-      padding: 32px;
+      min-height: 410px;
+      padding: 30px;
       border: 1px solid var(--line);
       background: var(--white);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: .25s ease;
+    }
+
+    a.article-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(45,33,29,.07);
     }
 
     .article-card:nth-child(2) {
@@ -650,28 +738,34 @@
     }
 
     .article-card small {
-      text-transform: uppercase;
-      font-size: 9px;
-      letter-spacing: 1.5px;
       color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 9px;
+      font-weight: bold;
     }
 
     .article-card h3 {
-      margin-top: 20px;
-      font-size: 32px;
+      margin-top: 22px;
+      font-size: 31px;
     }
 
     .article-card p {
       margin-top: 18px;
       color: #665851;
+      font-size: 13px;
+      line-height: 1.8;
     }
 
     .coming {
       margin-top: 30px;
-      text-transform: uppercase;
-      font-size: 9px;
-      letter-spacing: 1.4px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(45,33,29,.12);
       color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-size: 9px;
+      font-weight: bold;
     }
 
 
@@ -681,58 +775,75 @@
 
     .pina {
       background: var(--brown);
-      color: var(--white);
+      color: var(--cream);
       overflow: hidden;
     }
 
     .pina-grid {
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
-      gap: 80px;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
       align-items: center;
     }
 
-    .pina-visual {
-      min-height: 480px;
+    .pina-art {
+      min-height: 550px;
+      background: rgba(255,255,255,.035);
       position: relative;
+      overflow: hidden;
+    }
+
+    .pina-word {
+      position: absolute;
+      top: 18px;
+      left: 22px;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 100px;
+      color: rgba(229,221,243,.10);
     }
 
     .pina-card {
       position: absolute;
-      padding: 35px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.12);
     }
 
-    .pina-card-one {
-      width: 78%;
+    .pina-card.one {
+      width: 68%;
       background: var(--pinterest-light);
       color: var(--brown);
-      top: 15px;
-      left: 0;
-      transform: rotate(-5deg);
+      top: 125px;
+      left: 8%;
+      transform: rotate(-3deg);
     }
 
-    .pina-card-two {
-      width: 75%;
+    .pina-card.two {
+      width: 67%;
       background: var(--lavender-light);
       color: var(--brown);
-      top: 215px;
-      right: 0;
-      transform: rotate(5deg);
+      right: 6%;
+      bottom: 70px;
+      transform: rotate(3deg);
     }
 
     .pina-card small {
       display: block;
-      font-size: 9px;
-      letter-spacing: 1.5px;
+      color: var(--terracotta);
       text-transform: uppercase;
-      margin-bottom: 15px;
+      letter-spacing: 2px;
+      font-size: 8px;
+      font-weight: bold;
+      margin-bottom: 12px;
     }
 
-    .pina-card h3 {
-      font-size: 31px;
+    .pina-card p {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      line-height: 1.15;
     }
 
-    .pina-copy .eyebrow {
+    .pina-copy .mini-label {
       color: var(--terracotta-light);
     }
 
@@ -740,22 +851,23 @@
       color: var(--lavender);
     }
 
-    .pina-copy > p:not(.eyebrow):not(.affiliate) {
-      color: #dfd5d0;
+    .pina-copy > p:not(.mini-label):not(.affiliate) {
+      max-width: 540px;
+      color: #d9d0ca;
+      font-size: 13px;
+      line-height: 1.8;
       margin-top: 25px;
-      font-size: 17px;
     }
 
     .pina-list {
-      margin: 30px 0;
-      display: grid;
-      gap: 12px;
+      margin: 30px 0 35px;
     }
 
     .pina-list div {
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(255,255,255,.12);
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.14);
       color: #f3ece8;
+      font-size: 13px;
     }
 
     .pina .button {
@@ -770,31 +882,36 @@
     }
 
     .affiliate {
-      margin-top: 14px;
-      font-size: 10px;
-      color: #ad9d95;
       max-width: 540px;
+      margin-top: 14px;
+      color: #ad9d95;
+      font-size: 10px;
+      line-height: 1.6;
     }
 
 
     /* =========================================
-       PHILOSOPHY
+       PHILOSOPHIE
     ========================================= */
 
     .philosophy {
       background: var(--terracotta-light);
-      text-align: center;
+    }
+
+    .philosophy-content {
+      max-width: 930px;
     }
 
     .philosophy h2 {
       max-width: 900px;
-      margin: 0 auto;
     }
 
     .philosophy p:last-child {
-      max-width: 680px;
-      margin: 30px auto 0;
+      max-width: 620px;
+      margin-top: 30px;
       color: #594943;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
 
@@ -804,26 +921,25 @@
 
     .final {
       background: var(--cream);
-      text-align: center;
     }
 
-    .final h2 {
+    .final-content {
       max-width: 850px;
-      margin: 0 auto;
     }
 
-    .final p:not(.eyebrow) {
-      max-width: 650px;
-      margin: 28px auto 0;
+    .final p:not(.mini-label) {
+      max-width: 590px;
+      margin-top: 28px;
       color: #665851;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
     .final-actions {
-      margin-top: 35px;
       display: flex;
-      justify-content: center;
-      gap: 12px;
       flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 35px;
     }
 
 
@@ -832,32 +948,35 @@
     ========================================= */
 
     footer {
-      padding: 55px 0 35px;
-      border-top: 1px solid var(--line);
+      padding: 90px 0 30px;
       background: var(--cream);
     }
 
-    .footer-top {
+    .footer-logo {
+      font-family: Georgia, serif;
+      font-size: clamp(55px, 9vw, 125px);
+      line-height: .9;
+      padding-bottom: 50px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .footer-logo em {
+      color: var(--terracotta);
+      font-weight: 400;
+    }
+
+    .footer-bottom {
+      padding-top: 25px;
       display: flex;
       justify-content: space-between;
-      gap: 30px;
-      align-items: flex-start;
-    }
-
-    .footer-brand {
-      font-family: Georgia, serif;
-      font-size: 25px;
-    }
-
-    .footer-text {
-      max-width: 450px;
-      color: #76665e;
-      font-size: 13px;
-      margin-top: 10px;
+      gap: 25px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .legal-links {
-      margin-top: 30px;
+      margin-top: 25px;
       padding-top: 20px;
       border-top: 1px solid var(--line);
       display: flex;
@@ -872,7 +991,7 @@
 
     .legal-links a {
       color: inherit;
-      text-decoration: none;
+      transition: .2s ease;
     }
 
     .legal-links a:hover {
@@ -881,29 +1000,17 @@
 
 
     /* =========================================
-       MOBILE
+       TABLET / HANDY
     ========================================= */
 
     @media (max-width: 900px) {
 
-      section {
-        padding: 75px 0;
-      }
-
       .hero-grid,
+      .intro-grid,
       .split,
       .pina-grid {
         grid-template-columns: 1fr;
         gap: 55px;
-      }
-
-      .hero {
-        padding-top: 70px;
-      }
-
-      .hero-visual,
-      .pina-visual {
-        min-height: 460px;
       }
 
       .case-grid {
@@ -931,61 +1038,116 @@
     }
 
 
-    @media (max-width: 650px) {
+    @media (max-width: 800px) {
 
       .container {
-        width: min(100% - 28px, 1120px);
+        width: min(100% - 36px, 1180px);
       }
 
-      nav {
-        padding: 18px 0;
-        align-items: flex-start;
+
+      /* NAVIGATION */
+
+      .nav {
+        min-height: auto;
+        padding: 18px 0 16px;
         flex-direction: column;
-        gap: 14px;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .logo {
+        font-size: 17px;
       }
 
       .nav-links {
-        gap: 14px 18px;
+        width: 100%;
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
       }
 
       .nav-links a {
-        font-size: 9px;
+        display: block;
+        font-size: 10px;
       }
 
-      h1 {
-        font-size: 50px;
-        letter-spacing: -2px;
+
+      /* HERO */
+
+      .hero {
+        padding: 65px 0 75px;
       }
 
-      h2 {
-        font-size: 40px;
-        letter-spacing: -1.5px;
+      .hero h1 {
+        font-size: clamp(50px, 14vw, 68px);
+        letter-spacing: -3px;
       }
 
-      .hero-copy p:not(.eyebrow) {
-        font-size: 16px;
+      .hero-intro {
+        font-size: 19px;
       }
 
-      .hero-visual {
+
+      /* HERO COLLAGE */
+
+      .hero-art {
         min-height: auto;
-        display: grid;
-        gap: 16px;
+        padding: 100px 20px 45px;
+      }
+
+      .background-word {
+        top: 18px;
+        left: 18px;
+        font-size: 58px;
       }
 
       .hero-card {
         position: relative;
-        width: 100%;
-        top: auto;
-        left: auto;
-        right: auto;
-        transform: none;
+        width: 88%;
+        padding: 25px;
       }
 
-      .hero-note {
-        position: relative;
+      .card-one {
+        top: auto;
         left: auto;
+        margin: 0 0 38px 0;
+        transform: rotate(-2deg);
+      }
+
+      .card-two {
+        right: auto;
         bottom: auto;
-        margin: 15px 0 0 15px;
+        margin: 0 0 0 auto;
+        transform: rotate(2deg);
+      }
+
+      .hero-card h3 {
+        font-size: 22px;
+      }
+
+      .card-two h3 {
+        font-size: 23px;
+      }
+
+      .star-one {
+        top: 48%;
+        right: 7%;
+      }
+
+      .star-two {
+        left: 6%;
+        bottom: 3%;
+      }
+
+
+      /* SECTIONS */
+
+      section {
+        padding: 80px 0;
+      }
+
+      h2 {
+        font-size: clamp(40px, 11vw, 55px);
       }
 
       .case-grid {
@@ -1009,23 +1171,88 @@
         padding: 30px;
       }
 
-      .pina-visual {
+
+      /* PINA COLLAGE */
+
+      .pina-art {
         min-height: auto;
-        display: grid;
-        gap: 18px;
+        padding: 105px 20px 45px;
+      }
+
+      .pina-word {
+        top: 18px;
+        left: 18px;
+        font-size: 68px;
       }
 
       .pina-card {
         position: relative;
-        width: 100%;
-        top: auto;
-        left: auto;
-        right: auto;
-        transform: none;
+        width: 88%;
+        padding: 25px;
       }
 
-      .footer-top {
+      .pina-card.one {
+        width: 88%;
+        top: auto;
+        left: auto;
+        margin: 0 0 38px 0;
+        transform: rotate(-2deg);
+      }
+
+      .pina-card.two {
+        width: 88%;
+        right: auto;
+        bottom: auto;
+        margin: 0 0 0 auto;
+        transform: rotate(2deg);
+      }
+
+      .pina-card p {
+        font-size: 22px;
+      }
+
+
+      /* FOOTER */
+
+      .footer-bottom {
         flex-direction: column;
+        gap: 12px;
+      }
+
+    }
+
+
+    @media (max-width: 430px) {
+
+      .container {
+        width: calc(100% - 30px);
+      }
+
+      .nav-links a {
+        font-size: 9px;
+        letter-spacing: .8px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2.5px;
+      }
+
+      .background-word {
+        font-size: 50px;
+      }
+
+      .hero-card,
+      .card-one,
+      .card-two,
+      .pina-card,
+      .pina-card.one,
+      .pina-card.two {
+        width: 92%;
+      }
+
+      .footer-logo {
+        font-size: 52px;
       }
 
     }
@@ -1043,22 +1270,18 @@
 
 <header>
 
-  <div class="container">
+  <div class="container nav">
 
-    <nav>
+    <a href="/" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
 
-     <a href="/" class="logo">
-  CREATORBASE <span class="logo-star">✦</span>
-</a>
-
-      <div class="nav-links">
-        <a href="/blog.html">Blog</a>
-        <a href="/#start">Guides</a>
-        <a href="/pinterest.html" class="active">Pinterest</a>
-        <a href="/#liora">Liora</a>
-        <a href="/ueber-uns.html">Über uns</a>
-      </div>
-
+    <nav class="nav-links">
+      <a href="/blog.html">Blog</a>
+      <a href="/#start">Guides</a>
+      <a href="/pinterest.html" class="active">Pinterest</a>
+      <a href="/#liora">Liora</a>
+      <a href="/ueber-uns.html">Über uns</a>
     </nav>
 
   </div>
@@ -1077,23 +1300,28 @@
 
   <div class="container hero-grid">
 
-    <div class="hero-copy">
+    <div>
 
-      <p class="eyebrow">
-        PINTEREST MARKETING ✦
-      </p>
+      <div class="mini-label">
+        Pinterest Marketing ✦
+      </div>
 
       <h1>
         Mach dein Angebot<br>
-        nicht nur sichtbar.<br>
+        nicht nur sichtbar.
         <em>Mach es auffindbar.</em>
       </h1>
 
-      <p>
+      <div class="hero-intro">
+        Menschen suchen nach Ideen und Lösungen.
+        <span>Dein Angebot kann Teil dieser Suche werden.</span>
+      </div>
+
+      <p class="hero-copy">
         Pinterest kann Menschen auf deine Produkte,
         Dienstleistungen und Inhalte aufmerksam machen,
-        während sie aktiv nach Ideen, Lösungen
-        und Inspiration suchen.
+        während sie aktiv nach Inspiration,
+        Antworten und passenden Lösungen suchen.
       </p>
 
       <div class="hero-actions">
@@ -1111,7 +1339,11 @@
     </div>
 
 
-    <div class="hero-visual">
+    <div class="hero-art">
+
+      <div class="background-word">
+        found.
+      </div>
 
       <div class="hero-card card-one">
 
@@ -1126,6 +1358,8 @@
 
       </div>
 
+      <div class="art-star star-one">✦</div>
+      <div class="art-star star-two">✦</div>
 
       <div class="hero-card card-two">
 
@@ -1144,11 +1378,6 @@
 
       </div>
 
-
-      <div class="hero-note">
-        search → discover → click ✦
-      </div>
-
     </div>
 
   </div>
@@ -1162,40 +1391,44 @@
 
 <section class="intro" id="verstehen">
 
-  <div class="container">
+  <div class="container intro-grid">
 
-    <p class="eyebrow">
-      ERSTMAL: WAS IST PINTEREST EIGENTLICH?
-    </p>
+    <div class="mini-label">
+      Pinterest / 01
+    </div>
 
-    <h2>
-      Pinterest ist nicht einfach<br>
-      <em>„noch ein Social-Media-Kanal“.</em>
-    </h2>
+    <div>
 
-    <div class="intro-text">
+      <h2>
+        Pinterest ist nicht einfach
+        <em>„noch ein Social-Media-Kanal“.</em>
+      </h2>
 
-      <p>
-        Menschen öffnen Pinterest häufig,
-        weil sie nach etwas suchen:
-        nach Ideen, Inspiration, Produkten,
-        Anleitungen oder Lösungen für ein Problem.
-      </p>
+      <div class="intro-text">
 
-      <p>
-        Genau deshalb kann Pinterest
-        für Unternehmen, Marken und Menschen
-        mit einem eigenen Angebot interessant sein.
-      </p>
+        <p>
+          Menschen öffnen Pinterest häufig,
+          weil sie nach etwas suchen:
+          nach Ideen, Inspiration, Produkten,
+          Anleitungen oder Lösungen für ein Problem.
+        </p>
 
-      <p>
-        Statt nur zu überlegen:
-        „Was soll ich heute posten?“
-        stellst du eine andere Frage:
-        <strong>
-          „Wonach sucht jemand, der mein Angebot brauchen könnte?“
-        </strong>
-      </p>
+        <p>
+          Genau deshalb kann Pinterest
+          für Unternehmen, Marken und Menschen
+          mit einem eigenen Angebot interessant sein.
+        </p>
+
+        <p>
+          Statt nur zu überlegen:
+          „Was soll ich heute posten?“
+          stellst du eine andere Frage:
+          <strong>
+            „Wonach sucht jemand, der mein Angebot brauchen könnte?“
+          </strong>
+        </p>
+
+      </div>
 
     </div>
 
@@ -1205,7 +1438,7 @@
 
 
 <!-- =========================================
-     SEARCH
+     SUCHE
 ========================================= -->
 
 <section class="search-section">
@@ -1214,12 +1447,12 @@
 
     <div class="split-copy">
 
-      <p class="eyebrow">
-        DER ENTSCHEIDENDE UNTERSCHIED
-      </p>
+      <div class="mini-label">
+        Der entscheidende Unterschied ✦
+      </div>
 
       <h2>
-        Menschen suchen.<br>
+        Menschen suchen.
         <em>Du wirst gefunden.</em>
       </h2>
 
@@ -1279,7 +1512,7 @@
 
 
 <!-- =========================================
-     USE CASES
+     ANGEBOTE
 ========================================= -->
 
 <section class="use-cases">
@@ -1288,12 +1521,12 @@
 
     <div class="section-head">
 
-      <p class="eyebrow">
-        WAS KANNST DU ÜBER PINTEREST VERMARKTEN?
-      </p>
+      <div class="mini-label">
+        Was kannst du über Pinterest vermarkten? ✦
+      </div>
 
       <h2>
-        Mehr als nur<br>
+        Mehr als nur
         <em>schöne Bilder.</em>
       </h2>
 
@@ -1311,15 +1544,11 @@
 
       <article class="case-card">
 
-        <span class="case-number">
-          01
-        </span>
+        <span class="case-number">01</span>
 
         <div>
 
-          <h3>
-            Digitale Produkte
-          </h3>
+          <h3>Digitale Produkte</h3>
 
           <p>
             Guides, Vorlagen, Kurse,
@@ -1334,15 +1563,11 @@
 
       <article class="case-card">
 
-        <span class="case-number">
-          02
-        </span>
+        <span class="case-number">02</span>
 
         <div>
 
-          <h3>
-            Physische Produkte
-          </h3>
+          <h3>Physische Produkte</h3>
 
           <p>
             Produkte können in Inspiration,
@@ -1357,15 +1582,11 @@
 
       <article class="case-card">
 
-        <span class="case-number">
-          03
-        </span>
+        <span class="case-number">03</span>
 
         <div>
 
-          <h3>
-            Dienstleistungen
-          </h3>
+          <h3>Dienstleistungen</h3>
 
           <p>
             Expertise lässt sich über Guides,
@@ -1379,15 +1600,11 @@
 
       <article class="case-card">
 
-        <span class="case-number">
-          04
-        </span>
+        <span class="case-number">04</span>
 
         <div>
 
-          <h3>
-            Marken & Unternehmen
-          </h3>
+          <h3>Marken & Unternehmen</h3>
 
           <p>
             Pinterest kann ein zusätzlicher Weg sein,
@@ -1407,7 +1624,7 @@
 
 
 <!-- =========================================
-     INSTAGRAM / PINTEREST
+     INSTAGRAM VS PINTEREST
 ========================================= -->
 
 <section class="difference">
@@ -1416,13 +1633,13 @@
 
     <div class="difference-head">
 
-      <p class="eyebrow">
-        INSTAGRAM ODER PINTEREST?
-      </p>
+      <div class="mini-label">
+        Instagram oder Pinterest?
+      </div>
 
       <h2>
-        Eigentlich ist die spannendere Antwort:
-        <em>beides kann unterschiedliche Aufgaben haben.</em>
+        Beides kann
+        <em>unterschiedliche Aufgaben haben.</em>
       </h2>
 
       <p>
@@ -1438,9 +1655,7 @@
 
       <article class="platform">
 
-        <small>
-          INSTAGRAM
-        </small>
+        <small>INSTAGRAM</small>
 
         <h3>
           Zeigen & verbinden.
@@ -1458,9 +1673,7 @@
 
       <article class="platform pinterest">
 
-        <small>
-          PINTEREST
-        </small>
+        <small>PINTEREST</small>
 
         <h3>
           Suchen & entdecken.
@@ -1492,12 +1705,12 @@
 
     <div class="section-head">
 
-      <p class="eyebrow">
-        WIE KANN DAS ZUSAMMENSPIELEN?
-      </p>
+      <div class="mini-label">
+        Wie kann das zusammenspielen? ✦
+      </div>
 
       <h2>
-        Pinterest ist nicht das Ende.<br>
+        Pinterest ist nicht das Ende.
         <em>Es ist ein Weg zu deinem Angebot.</em>
       </h2>
 
@@ -1561,12 +1774,12 @@
 
     <div class="split-copy">
 
-      <p class="eyebrow">
-        PINTEREST + BLOG
-      </p>
+      <div class="mini-label">
+        Pinterest + Blog ✦
+      </div>
 
       <h2>
-        Ein Pin kann<br>
+        Ein Pin kann
         <em>der Anfang sein.</em>
       </h2>
 
@@ -1592,31 +1805,27 @@
     </div>
 
 
-    <div>
+    <div class="blog-paper">
 
-      <div class="blog-paper">
+      <small>
+        BEISPIEL
+      </small>
 
-        <small>
-          BEISPIEL
-        </small>
+      <h3>
+        Du verkaufst eine Vorlage
+        für Content-Planung.
+      </h3>
 
-        <h3>
-          Du verkaufst eine Vorlage
-          für Content-Planung.
-        </h3>
+      <p>
+        Statt nur einen Pin mit
+        „Kauf meine Vorlage“ zu erstellen,
+        könntest du einen hilfreichen Inhalt
+        rund um Content-Planung veröffentlichen.
+      </p>
 
-        <p>
-          Statt nur einen Pin mit
-          „Kauf meine Vorlage“ zu erstellen,
-          könntest du einen hilfreichen Inhalt
-          rund um Content-Planung veröffentlichen.
-        </p>
-
-        <p class="pin-arrow">
-          Pinterest → hilfreicher Inhalt → Produkt ✦
-        </p>
-
-      </div>
+      <p class="pin-arrow">
+        Pinterest → hilfreicher Inhalt → Produkt ✦
+      </p>
 
     </div>
 
@@ -1635,12 +1844,12 @@
 
     <div class="section-head">
 
-      <p class="eyebrow">
-        PINTEREST AUF CREATORBASE
-      </p>
+      <div class="mini-label">
+        Pinterest auf Creatorbase ✦
+      </div>
 
       <h2>
-        Wir machen Pinterest<br>
+        Wir machen Pinterest
         <em>Schritt für Schritt verständlich.</em>
       </h2>
 
@@ -1657,34 +1866,34 @@
     <div class="article-grid">
 
 
-     <a
-  href="/artikel/pinterest-marketing-fuer-anfaenger.html"
-  class="article-card"
-  style="text-decoration: none; color: inherit;">
+      <a
+        href="/artikel/pinterest-marketing-fuer-anfaenger.html"
+        class="article-card"
+      >
 
-  <div>
+        <div>
 
-    <small>
-      PINTEREST · EINSTIEG
-    </small>
+          <small>
+            PINTEREST · EINSTIEG
+          </small>
 
-    <h3>
-      Pinterest Marketing für Anfänger
-    </h3>
+          <h3>
+            Pinterest Marketing für Anfänger
+          </h3>
 
-    <p>
-      Was Pinterest Marketing eigentlich bedeutet
-      und wie du herausfindest,
-      ob es zu deinem Angebot passt.
-    </p>
+          <p>
+            Was Pinterest Marketing eigentlich bedeutet
+            und wie du herausfindest,
+            ob es zu deinem Angebot passt.
+          </p>
 
-  </div>
+        </div>
 
-  <div class="coming">
-    Guide lesen →
-  </div>
+        <div class="coming">
+          Guide lesen →
+        </div>
 
-</a>
+      </a>
 
 
       <article class="article-card">
@@ -1757,46 +1966,48 @@
   <div class="container pina-grid">
 
 
-    <div class="pina-visual">
+    <div class="pina-art">
 
+      <div class="pina-word">
+        okay...
+      </div>
 
-      <div class="pina-card pina-card-one">
+      <div class="pina-card one">
 
         <small>
           CREATORBASE
         </small>
 
-        <h3>
+        <p>
           „Okay. Ich verstehe Pinterest.“
-        </h3>
+        </p>
 
       </div>
 
 
-      <div class="pina-card pina-card-two">
+      <div class="pina-card two">
 
         <small>
           PINA
         </small>
 
-        <h3>
+        <p>
           „Gut. Jetzt bauen wir dein System.“
-        </h3>
+        </p>
 
       </div>
-
 
     </div>
 
 
     <div class="pina-copy">
 
-      <p class="eyebrow">
-        DU WILLST NICHT ALLES SELBST ZUSAMMENSUCHEN?
-      </p>
+      <div class="mini-label">
+        Du willst nicht alles selbst zusammensuchen? ✦
+      </div>
 
       <h2>
-        Dann lern<br>
+        Dann lern
         <em>Pina</em> kennen.
       </h2>
 
@@ -1844,10 +2055,9 @@
         class="button"
         href="https://livcherry.mytentary.com/p/V4AgeW?aref=80472"
         target="_blank"
-        rel="sponsored noopener">
-
+        rel="sponsored noopener"
+      >
         Pina ansehen →
-
       </a>
 
 
@@ -1865,28 +2075,32 @@
 
 
 <!-- =========================================
-     PHILOSOPHY
+     PHILOSOPHIE
 ========================================= -->
 
 <section class="philosophy">
 
   <div class="container">
 
-    <p class="eyebrow">
-      DER GEDANKE DAHINTER
-    </p>
+    <div class="philosophy-content">
 
-    <h2>
-      Nicht überall mehr posten.<br>
-      <em>Sondern bessere Wege zu deinem Angebot bauen.</em>
-    </h2>
+      <div class="mini-label">
+        Der Gedanke dahinter ✦
+      </div>
 
-    <p>
-      Pinterest ist kein Versprechen
-      für schnelle Ergebnisse.
-      Es kann ein zusätzlicher Marketingkanal sein,
-      den du strategisch und langfristig aufbaust.
-    </p>
+      <h2>
+        Nicht überall mehr posten.
+        <em>Sondern bessere Wege zu deinem Angebot bauen.</em>
+      </h2>
+
+      <p>
+        Pinterest ist kein Versprechen
+        für schnelle Ergebnisse.
+        Es kann ein zusätzlicher Marketingkanal sein,
+        den du strategisch und langfristig aufbaust.
+      </p>
+
+    </div>
 
   </div>
 
@@ -1901,33 +2115,37 @@
 
   <div class="container">
 
-    <p class="eyebrow">
-      WO MÖCHTEST DU SICHTBAR WERDEN?
-    </p>
+    <div class="final-content">
 
-    <h2>
-      Instagram?<br>
-      Pinterest?<br>
-      <em>Oder beides?</em>
-    </h2>
+      <div class="mini-label">
+        Wo möchtest du sichtbar werden? ✦
+      </div>
 
-    <p>
-      Creatorbase hilft dir dabei,
-      Marketing verständlich zu machen
-      und den Weg zu wählen,
-      der zu deinem Angebot passt.
-    </p>
+      <h2>
+        Instagram?
+        Pinterest?
+        <em>Oder beides?</em>
+      </h2>
+
+      <p>
+        Creatorbase hilft dir dabei,
+        Marketing verständlich zu machen
+        und den Weg zu wählen,
+        der zu deinem Angebot passt.
+      </p>
 
 
-    <div class="final-actions">
+      <div class="final-actions">
 
-      <a href="/blog.html" class="button">
-        Creatorbase Blog →
-      </a>
+        <a href="/blog.html" class="button">
+          Creatorbase Blog →
+        </a>
 
-      <a href="#pina" class="button button-light">
-        Pinterest mit Pina
-      </a>
+        <a href="#pina" class="button button-light">
+          Pinterest mit Pina
+        </a>
+
+      </div>
 
     </div>
 
@@ -1947,30 +2165,19 @@
 
   <div class="container">
 
-    <div class="footer-top">
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
 
-      <div>
+    <div class="footer-bottom">
 
-        <div class="footer-brand">
-          CREATORBASE ✦
-        </div>
+      <span>
+        Marketing · Content · Wachstum
+      </span>
 
-        <p class="footer-text">
-          Marketing, Content & Wachstum
-          für moderne Marken.
-        </p>
-
-      </div>
-
-
-      <div class="nav-links">
-
-        <a href="/">Startseite</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/pinterest.html">Pinterest</a>
-        <a href="/ueber-uns.html">Über uns</a>
-
-      </div>
+      <span>
+        Für Ideen, die gesehen und gefunden werden sollen.
+      </span>
 
     </div>
 
