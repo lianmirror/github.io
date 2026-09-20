@@ -51,10 +51,13 @@ a {
 }
 
 
-/* NAVIGATION */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 header {
   border-bottom: 1px solid var(--line);
+  background: var(--cream);
 }
 
 .nav {
@@ -65,9 +68,11 @@ header {
 }
 
 .logo {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
   font-weight: 800;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .logo span {
@@ -76,16 +81,30 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 32px;
-  font-size: 13px;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
-.nav-links a:hover {
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--terracotta);
 }
 
 
-/* HERO */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
   padding: 95px 0 85px;
@@ -150,11 +169,14 @@ header {
 }
 
 
-/* HERO VISUAL */
+/* =========================================
+   HERO VISUAL
+========================================= */
 
 .hero-visual {
   background: var(--lavender-light);
   padding: 95px 24px;
+  overflow: hidden;
 }
 
 .visual-inner {
@@ -198,7 +220,9 @@ header {
 }
 
 
-/* ARTICLE */
+/* =========================================
+   ARTICLE
+========================================= */
 
 .article-layout {
   max-width: 1050px;
@@ -277,7 +301,9 @@ header {
 }
 
 
-/* HIGHLIGHT */
+/* =========================================
+   HIGHLIGHT
+========================================= */
 
 .highlight {
   background: var(--lavender-light);
@@ -301,7 +327,9 @@ header {
 }
 
 
-/* STEPS */
+/* =========================================
+   STEPS
+========================================= */
 
 .steps {
   margin: 45px 0 60px;
@@ -340,7 +368,9 @@ header {
 }
 
 
-/* EXAMPLE */
+/* =========================================
+   EXAMPLE
+========================================= */
 
 .example {
   border-top: 1px solid var(--terracotta);
@@ -365,7 +395,9 @@ header {
 }
 
 
-/* CHECK */
+/* =========================================
+   CHECK
+========================================= */
 
 .check-list {
   margin: 45px 0 60px;
@@ -402,7 +434,9 @@ header {
 }
 
 
-/* LIORA */
+/* =========================================
+   LIORA
+========================================= */
 
 .liora {
   background: var(--brown);
@@ -463,7 +497,9 @@ header {
 }
 
 
-/* WEITERLESEN */
+/* =========================================
+   WEITERLESEN
+========================================= */
 
 .next-article {
   padding: 110px 24px;
@@ -525,7 +561,9 @@ header {
 }
 
 
-/* BACK */
+/* =========================================
+   BACK
+========================================= */
 
 .back {
   padding: 80px 24px;
@@ -547,7 +585,9 @@ header {
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
   padding: 80px 0 30px;
@@ -570,13 +610,16 @@ footer {
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 
-/* MOBILE */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -584,18 +627,33 @@ footer {
     width: min(100% - 36px, 1180px);
   }
 
-  .nav {
-    min-height: 70px;
-  }
+  /* MENÜ WIE AUF INDEX.HTML */
 
-  .nav-links {
+  .nav {
+    min-height: auto;
+    padding: 18px 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
   }
 
-  .nav-links a:nth-child(2),
-  .nav-links a:nth-child(4) {
-    display: none;
+  .logo {
+    font-size: 17px;
   }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 10px;
+  }
+
+  /* HERO */
 
   .hero {
     padding: 70px 0;
@@ -617,6 +675,8 @@ footer {
   .visual-card p {
     font-size: 24px;
   }
+
+  /* ARTICLE */
 
   .article-layout {
     grid-template-columns: 1fr;
@@ -640,6 +700,8 @@ footer {
     font-size: 21px;
   }
 
+  /* LIORA */
+
   .liora {
     padding: 80px 20px;
   }
@@ -648,6 +710,8 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
+  /* WEITERLESEN */
 
   .next-article {
     padding: 80px 20px;
@@ -658,11 +722,29 @@ footer {
     gap: 30px;
   }
 
+  /* FOOTER */
+
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
   }
+}
 
+
+/* =========================================
+   KLEINE HANDYS
+========================================= */
+
+@media (max-width: 430px) {
+
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
 }
 
 </style>
@@ -672,25 +754,25 @@ footer {
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================================
+     NAVIGATION
+========================================= -->
 
 <header>
 
   <div class="container nav">
 
-    <a href="../index.html" class="logo">
+    <a href="/" class="logo">
       CREATORBASE <span>✦</span>
     </a>
 
     <nav class="nav-links">
 
-      <a href="../blog.html">Blog</a>
-
-      <a href="../index.html#start">Guides</a>
-
-      <a href="../index.html#liora">Liora</a>
-
-      <a href="../ueber-uns.html">Über uns</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/#start">Guides</a>
+      <a href="/pinterest.html">Pinterest</a>
+      <a href="/#liora">Liora</a>
+      <a href="/ueber-uns.html">Über uns</a>
 
     </nav>
 
@@ -699,11 +781,12 @@ footer {
 </header>
 
 
-
 <main>
 
 
-<!-- HERO -->
+<!-- =========================================
+     HERO
+========================================= -->
 
 <section class="hero">
 
@@ -747,8 +830,9 @@ footer {
 </section>
 
 
-
-<!-- VISUAL -->
+<!-- =========================================
+     VISUAL
+========================================= -->
 
 <section class="hero-visual">
 
@@ -777,13 +861,12 @@ footer {
 </section>
 
 
-
-<!-- ARTICLE -->
+<!-- =========================================
+     ARTICLE
+========================================= -->
 
 <div class="article-layout">
 
-
-  <!-- INHALTSVERZEICHNIS -->
 
   <aside class="toc">
 
@@ -816,7 +899,6 @@ footer {
     </a>
 
   </aside>
-
 
 
   <article class="article-content">
@@ -863,7 +945,6 @@ footer {
     </div>
 
 
-
     <!-- 01 -->
 
     <h2 id="qualitaet">
@@ -899,7 +980,9 @@ footer {
 
     <div class="example">
 
-      <small>Das Problem</small>
+      <small>
+        Das Problem
+      </small>
 
       <p>
         Du siehst dein Produkt mit Monaten an Hintergrundwissen.
@@ -912,7 +995,6 @@ footer {
       Marketing hat deshalb auch die Aufgabe,
       diese Wissenslücke zu schließen.
     </p>
-
 
 
     <!-- 02 -->
@@ -967,37 +1049,47 @@ footer {
     <div class="steps">
 
       <div class="step">
+
         <div class="step-number">01</div>
+
         <div>
           <h3>Was ist es?</h3>
           <p>
             Kann jemand dein Angebot in wenigen Sekunden einordnen?
           </p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">02</div>
+
         <div>
           <h3>Für wen ist es?</h3>
           <p>
             Wird klar, welche Menschen besonders davon profitieren?
           </p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">03</div>
+
         <div>
           <h3>Was verändert es?</h3>
           <p>
             Welches Problem, welchen Wunsch oder welche Situation spricht es an?
           </p>
         </div>
+
       </div>
 
     </div>
-
 
 
     <!-- 03 -->
@@ -1029,7 +1121,9 @@ footer {
 
     <div class="example">
 
-      <small>Statt nur</small>
+      <small>
+        Statt nur
+      </small>
 
       <p>
         „Unser Tool hat eine neue intelligente Planungsfunktion.“
@@ -1040,7 +1134,9 @@ footer {
 
     <div class="example">
 
-      <small>Beginne bei der Situation</small>
+      <small>
+        Beginne bei der Situation
+      </small>
 
       <p>
         „Du hast 17 Dinge auf deiner To-do-Liste
@@ -1055,7 +1151,6 @@ footer {
       Aber jetzt versteht die Person zuerst,
       warum sie überhaupt relevant sein könnte.
     </p>
-
 
 
     <!-- 04 -->
@@ -1098,43 +1193,58 @@ footer {
     <div class="steps">
 
       <div class="step">
+
         <div class="step-number">01</div>
+
         <div>
           <h3>Als Problem</h3>
           <p>
             Zeige die Situation vor deinem Produkt.
           </p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">02</div>
+
         <div>
           <h3>Als Geschichte</h3>
           <p>
             Erzähle, warum du das Produkt entwickelt hast.
           </p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">03</div>
+
         <div>
           <h3>Als Anwendung</h3>
           <p>
             Zeige das Produkt in einer konkreten Situation.
           </p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">04</div>
+
         <div>
           <h3>Als Kundenerfahrung</h3>
           <p>
             Zeige, wie andere Menschen das Angebot nutzen.
           </p>
         </div>
+
       </div>
 
     </div>
@@ -1153,7 +1263,6 @@ footer {
       </p>
 
     </div>
-
 
 
     <!-- 05 -->
@@ -1186,48 +1295,91 @@ footer {
     <div class="check-list">
 
       <div class="check-item">
-        <div class="check-label">Frage 01</div>
-        <h3>Warum sollte mich das interessieren?</h3>
+
+        <div class="check-label">
+          Frage 01
+        </div>
+
+        <h3>
+          Warum sollte mich das interessieren?
+        </h3>
+
         <p>
           Sprich über Problem, Wunsch und Alltag deiner Zielgruppe.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Frage 02</div>
-        <h3>Wie funktioniert das?</h3>
+
+        <div class="check-label">
+          Frage 02
+        </div>
+
+        <h3>
+          Wie funktioniert das?
+        </h3>
+
         <p>
           Zeige Anwendung, Prozess und konkrete Beispiele.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Frage 03</div>
-        <h3>Kann ich euch vertrauen?</h3>
+
+        <div class="check-label">
+          Frage 03
+        </div>
+
+        <h3>
+          Kann ich euch vertrauen?
+        </h3>
+
         <p>
           Teile Wissen, Einblicke, Erfahrungen und nachvollziehbare Belege.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Frage 04</div>
-        <h3>Ist das wirklich für mich?</h3>
+
+        <div class="check-label">
+          Frage 04
+        </div>
+
+        <h3>
+          Ist das wirklich für mich?
+        </h3>
+
         <p>
           Beschreibe konkrete Menschen, Situationen und Anwendungsfälle.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Frage 05</div>
-        <h3>Was mache ich jetzt?</h3>
+
+        <div class="check-label">
+          Frage 05
+        </div>
+
+        <h3>
+          Was mache ich jetzt?
+        </h3>
+
         <p>
-          Gib einen klaren nächsten Schritt: mehr erfahren, ansehen,
-          ausprobieren oder kaufen.
+          Gib einen klaren nächsten Schritt:
+          mehr erfahren, ansehen, ausprobieren oder kaufen.
         </p>
+
       </div>
 
     </div>
-
 
 
     <!-- 06 -->
@@ -1254,47 +1406,92 @@ footer {
     <div class="check-list">
 
       <div class="check-item">
-        <div class="check-label">Check 01</div>
-        <h3>Ist in wenigen Sekunden klar, was du anbietest?</h3>
+
+        <div class="check-label">
+          Check 01
+        </div>
+
+        <h3>
+          Ist in wenigen Sekunden klar, was du anbietest?
+        </h3>
+
         <p>
           Vermeide Formulierungen, die schön klingen,
           aber das Angebot nicht verständlich machen.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Check 02</div>
-        <h3>Sprichst du über Situationen statt nur Features?</h3>
+
+        <div class="check-label">
+          Check 02
+        </div>
+
+        <h3>
+          Sprichst du über Situationen statt nur Features?
+        </h3>
+
         <p>
           Menschen müssen erkennen können,
           wo dein Produkt in ihre Welt passt.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Check 03</div>
-        <h3>Wiederholst du deine Kernbotschaft?</h3>
+
+        <div class="check-label">
+          Check 03
+        </div>
+
+        <h3>
+          Wiederholst du deine Kernbotschaft?
+        </h3>
+
         <p>
           Nicht wortgleich – aber konsequent genug,
           damit sie mit deiner Marke verbunden werden kann.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Check 04</div>
-        <h3>Zeigst du dein Angebot in Aktion?</h3>
+
+        <div class="check-label">
+          Check 04
+        </div>
+
+        <h3>
+          Zeigst du dein Angebot in Aktion?
+        </h3>
+
         <p>
-          Anwendung ist oft verständlicher als eine Liste von Eigenschaften.
+          Anwendung ist oft verständlicher
+          als eine Liste von Eigenschaften.
         </p>
+
       </div>
 
+
       <div class="check-item">
-        <div class="check-label">Check 05</div>
-        <h3>Gibt dein Content einen nächsten Schritt?</h3>
+
+        <div class="check-label">
+          Check 05
+        </div>
+
+        <h3>
+          Gibt dein Content einen nächsten Schritt?
+        </h3>
+
         <p>
           Menschen sollten nicht erraten müssen,
           wo sie dein Angebot finden.
         </p>
+
       </div>
 
     </div>
@@ -1331,8 +1528,9 @@ footer {
 </div>
 
 
-
-<!-- LIORA -->
+<!-- =========================================
+     LIORA
+========================================= -->
 
 <section class="liora">
 
@@ -1372,8 +1570,9 @@ footer {
 </section>
 
 
-
-<!-- WEITERLESEN -->
+<!-- =========================================
+     WEITERLESEN
+========================================= -->
 
 <section class="next-article">
 
@@ -1407,8 +1606,9 @@ footer {
 </section>
 
 
-
-<!-- BACK -->
+<!-- =========================================
+     ZURÜCK
+========================================= -->
 
 <section class="back">
 
@@ -1416,7 +1616,7 @@ footer {
     oder lieber stöbern?
   </p>
 
-  <a href="../blog.html">
+  <a href="/blog.html">
     ← Zurück zum Creatorbase Blog
   </a>
 
@@ -1426,8 +1626,9 @@ footer {
 </main>
 
 
-
-<!-- FOOTER -->
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer>
 
