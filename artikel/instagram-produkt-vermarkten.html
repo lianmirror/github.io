@@ -51,10 +51,13 @@ a {
 }
 
 
-/* NAVIGATION */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 header {
   border-bottom: 1px solid var(--line);
+  background: var(--cream);
 }
 
 .nav {
@@ -65,9 +68,11 @@ header {
 }
 
 .logo {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
   font-weight: 800;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .logo span {
@@ -76,14 +81,25 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 32px;
-  font-size: 13px;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
-.nav-links a:hover {
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--terracotta);
 }
-
 
 /* HERO */
 
@@ -655,27 +671,17 @@ footer {
 
   <div class="container nav">
 
-    <a href="../index.html" class="logo">
+    <a href="/" class="logo">
       CREATORBASE <span>✦</span>
     </a>
 
     <nav class="nav-links">
 
-      <a href="../blog.html">
-        Blog
-      </a>
-
-      <a href="../index.html#start">
-        Guides
-      </a>
-
-      <a href="../index.html#liora">
-        Liora
-      </a>
-
-      <a href="../ueber-uns.html">
-        Über uns
-      </a>
+      <a href="/blog.html">Blog</a>
+      <a href="/index.html#start">Guides</a>
+      <a href="/pinterest.html">Pinterest</a>
+      <a href="/index.html#liora">Liora</a>
+      <a href="/ueber-uns.html">Über uns</a>
 
     </nav>
 
