@@ -82,9 +82,11 @@ header {
 }
 
 .logo {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
   font-weight: 800;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .logo span {
@@ -93,11 +95,23 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 32px;
-  font-size: 13px;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
-.nav-links a:hover {
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--terracotta);
 }
 
