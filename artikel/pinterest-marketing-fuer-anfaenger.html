@@ -212,7 +212,9 @@ header {
 }
 
 
-/* HERO ART */
+/* =========================================
+   HERO ART
+========================================= */
 
 .hero-art {
   min-height: 500px;
@@ -781,7 +783,7 @@ footer {
   }
 
 
-  /* NAV */
+  /* NAVIGATION WIE AUF INDEX.HTML */
 
   .nav {
     min-height: auto;
@@ -797,8 +799,13 @@ footer {
 
   .nav-links {
     width: 100%;
+    display: flex;
     gap: 0;
     justify-content: space-between;
+  }
+
+  .nav-links a {
+    display: block;
     font-size: 10px;
   }
 
@@ -871,22 +878,34 @@ footer {
     min-height: 110px;
   }
 
+
+  /* PINA */
+
   .pina-break {
     padding: 80px 0;
   }
+
+
+  /* BACK */
 
   .back-inner {
     flex-direction: column;
     align-items: flex-start;
   }
 
+
+  /* FOOTER */
+
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
   }
-
 }
 
+
+/* =========================================
+   KLEINE HANDYS
+========================================= */
 
 @media (max-width: 430px) {
 
@@ -895,8 +914,9 @@ footer {
     width: calc(100% - 30px);
   }
 
-  .nav-links {
+  .nav-links a {
     font-size: 9px;
+    letter-spacing: .8px;
   }
 
   .hero h1 {
@@ -924,7 +944,6 @@ footer {
   .lead {
     font-size: 21px !important;
   }
-
 }
 
 </style>
@@ -950,9 +969,9 @@ footer {
     <nav class="nav-links">
 
       <a href="/blog.html">Blog</a>
-      <a href="/index.html#start">Guides</a>
+      <a href="/#start">Guides</a>
       <a href="/pinterest.html" class="active">Pinterest</a>
-      <a href="/index.html#liora">Liora</a>
+      <a href="/#liora">Liora</a>
       <a href="/ueber-uns.html">Über uns</a>
 
     </nav>
