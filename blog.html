@@ -4,27 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Instagram Marketing & Content Guides | Creatorbase</title>
+<title>Marketing, Instagram & Pinterest Guides | Creatorbase</title>
 
 <meta name="description"
-content="Praktische Guides zu Instagram Marketing, Content, Reels, Positionierung und Produktvermarktung. Für Marken und Angebote, die sichtbar werden wollen.">
+content="Praktische Guides zu Instagram Marketing, Pinterest, Content, Reels, Positionierung und Produktvermarktung – für Angebote und Marken, die sichtbar und auffindbar werden sollen.">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://lianmirror.github.io/blog.html">
 
 <!-- SOCIAL MEDIA / OPEN GRAPH -->
+
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Creatorbase">
-<meta property="og:title" content="Instagram Marketing & Content Guides | Creatorbase">
-<meta property="og:description" content="Praktische Guides zu Instagram Marketing, Content, Reels, Positionierung und Produktvermarktung.">
-<meta property="og:url" content="https://lianmirror.github.io/blog.html">
+
+<meta property="og:title"
+content="Marketing, Instagram & Pinterest Guides | Creatorbase">
+
+<meta property="og:description"
+content="Praktische Guides zu Instagram, Pinterest, Content, Positionierung und Produktvermarktung.">
+
+<meta property="og:url"
+content="https://lianmirror.github.io/blog.html">
 
 <!-- X / TWITTER -->
+
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Instagram Marketing & Content Guides | Creatorbase">
-<meta name="twitter:description" content="Praktische Guides zu Instagram Marketing, Content, Reels, Positionierung und Produktvermarktung.">
+
+<meta name="twitter:title"
+content="Marketing, Instagram & Pinterest Guides | Creatorbase">
+
+<meta name="twitter:description"
+content="Praktische Guides zu Instagram, Pinterest, Content, Positionierung und Produktvermarktung.">
+
 
 <style>
 
@@ -72,10 +85,13 @@ button {
 }
 
 
-/* NAVIGATION */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 header {
   border-bottom: 1px solid var(--line);
+  background: var(--cream);
 }
 
 .nav {
@@ -86,9 +102,11 @@ header {
 }
 
 .logo {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
   font-weight: 800;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .logo span {
@@ -97,20 +115,30 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 32px;
-  font-size: 13px;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
-.nav-links a:hover {
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--terracotta);
 }
 
-.nav-links .active {
-  color: var(--terracotta);
-}
 
-
-/* HERO */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
   padding: 115px 0 100px;
@@ -153,7 +181,7 @@ header {
 }
 
 .hero-copy {
-  max-width: 590px;
+  max-width: 620px;
   border-left: 2px solid var(--terracotta);
   padding-left: 22px;
   font-family: Georgia, serif;
@@ -166,7 +194,9 @@ header {
 }
 
 
-/* KATEGORIEN */
+/* =========================================
+   KATEGORIEN
+========================================= */
 
 .categories {
   border-top: 1px solid var(--line);
@@ -179,6 +209,7 @@ header {
   align-items: center;
   gap: 12px;
   overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 .category {
@@ -202,7 +233,9 @@ header {
 }
 
 
-/* FEATURED ARTIKEL */
+/* =========================================
+   FEATURED ARTIKEL
+========================================= */
 
 .featured {
   padding: 110px 0;
@@ -316,7 +349,9 @@ header {
 }
 
 
-/* ARTIKEL */
+/* =========================================
+   ARTIKEL
+========================================= */
 
 .articles-section {
   padding: 30px 0 130px;
@@ -371,6 +406,7 @@ header {
 .article-number {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   color: #96877f;
   font-size: 10px;
   margin-bottom: 65px;
@@ -404,7 +440,9 @@ header {
 }
 
 
-/* LIORA */
+/* =========================================
+   LIORA
+========================================= */
 
 .liora-break {
   background: var(--brown);
@@ -460,7 +498,67 @@ header {
 }
 
 
-/* FOOTER */
+/* =========================================
+   PINTEREST BREAK
+========================================= */
+
+.pinterest-break {
+  background: var(--terracotta-light);
+  padding: 120px 0;
+}
+
+.pinterest-grid {
+  display: grid;
+  grid-template-columns: .65fr 1.35fr;
+  gap: 80px;
+}
+
+.pinterest-break .mini-label {
+  color: var(--brown);
+}
+
+.pinterest-break h2 {
+  max-width: 850px;
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 6vw, 80px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.pinterest-break h2 em {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.pinterest-break p {
+  max-width: 590px;
+  color: #594943;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.pinterest-button {
+  display: inline-block;
+  background: var(--brown);
+  color: var(--white);
+  padding: 15px 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.pinterest-button:hover {
+  background: var(--white);
+  color: var(--brown);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
   padding: 90px 0 30px;
@@ -490,7 +588,9 @@ footer {
 }
 
 
-/* RECHTLICHE LINKS */
+/* =========================================
+   RECHTLICHE LINKS
+========================================= */
 
 .legal-links {
   margin-top: 25px;
@@ -517,7 +617,9 @@ footer {
 }
 
 
-/* HANDY */
+/* =========================================
+   HANDY
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -525,7 +627,8 @@ footer {
     width: min(100% - 36px, 1180px);
   }
 
-  /* HANDY NAVIGATION */
+
+  /* NAVIGATION WIE AUF INDEX.HTML */
 
   .nav {
     min-height: auto;
@@ -544,12 +647,15 @@ footer {
     display: flex;
     gap: 0;
     justify-content: space-between;
-    font-size: 11px;
   }
 
   .nav-links a {
     display: block;
+    font-size: 10px;
   }
+
+
+  /* HERO */
 
   .hero {
     padding: 80px 0 70px;
@@ -558,7 +664,8 @@ footer {
   .hero-top,
   .hero-bottom,
   .section-head,
-  .liora-grid {
+  .liora-grid,
+  .pinterest-grid {
     grid-template-columns: 1fr;
     gap: 35px;
   }
@@ -571,9 +678,15 @@ footer {
     margin-top: 40px;
   }
 
+
+  /* KATEGORIEN */
+
   .category-row {
     padding: 15px 0;
   }
+
+
+  /* FEATURED */
 
   .featured {
     padding: 75px 0;
@@ -604,6 +717,9 @@ footer {
     font-size: 25px;
   }
 
+
+  /* ARTIKEL */
+
   .articles-section {
     padding-bottom: 80px;
   }
@@ -625,9 +741,16 @@ footer {
     margin-bottom: 45px;
   }
 
-  .liora-break {
+
+  /* BREAKS */
+
+  .liora-break,
+  .pinterest-break {
     padding: 85px 0;
   }
+
+
+  /* FOOTER */
 
   .footer-bottom {
     flex-direction: column;
@@ -637,11 +760,12 @@ footer {
   .legal-links {
     margin-top: 22px;
   }
-
 }
 
 
-/* EXTRA KLEINE HANDYS */
+/* =========================================
+   EXTRA KLEINE HANDYS
+========================================= */
 
 @media (max-width: 430px) {
 
@@ -649,8 +773,9 @@ footer {
     width: calc(100% - 30px);
   }
 
-  .nav-links {
-    font-size: 10px;
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
   }
 
   .hero h1 {
@@ -678,25 +803,41 @@ footer {
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================================
+     NAVIGATION
+========================================= -->
 
 <header>
 
   <div class="container nav">
 
-    <a href="/index.html" class="logo">
+    <a href="/" class="logo">
       CREATORBASE <span>✦</span>
     </a>
 
     <nav class="nav-links">
 
-  <a href="/blog.html" class="active">Blog</a>
-  <a href="/index.html#start">Guides</a>
-  <a href="/pinterest.html">Pinterest</a>
-  <a href="/index.html#liora">Liora</a>
-  <a href="/ueber-uns.html">Über uns</a>
+      <a href="/blog.html" class="active">
+        Blog
+      </a>
 
-</nav>
+      <a href="/#start">
+        Guides
+      </a>
+
+      <a href="/pinterest.html">
+        Pinterest
+      </a>
+
+      <a href="/#liora">
+        Liora
+      </a>
+
+      <a href="/ueber-uns.html">
+        Über uns
+      </a>
+
+    </nav>
 
   </div>
 
@@ -706,7 +847,9 @@ footer {
 <main>
 
 
-<!-- HERO -->
+<!-- =========================================
+     HERO
+========================================= -->
 
 <section class="hero">
 
@@ -725,18 +868,17 @@ footer {
 
     </div>
 
+
     <div class="hero-bottom">
 
       <div></div>
 
       <div class="hero-copy">
-
         Kein „poste einfach jeden Tag“.
-
         Sondern Strategien, Ideen und praktische Guides
-        für Content, Marketing und Marken,
-        <em>die wirklich etwas zu zeigen haben.</em>
-
+        für Instagram, Pinterest, Content und Marketing —
+        für Angebote und Marken,
+        <em>die gesehen und gefunden werden sollen.</em>
       </div>
 
     </div>
@@ -746,27 +888,54 @@ footer {
 </section>
 
 
-<!-- KATEGORIEN -->
+<!-- =========================================
+     KATEGORIEN
+========================================= -->
 
 <section class="categories">
 
   <div class="container category-row">
 
-    <button type="button" class="category active" data-filter="alle">Alle</button>
-    <button type="button" class="category" data-filter="instagram">Instagram</button>
-    <button type="button" class="category" data-filter="content">Content</button>
-    <button type="button" class="category" data-filter="produkte">Produkte</button>
-    <button type="button" class="category" data-filter="positionierung">Positionierung</button>
-    <button type="button" class="category" data-filter="unternehmen">Unternehmen</button>
-    <button type="button" class="category" data-filter="pinterest">Pinterest</button>
-    <button type="button" class="category" data-filter="ki">KI & Tools</button>
+    <button type="button" class="category active" data-filter="alle">
+      Alle
+    </button>
+
+    <button type="button" class="category" data-filter="instagram">
+      Instagram
+    </button>
+
+    <button type="button" class="category" data-filter="content">
+      Content
+    </button>
+
+    <button type="button" class="category" data-filter="produkte">
+      Produkte
+    </button>
+
+    <button type="button" class="category" data-filter="positionierung">
+      Positionierung
+    </button>
+
+    <button type="button" class="category" data-filter="unternehmen">
+      Unternehmen
+    </button>
+
+    <button type="button" class="category" data-filter="pinterest">
+      Pinterest
+    </button>
+
+    <button type="button" class="category" data-filter="ki">
+      KI & Tools
+    </button>
 
   </div>
 
 </section>
 
 
-<!-- FEATURED -->
+<!-- =========================================
+     FEATURED
+========================================= -->
 
 <section class="featured">
 
@@ -776,7 +945,9 @@ footer {
       ✦ Start here
     </div>
 
-    <a href="/artikel/instagram-produkt-vermarkten.html" class="featured-card">
+    <a
+      href="/artikel/instagram-produkt-vermarkten.html"
+      class="featured-card">
 
       <div class="featured-art">
 
@@ -816,9 +987,9 @@ footer {
 
         <p>
           Von der Positionierung bis zum Content:
-          Was du wirklich brauchst, damit aus einem
-          Produkt ein Angebot wird, das Menschen
-          verstehen und wahrnehmen.
+          Was du wirklich brauchst,
+          damit aus einem Produkt ein Angebot wird,
+          das Menschen verstehen und wahrnehmen.
         </p>
 
         <span class="read-link">
@@ -834,7 +1005,9 @@ footer {
 </section>
 
 
-<!-- ARTIKEL -->
+<!-- =========================================
+     ARTIKEL
+========================================= -->
 
 <section class="articles-section">
 
@@ -856,6 +1029,9 @@ footer {
 
     <div class="article-grid">
 
+
+      <!-- 01 -->
+
       <a
         href="/artikel/was-posten-wenn-ich-etwas-verkaufen-will.html"
         class="article"
@@ -867,12 +1043,14 @@ footer {
         </div>
 
         <h3>
-          Was soll ich posten, wenn ich etwas verkaufen will?
+          Was soll ich posten,
+          wenn ich etwas verkaufen will?
         </h3>
 
         <p>
-          Content-Ideen entwickeln, ohne jeden Morgen
-          wieder vor einem leeren Bildschirm zu sitzen.
+          Content-Ideen entwickeln,
+          ohne jeden Morgen wieder
+          vor einem leeren Bildschirm zu sitzen.
         </p>
 
         <div class="article-footer">
@@ -882,6 +1060,8 @@ footer {
 
       </a>
 
+
+      <!-- 02 -->
 
       <a
         href="/artikel/content-strategie-entwickeln.html"
@@ -894,11 +1074,13 @@ footer {
         </div>
 
         <h3>
-          Von „Ich hab eine Idee“ zur klaren Content-Strategie.
+          Von „Ich hab eine Idee“
+          zur klaren Content-Strategie.
         </h3>
 
         <p>
-          Wie aus einzelnen Posts ein Auftritt entsteht,
+          Wie aus einzelnen Posts
+          ein Auftritt entsteht,
           der eine klare Richtung hat.
         </p>
 
@@ -909,6 +1091,8 @@ footer {
 
       </a>
 
+
+      <!-- 03 -->
 
       <a
         href="/artikel/warum-gute-produkte-uebersehen-werden.html"
@@ -921,7 +1105,8 @@ footer {
         </div>
 
         <h3>
-          Warum gute Produkte trotzdem übersehen werden.
+          Warum gute Produkte
+          trotzdem übersehen werden.
         </h3>
 
         <p>
@@ -937,6 +1122,8 @@ footer {
       </a>
 
 
+      <!-- 04 -->
+
       <a
         href="/artikel/instagram-strategie.html"
         class="article"
@@ -948,12 +1135,14 @@ footer {
         </div>
 
         <h3>
-          Eine Instagram-Strategie, die nicht bei „mehr posten“ endet.
+          Eine Instagram-Strategie,
+          die nicht bei „mehr posten“ endet.
         </h3>
 
         <p>
-          Welche Rolle Positionierung, Formate und
-          Wiedererkennbarkeit wirklich spielen.
+          Welche Rolle Positionierung,
+          Formate und Wiedererkennbarkeit
+          wirklich spielen.
         </p>
 
         <div class="article-footer">
@@ -963,6 +1152,8 @@ footer {
 
       </a>
 
+
+      <!-- 05 -->
 
       <a
         href="/artikel/reels-fuer-produkte.html"
@@ -975,12 +1166,14 @@ footer {
         </div>
 
         <h3>
-          Reels für dein Produkt: Was soll im Video eigentlich passieren?
+          Reels für dein Produkt:
+          Was soll im Video eigentlich passieren?
         </h3>
 
         <p>
           Von der ersten Idee bis zum Video:
-          Content nicht nur planen, sondern sichtbar machen.
+          Content nicht nur planen,
+          sondern sichtbar machen.
         </p>
 
         <div class="article-footer">
@@ -990,6 +1183,8 @@ footer {
 
       </a>
 
+
+      <!-- 06 -->
 
       <a
         href="/artikel/ki-fuer-content-nutzen.html"
@@ -1002,7 +1197,8 @@ footer {
         </div>
 
         <h3>
-          KI für Content nutzen, ohne dass alles nach KI klingt.
+          KI für Content nutzen,
+          ohne dass alles nach KI klingt.
         </h3>
 
         <p>
@@ -1018,6 +1214,8 @@ footer {
       </a>
 
 
+      <!-- 07 -->
+
       <a
         href="/artikel/zielgruppe-auf-instagram-finden.html"
         class="article"
@@ -1029,12 +1227,15 @@ footer {
         </div>
 
         <h3>
-          Wie finde ich meine Zielgruppe auf Instagram?
+          Wie finde ich meine Zielgruppe
+          auf Instagram?
         </h3>
 
         <p>
-          Vergiss komplizierte Personas für einen Moment.
-          Entscheidend ist, wann und warum dein Angebot
+          Vergiss komplizierte Personas
+          für einen Moment.
+          Entscheidend ist,
+          wann und warum dein Angebot
           für Menschen relevant wird.
         </p>
 
@@ -1044,32 +1245,39 @@ footer {
         </div>
 
       </a>
-<a
-  href="/pinterest.html"
-  class="article lavender"
-  data-category="pinterest produkte">
 
-  <div class="article-number">
-    <span>08</span>
-    <span>PINTEREST</span>
-  </div>
 
-  <h3>
-    Pinterest Marketing: Wie kann dein Angebot gefunden werden?
-  </h3>
+      <!-- 08 PINTEREST -->
 
-  <p>
-    Pinterest ist mehr als nur Inspiration.
-    Entdecke, wie Produkte, Dienstleistungen und Inhalte
-    über Suche und Pins langfristig auffindbar werden können.
-  </p>
+      <a
+        href="/artikel/pinterest-marketing-fuer-anfaenger.html"
+        class="article lavender"
+        data-category="pinterest produkte">
 
-  <div class="article-footer">
-    <span>Pinterest entdecken</span>
-    <span>↗</span>
-  </div>
+        <div class="article-number">
+          <span>08</span>
+          <span>PINTEREST</span>
+        </div>
 
-</a>
+        <h3>
+          Pinterest Marketing für Anfänger:
+          Wie funktioniert das eigentlich?
+        </h3>
+
+        <p>
+          Wie Suche, Pins, hilfreiche Inhalte,
+          deine Website und dein Angebot
+          miteinander zusammenspielen können.
+        </p>
+
+        <div class="article-footer">
+          <span>Guide lesen</span>
+          <span>↗</span>
+        </div>
+
+      </a>
+
+
     </div>
 
   </div>
@@ -1077,29 +1285,32 @@ footer {
 </section>
 
 
-<!-- LIORA -->
+<!-- =========================================
+     LIORA
+========================================= -->
 
 <section class="liora-break">
 
   <div class="container liora-grid">
 
     <div class="mini-label">
-      Genug gelesen? ✦
+      Instagram umsetzen ✦
     </div>
 
     <div>
 
       <h2>
-        Wissen ist gut.
-        <em>Umsetzen ist besser.</em>
+        Du weißt, was du verkaufen willst.
+        <em>Liora weiß, wie du es zeigst.</em>
       </h2>
 
       <p>
-        Du weißt schon, was du verkaufen möchtest?
-        Liora entwickelt passend zu deinem Produkt,
-        deiner Dienstleistung oder deinem Unternehmen
-        eine Instagram-Strategie und hilft dir,
-        daraus Content und Videos zu machen.
+        Bring Liora dein Produkt,
+        deine Dienstleistung oder dein Unternehmen.
+        Liora hilft dir dabei,
+        daraus Positionierung,
+        Instagram-Strategie,
+        Content-Ideen und Videos zu entwickeln.
       </p>
 
       <a
@@ -1117,10 +1328,53 @@ footer {
 </section>
 
 
+<!-- =========================================
+     PINTEREST
+========================================= -->
+
+<section class="pinterest-break">
+
+  <div class="container pinterest-grid">
+
+    <div class="mini-label">
+      Pinterest verstehen ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Nicht nur sichtbar.
+        <em>Auch auffindbar.</em>
+      </h2>
+
+      <p>
+        Pinterest funktioniert anders als ein klassischer Feed.
+        Starte im Creatorbase Pinterest-Bereich
+        und lerne Schritt für Schritt,
+        wie Themen, Pins, Inhalte,
+        Website und dein Angebot
+        miteinander verbunden werden können.
+      </p>
+
+      <a
+        href="/pinterest.html"
+        class="pinterest-button">
+        Pinterest entdecken →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 </main>
 
 
-<!-- FOOTER -->
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer>
 
@@ -1142,10 +1396,19 @@ footer {
 
     </div>
 
+
     <div class="legal-links">
-      <a href="/impressum.html">Impressum</a>
+
+      <a href="/impressum.html">
+        Impressum
+      </a>
+
       <span>·</span>
-      <a href="/datenschutz.html">Datenschutz</a>
+
+      <a href="/datenschutz.html">
+        Datenschutz
+      </a>
+
     </div>
 
   </div>
@@ -1153,12 +1416,17 @@ footer {
 </footer>
 
 
-<!-- KATEGORIE-FILTER -->
+<!-- =========================================
+     KATEGORIE-FILTER
+========================================= -->
 
 <script>
 
-const categoryButtons = document.querySelectorAll('.category-row .category');
-const articles = document.querySelectorAll('.article[data-category]');
+const categoryButtons =
+  document.querySelectorAll('.category-row .category');
+
+const articles =
+  document.querySelectorAll('.article[data-category]');
 
 categoryButtons.forEach(button => {
 
@@ -1174,9 +1442,13 @@ categoryButtons.forEach(button => {
 
     articles.forEach(article => {
 
-      const categories = article.dataset.category.split(' ');
+      const categories =
+        article.dataset.category.split(' ');
 
-      if (filter === 'alle' || categories.includes(filter)) {
+      if (
+        filter === 'alle' ||
+        categories.includes(filter)
+      ) {
         article.style.display = 'flex';
       } else {
         article.style.display = 'none';
