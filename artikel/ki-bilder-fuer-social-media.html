@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KI-Bilder für Social Media: Visuals, die auffallen | Creatorbase</title>
+
+<meta name="description"
+content="KI-Bilder für Social Media: So entwickelst du auffällige Visuals, Bildwelten und Kampagnenideen für Produkte, Marken und Content.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://lianmirror.github.io/artikel/ki-bilder-fuer-social-media.html">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Creatorbase">
+
+<meta property="og:title"
+content="KI-Bilder für Social Media: Visuals, die auffallen">
+
+<meta property="og:description"
+content="Wie du mit KI nicht einfach nur schöne Bilder, sondern eine erkennbare visuelle Welt für Marke, Produkt und Content entwickelst.">
+
+<meta property="og:url"
+content="https://lianmirror.github.io/artikel/ki-bilder-fuer-social-media.html">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title"
+content="KI-Bilder für Social Media | Creatorbase">
+
+<meta name="twitter:description"
+content="Visuals, Bildwelten und Kampagnenideen für Produkte, Marken und Social Media.">
+
+
+<style>
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+  --text: #665851;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+.article-container {
+  width: min(760px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: .2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  padding: 105px 0 90px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.12fr .88fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.mini-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(52px, 6.2vw, 86px);
+  line-height: .98;
+  letter-spacing: -3.5px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.hero h1 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.hero-intro {
+  max-width: 620px;
+  border-left: 2px solid var(--terracotta);
+  padding-left: 22px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.hero-meta {
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #8a7970;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-art {
+  min-height: 540px;
+  position: relative;
+  background: var(--brown);
+  overflow: hidden;
+}
+
+.hero-art img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.hero-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(45,33,29,.55),
+    transparent 55%
+  );
+}
+
+.hero-sticker {
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+  bottom: 25px;
+  max-width: 270px;
+  background: var(--cream);
+  padding: 20px 22px;
+  transform: rotate(-2deg);
+}
+
+.hero-sticker small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.hero-sticker p {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   ARTICLE
+========================================= */
+
+.article-body {
+  background: var(--white);
+  padding: 100px 0;
+}
+
+.article-body p {
+  margin-bottom: 25px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.article-body strong {
+  color: var(--brown);
+}
+
+.article-body h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 55px);
+  line-height: 1.08;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin: 85px 0 30px;
+}
+
+.article-body h2:first-of-type {
+  margin-top: 75px;
+}
+
+.article-body h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.lead {
+  font-family: Georgia, serif;
+  font-size: 24px !important;
+  line-height: 1.55;
+  color: var(--brown) !important;
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.highlight {
+  background: var(--lavender-light);
+  margin: 55px 0;
+  padding: 40px;
+  border-left: 4px solid var(--lavender);
+}
+
+.highlight.terra {
+  background: var(--terracotta-light);
+  border-left-color: var(--terracotta);
+}
+
+.highlight small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.highlight p {
+  margin: 0;
+  color: var(--brown);
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   VISUAL SLIDER
+========================================= */
+
+.visual-section {
+  background: var(--brown);
+  color: var(--white);
+  padding: 95px 0 100px;
+  overflow: hidden;
+}
+
+.visual-head {
+  margin-bottom: 45px;
+  display: grid;
+  grid-template-columns: 1fr .7fr;
+  gap: 60px;
+  align-items: end;
+}
+
+.visual-section .mini-label {
+  color: var(--terracotta-light);
+}
+
+.visual-head h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.visual-head h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.visual-head p {
+  color: #d9cfca;
+  font-size: 14px;
+  max-width: 430px;
+}
+
+.swipe-note {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--terracotta-light);
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.visual-slider {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 max(24px, calc((100vw - 1180px) / 2));
+  padding-bottom: 25px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--terracotta) rgba(255,255,255,.12);
+}
+
+.visual-slider::-webkit-scrollbar {
+  height: 7px;
+}
+
+.visual-slider::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.10);
+}
+
+.visual-slider::-webkit-scrollbar-thumb {
+  background: var(--terracotta);
+}
+
+.visual-card {
+  flex: 0 0 min(390px, 78vw);
+  scroll-snap-align: start;
+}
+
+.visual-image {
+  width: 100%;
+  height: 530px;
+  background: #1c1512;
+  overflow: hidden;
+}
+
+.visual-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.visual-card:hover .visual-image img {
+  transform: scale(1.02);
+}
+
+.visual-caption {
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #cdbfba;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.visual-caption span:last-child {
+  color: var(--terracotta-light);
+}
+
+
+/* =========================================
+   IDEA CARDS
+========================================= */
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 45px 0;
+}
+
+.idea-card {
+  padding: 30px;
+  min-height: 220px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.idea-card:nth-child(2),
+.idea-card:nth-child(5) {
+  background: var(--lavender-light);
+}
+
+.idea-card:nth-child(3) {
+  background: var(--terracotta-light);
+}
+
+.idea-card small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.idea-card h3 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0 0 13px;
+}
+
+.idea-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   SIMPLE LIST
+========================================= */
+
+.simple-list {
+  margin: 30px 0 45px;
+  border-top: 1px solid var(--line);
+}
+
+.simple-item {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.simple-item span {
+  color: var(--terracotta);
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.simple-item p {
+  margin: 0;
+}
+
+
+/* =========================================
+   VELIRA RECOMMENDATION
+========================================= */
+
+.tool-section {
+  background: var(--cream);
+  padding: 105px 0;
+}
+
+.tool-card {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  background: var(--brown);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.tool-image {
+  min-height: 590px;
+  background: var(--cream-dark);
+}
+
+.tool-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+  object-fit: cover;
+}
+
+.tool-content {
+  padding: 70px 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tool-label {
+  color: var(--terracotta-light);
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.tool-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 66px);
+  line-height: 1;
+  letter-spacing: -2px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+.tool-content h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.tool-content p {
+  color: #d9cfca;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.tool-content strong {
+  color: var(--white);
+}
+
+.tool-button {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 10px;
+  background: var(--terracotta);
+  color: var(--white);
+  padding: 15px 22px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  transition: .2s ease;
+}
+
+.tool-button:hover {
+  background: var(--lavender);
+  color: var(--brown);
+}
+
+.affiliate-note {
+  margin-top: 22px !important;
+  margin-bottom: 0 !important;
+  color: #ad9f99 !important;
+  font-size: 10px !important;
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   NEXT
+========================================= */
+
+.next-section {
+  padding: 90px 0;
+  background: var(--lavender-light);
+}
+
+.next-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.next-section h2 {
+  max-width: 800px;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.next-section p {
+  max-width: 650px;
+  color: var(--text);
+  margin-bottom: 28px;
+}
+
+.next-link {
+  color: var(--terracotta);
+  font-family: Georgia, serif;
+  font-style: italic;
+  border-bottom: 1px solid var(--terracotta);
+}
+
+
+/* =========================================
+   BACK
+========================================= */
+
+.back {
+  padding: 65px 0;
+  background: var(--cream);
+}
+
+.back-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.back small {
+  display: block;
+  color: #8a7970;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  margin-bottom: 8px;
+}
+
+.back h3 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.back-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.back-link {
+  border: 1px solid var(--brown);
+  padding: 12px 18px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.back-link:hover {
+  background: var(--brown);
+  color: var(--white);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 80px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 120px);
+  line-height: .9;
+  padding-bottom: 45px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legal-links {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .article-container {
+    width: min(100% - 36px, 760px);
+  }
+
+  .nav {
+    min-height: auto;
+    padding: 18px 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 65px 0 75px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 13vw, 65px);
+    letter-spacing: -2.5px;
+  }
+
+  .hero-art {
+    min-height: 470px;
+  }
+
+  .hero-art img {
+    height: 470px;
+  }
+
+  .visual-head {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .visual-slider {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .visual-card {
+    flex-basis: 82vw;
+  }
+
+  .visual-image {
+    height: 110vw;
+    max-height: 560px;
+  }
+
+  .article-body {
+    padding: 75px 0;
+  }
+
+  .article-body h2 {
+    margin-top: 65px;
+  }
+
+  .idea-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-section {
+    padding: 75px 0;
+  }
+
+  .tool-card {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-image {
+    min-height: 0;
+  }
+
+  .tool-image img {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .tool-content {
+    padding: 45px 32px;
+  }
+
+  .back-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .container,
+  .article-container {
+    width: calc(100% - 30px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero-intro {
+    font-size: 19px;
+  }
+
+  .lead {
+    font-size: 21px !important;
+  }
+
+  .highlight {
+    padding: 28px;
+  }
+
+  .visual-card {
+    flex-basis: 84vw;
+  }
+
+  .tool-content {
+    padding: 38px 25px;
+  }
+
+  .tool-content h2 {
+    font-size: 42px;
+  }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="/" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="/blog.html">Blog</a>
+      <a href="/#start">Guides</a>
+      <a href="/pinterest.html">Pinterest</a>
+      <a href="/#liora">Liora</a>
+      <a href="/ueber-uns.html">Über uns</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="mini-label">
+        Visual Content · KI ✦
+      </div>
+
+      <h1>
+        KI-Bilder für Social Media:
+        <em>Visuals, die auffallen.</em>
+      </h1>
+
+      <div class="hero-intro">
+        Ein schönes Bild ist schnell erstellt.
+        Interessanter wird es,
+        wenn aus einzelnen Bildern
+        eine erkennbare visuelle Welt entsteht.
+      </div>
+
+      <div class="hero-meta">
+        <span>Creatorbase Guide</span>
+        <span>·</span>
+        <span>Visual Marketing</span>
+      </div>
+
+    </div>
+
+
+    <div class="hero-art">
+
+      <img
+        src="/bilder/visuals/Fashion_1.png"
+        alt="KI-generiertes Fashion Visual als Beispiel für Social Media">
+
+      <div class="hero-sticker">
+
+        <small>
+          VISUAL CONTENT
+        </small>
+
+        <p>
+          Nicht einfach ein Bild.
+          Eine Bildwelt. ✦
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE INTRO -->
+
+<article class="article-body">
+
+  <div class="article-container">
+
+    <p class="lead">
+      KI macht es möglich,
+      Bildideen umzusetzen,
+      für die früher ein Studio,
+      Models, Locations und aufwendige Produktionen
+      nötig gewesen wären.
+    </p>
+
+    <p>
+      Das bedeutet aber nicht automatisch,
+      dass jedes KI-Bild auch gutes Marketing ist.
+    </p>
+
+    <p>
+      Zwischen einem Bild,
+      das für zwei Sekunden interessant aussieht,
+      und einer visuellen Welt,
+      die zu einer Marke oder einem Produkt passt,
+      liegt ein wichtiger Unterschied.
+    </p>
+
+    <p>
+      Genau darum geht es in diesem Guide.
+    </p>
+
+
+    <div class="highlight">
+
+      <small>
+        DER DENKWECHSEL
+      </small>
+
+      <p>
+        Frag nicht nur:
+        „Wie erstelle ich ein schönes KI-Bild?“
+        Frag:
+        „Was soll dieses Bild über meine Marke,
+        mein Produkt oder meine Idee erzählen?“
+      </p>
+
+    </div>
+
+
+    <h2>
+      Aufmerksamkeit ist gut.
+      <em>Wiedererkennbarkeit ist besser.</em>
+    </h2>
+
+    <p>
+      Ein außergewöhnliches Bild
+      kann einen Menschen kurz stoppen lassen.
+    </p>
+
+    <p>
+      Für eine Marke reicht dieser Moment allein
+      aber nicht unbedingt aus.
+    </p>
+
+    <p>
+      Interessant wird es,
+      wenn mehrere Visuals miteinander verwandt wirken:
+      durch Licht, Farben, Styling,
+      Perspektive, Atmosphäre oder Komposition.
+    </p>
+
+    <p>
+      Dann entsteht nicht mehr nur
+      eine Sammlung einzelner Bilder.
+      Es entsteht eine <strong>Bildwelt</strong>.
+    </p>
+
+  </div>
+
+</article>
+
+
+<!-- VISUAL SLIDER -->
+
+<section class="visual-section">
+
+  <div class="container visual-head">
+
+    <div>
+
+      <div class="mini-label">
+        Visual Study 01 ✦
+      </div>
+
+      <h2>
+        Eine Serie.
+        <em>Viele Momente.</em>
+      </h2>
+
+    </div>
+
+    <div>
+
+      <p>
+        Die Bilder müssen nicht identisch sein.
+        Entscheidend ist,
+        dass sie sich wie Teile derselben visuellen Idee anfühlen.
+      </p>
+
+      <span class="swipe-note">
+        ← seitlich scrollen / wischen →
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="visual-slider" aria-label="KI Fashion Visual Galerie">
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_1.png"
+        alt="KI-generiertes Fashion Visual 1">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>01 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_2.png"
+        alt="KI-generiertes Fashion Visual 2" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>02 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_3.png"
+        alt="KI-generiertes Fashion Visual 3" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>03 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_4.png"
+        alt="KI-generiertes Fashion Visual 4" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>04 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_5.png"
+        alt="KI-generiertes Fashion Visual 5" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>05 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_6.png"
+        alt="KI-generiertes Fashion Visual 6" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>06 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_7.png"
+        alt="KI-generiertes Fashion Visual 7" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>07 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_8.png"
+        alt="KI-generiertes Fashion Visual 8" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>08 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_9.png"
+        alt="KI-generiertes Fashion Visual 9" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>09 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_10.png"
+        alt="KI-generiertes Fashion Visual 10" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>10 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_11.png"
+        alt="KI-generiertes Fashion Visual 11" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>11 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_12.png"
+        alt="KI-generiertes Fashion Visual 12" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>12 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_13.png"
+        alt="KI-generiertes Fashion Visual 13" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>13 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_14.png"
+        alt="KI-generiertes Fashion Visual 14" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>14 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_15.png"
+        alt="KI-generiertes Fashion Visual 15" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>15 / 16</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/visuals/Fashion_16.png"
+        alt="KI-generiertes Fashion Visual 16" loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Fashion Series</span><span>16 / 16</span>
+      </figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE CONTINUED -->
+
+<article class="article-body">
+
+  <div class="article-container">
+
+    <h2>
+      Was macht eine Bildserie
+      <em>zusammenhängend?</em>
+    </h2>
+
+    <p>
+      Nicht jedes Bild muss gleich aussehen.
+      Im Gegenteil:
+      Eine Serie darf unterschiedliche Motive,
+      Ausschnitte und Situationen zeigen.
+    </p>
+
+    <p>
+      Trotzdem sollte es Elemente geben,
+      die sich wiederholen.
+    </p>
+
+
+    <div class="idea-grid">
+
+      <div class="idea-card">
+        <small>01 / FARBE</small>
+        <h3>Eine Farbwelt.</h3>
+        <p>
+          Wiederkehrende Farbtöne können dafür sorgen,
+          dass unterschiedliche Motive zusammengehören.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>02 / LICHT</small>
+        <h3>Eine Lichtstimmung.</h3>
+        <p>
+          Hartes Editorial-Licht wirkt anders
+          als weiches Tageslicht oder dramatische Schatten.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>03 / STYLING</small>
+        <h3>Eine visuelle Haltung.</h3>
+        <p>
+          Kleidung, Materialien, Make-up,
+          Accessoires und Formen prägen die Bildwelt.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>04 / LOCATION</small>
+        <h3>Eine Umgebung.</h3>
+        <p>
+          Studio, Straße, Hotel, Natur oder Fantasiewelt
+          erzählen jeweils eine andere Geschichte.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>05 / KAMERA</small>
+        <h3>Eine Perspektive.</h3>
+        <p>
+          Close-ups, Ganzkörperaufnahmen
+          und ungewöhnliche Winkel verändern die Wirkung.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>06 / GEFÜHL</small>
+        <h3>Eine Atmosphäre.</h3>
+        <p>
+          Elegant, verspielt, futuristisch,
+          minimalistisch oder rebellisch:
+          Stimmung verbindet Bilder.
+        </p>
+      </div>
+
+    </div>
+
+
+    <h2>
+      Beginne nicht mit dem Prompt.
+      Beginne mit der <em>Idee.</em>
+    </h2>
+
+    <p>
+      Gerade bei KI-Bildern
+      ist die Versuchung groß,
+      sofort eine lange Beschreibung
+      in ein Bildtool einzugeben.
+    </p>
+
+    <p>
+      Für Marketing ist es sinnvoller,
+      vorher kurz festzulegen,
+      was du eigentlich zeigen möchtest.
+    </p>
+
+
+    <div class="simple-list">
+
+      <div class="simple-item">
+        <span>01</span>
+        <p>
+          <strong>Was wird beworben?</strong>
+          Produkt, Marke, Dienstleistung oder eine bestimmte Idee?
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>02</span>
+        <p>
+          <strong>Welche Wirkung soll entstehen?</strong>
+          Luxuriös, jung, ruhig, auffällig,
+          verspielt oder futuristisch?
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>03</span>
+        <p>
+          <strong>Welche visuelle Welt passt dazu?</strong>
+          Farben, Styling, Location,
+          Licht und Atmosphäre festlegen.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>04</span>
+        <p>
+          <strong>Welche Motive brauchst du?</strong>
+          Nicht sechzehnmal dasselbe Bild,
+          sondern verschiedene Momente derselben Idee.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>05</span>
+        <p>
+          <strong>Wo werden die Bilder eingesetzt?</strong>
+          Instagram, Pinterest, Website,
+          Produktseite oder Kampagne?
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="highlight terra">
+
+      <small>
+        WICHTIG
+      </small>
+
+      <p>
+        KI ist das Werkzeug.
+        Die kreative Richtung kommt vorher.
+      </p>
+
+    </div>
+
+
+    <h2>
+      Aus einem Shooting
+      wird <em>Content.</em>
+    </h2>
+
+    <p>
+      Eine zusammenhängende Bildserie
+      kann deutlich mehr sein
+      als ein einzelner Social-Media-Post.
+    </p>
+
+    <p>
+      Ein Motiv kann als Hero-Bild
+      auf einer Website funktionieren.
+      Ein anderes eignet sich für Pinterest.
+      Ein Close-up kann als Social-Post dienen.
+      Weitere Bilder können in einem Carousel,
+      einer Story oder einer Produktvorstellung auftauchen.
+    </p>
+
+    <p>
+      Genau dadurch wird die Bildwelt
+      für Marketing interessant:
+      Eine kreative Grundidee
+      kann in mehrere Content-Stücke übersetzt werden.
+    </p>
+
+  </div>
+
+</article>
+
+
+<!-- VELIRA -->
+
+<section class="tool-section">
+
+  <div class="container">
+
+    <div class="tool-card">
+
+      <div class="tool-image">
+
+        <img
+          src="https://img.tentary.com/kopie-von-kopie-von-cursive-(pr--sentation)_15756112921304472534-1785939584.png?width=1100"
+          alt="VELIRA – Inspiration und Tool für KI-Visuals"
+          loading="lazy">
+
+      </div>
+
+
+      <div class="tool-content">
+
+        <div class="tool-label">
+          Tool & Inspiration ✦
+        </div>
+
+        <h2>
+          Du willst aus Ideen
+          <em>Bildwelten entwickeln?</em>
+        </h2>
+
+        <p>
+          Wenn du nicht nur einzelne KI-Bilder erstellen,
+          sondern mit verschiedenen Motiven,
+          Perspektiven und visuellen Ideen arbeiten möchtest,
+          kannst du dir auch <strong>VELIRA</strong> ansehen.
+        </p>
+
+        <p>
+          Für Creatorbase ist dabei vor allem
+          der Gedanke interessant,
+          Visuals nicht isoliert zu betrachten:
+          Eine Idee kann zur Serie,
+          zum Editorial oder zu weiterem visuellen Content werden.
+        </p>
+
+        <a
+          href="https://deinebluetezeit.mytentary.com/p/xinapw?aref=80472"
+          class="tool-button"
+          target="_blank"
+          rel="sponsored noopener">
+          VELIRA ansehen →
+        </a>
+
+        <p class="affiliate-note">
+          Affiliate-Link: Wenn du VELIRA über diesen Link kaufst,
+          kann ich eine Provision erhalten.
+          Für dich ändert sich dadurch der Preis nicht.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE CONTINUED -->
+
+<article class="article-body">
+
+  <div class="article-container">
+
+
+    <h2>
+      Schön reicht trotzdem
+      <em>nicht immer.</em>
+    </h2>
+
+    <p>
+      Ein auffälliges Fashion-Visual
+      kann großartig aussehen
+      und trotzdem wenig mit einem Angebot zu tun haben.
+    </p>
+
+    <p>
+      Wenn du KI-Bilder für Marketing einsetzt,
+      sollte deshalb zumindest ein Teil deiner Visuals
+      eine Verbindung zu dem herstellen,
+      was du tatsächlich zeigen möchtest.
+    </p>
+
+    <p>
+      Das kann das Produkt selbst sein.
+      Es kann aber auch eine Situation,
+      ein Wunsch,
+      ein Lebensgefühl
+      oder die Welt rund um die Marke sein.
+    </p>
+
+
+    <div class="highlight">
+
+      <small>
+        MERKE
+      </small>
+
+      <p>
+        Ein gutes Visual zieht den Blick an.
+        Eine gute Bildwelt gibt diesem Blick eine Richtung.
+      </p>
+
+    </div>
+
+
+    <h2>
+      Wo solche Visuals
+      <em>eingesetzt werden können.</em>
+    </h2>
+
+    <div class="simple-list">
+
+      <div class="simple-item">
+        <span>01</span>
+        <p>
+          <strong>Instagram:</strong>
+          Posts, Carousels, Reels-Cover
+          und visuelle Kampagnen.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>02</span>
+        <p>
+          <strong>Pinterest:</strong>
+          auffällige Pins,
+          die ein Thema oder eine Idee visuell eröffnen.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>03</span>
+        <p>
+          <strong>Website:</strong>
+          Hero-Bilder, Kampagnenbereiche,
+          Landingpages und Editorials.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>04</span>
+        <p>
+          <strong>Produkte:</strong>
+          zusätzliche Bildwelten,
+          Anwendungsszenarien und Kampagnenideen.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>05</span>
+        <p>
+          <strong>Markenaufbau:</strong>
+          eine wiedererkennbare visuelle Richtung,
+          die sich durch mehrere Kanäle zieht.
+        </p>
+      </div>
+
+    </div>
+
+
+    <h2>
+      Und was ist mit
+      <em>KI-Fehlern?</em>
+    </h2>
+
+    <p>
+      Gerade bei Menschen,
+      Kleidung, Händen, Text,
+      Schmuck oder komplexen Produkten
+      können generierte Bilder Details enthalten,
+      die nicht logisch oder korrekt sind.
+    </p>
+
+    <p>
+      Deshalb solltest du Bilder,
+      die öffentlich für eine Marke verwendet werden,
+      immer noch einmal bewusst prüfen.
+    </p>
+
+    <p>
+      Besonders wichtig ist das,
+      wenn ein generiertes Bild
+      ein reales Produkt darstellen soll.
+      Das Visual sollte keine Eigenschaften vortäuschen,
+      die das tatsächliche Produkt nicht besitzt.
+    </p>
+
+
+    <div class="highlight terra">
+
+      <small>
+        VOR DEM POSTEN
+      </small>
+
+      <p>
+        Schau nicht nur darauf,
+        ob das Bild schön ist.
+        Schau darauf,
+        ob Details, Produkt und Aussage stimmen.
+      </p>
+
+    </div>
+
+
+    <h2>
+      Der einfachste Start:
+      <em>eine Mini-Kampagne.</em>
+    </h2>
+
+    <p>
+      Du musst nicht direkt
+      sechzehn perfekte Bilder produzieren.
+    </p>
+
+    <p>
+      Für deinen ersten Versuch
+      reichen beispielsweise fünf Motive:
+    </p>
+
+
+    <div class="simple-list">
+
+      <div class="simple-item">
+        <span>01</span>
+        <p>
+          Ein starkes <strong>Key Visual</strong>,
+          das die gesamte Idee repräsentiert.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>02</span>
+        <p>
+          Eine <strong>Ganzkörper- oder Gesamtansicht</strong>.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>03</span>
+        <p>
+          Ein <strong>Detail oder Close-up</strong>.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>04</span>
+        <p>
+          Ein Motiv mit einer
+          <strong>anderen Perspektive</strong>.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>05</span>
+        <p>
+          Ein Bild,
+          das bewusst Platz für
+          <strong>Text oder eine Botschaft</strong> lässt.
+        </p>
+      </div>
+
+    </div>
+
+
+    <p>
+      Damit hast du bereits genug Material,
+      um eine kleine visuelle Kampagne
+      statt nur eines einzelnen Bildes zu denken.
+    </p>
+
+  </div>
+
+</article>
+
+
+<!-- NEXT -->
+
+<section class="next-section">
+
+  <div class="container">
+
+    <div class="next-label">
+      Visual Content ✦
+    </div>
+
+    <h2>
+      Als Nächstes:
+      vom KI-Bild zur Produktkampagne.
+    </h2>
+
+    <p>
+      Wie lässt sich ein Produkt
+      in unterschiedliche visuelle Welten übersetzen?
+      Genau das schauen wir uns in weiteren
+      Creatorbase Visual-Guides an.
+    </p>
+
+    <a href="/blog.html" class="next-link">
+      Weitere Creatorbase Guides →
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- BACK -->
+
+<section class="back">
+
+  <div class="container back-inner">
+
+    <div>
+
+      <small>
+        Creatorbase
+      </small>
+
+      <h3>
+        Mehr über Content & Marketing.
+      </h3>
+
+    </div>
+
+
+    <div class="back-links">
+
+      <a href="/blog.html" class="back-link">
+        Alle Artikel
+      </a>
+
+      <a href="/pinterest.html" class="back-link">
+        Pinterest
+      </a>
+
+      <a href="/#liora" class="back-link">
+        Liora
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+    <div class="legal-links">
+
+      <a href="/impressum.html">
+        Impressum
+      </a>
+
+      <span>·</span>
+
+      <a href="/datenschutz.html">
+        Datenschutz
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
