@@ -102,7 +102,9 @@ header {
 }
 
 
-/* HERO */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
   padding: 95px 0 85px;
@@ -158,6 +160,7 @@ header {
 
 .meta {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   color: #7b6c65;
   font-size: 10px;
@@ -166,11 +169,14 @@ header {
 }
 
 
-/* HERO VISUAL */
+/* =========================================
+   HERO VISUAL
+========================================= */
 
 .hero-visual {
   background: var(--lavender-light);
   padding: 95px 24px;
+  overflow: hidden;
 }
 
 .visual-inner {
@@ -214,7 +220,9 @@ header {
 }
 
 
-/* ARTICLE */
+/* =========================================
+   ARTICLE
+========================================= */
 
 .article-layout {
   max-width: 1050px;
@@ -293,7 +301,9 @@ header {
 }
 
 
-/* HIGHLIGHT */
+/* =========================================
+   HIGHLIGHT
+========================================= */
 
 .highlight {
   background: var(--lavender-light);
@@ -317,7 +327,9 @@ header {
 }
 
 
-/* STEPS */
+/* =========================================
+   STEPS
+========================================= */
 
 .steps {
   margin: 45px 0 60px;
@@ -356,7 +368,9 @@ header {
 }
 
 
-/* EXAMPLE */
+/* =========================================
+   EXAMPLE
+========================================= */
 
 .example {
   border-top: 1px solid var(--terracotta);
@@ -381,7 +395,9 @@ header {
 }
 
 
-/* CONTENT SYSTEM */
+/* =========================================
+   CONTENT SYSTEM
+========================================= */
 
 .system {
   margin: 45px 0 60px;
@@ -418,7 +434,9 @@ header {
 }
 
 
-/* LIORA */
+/* =========================================
+   LIORA
+========================================= */
 
 .liora {
   background: var(--brown);
@@ -479,7 +497,9 @@ header {
 }
 
 
-/* WEITERLESEN */
+/* =========================================
+   WEITERLESEN
+========================================= */
 
 .next-article {
   padding: 110px 24px;
@@ -541,7 +561,9 @@ header {
 }
 
 
-/* BACK */
+/* =========================================
+   BACK
+========================================= */
 
 .back {
   padding: 80px 24px;
@@ -563,7 +585,9 @@ header {
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
   padding: 80px 0 30px;
@@ -586,13 +610,16 @@ footer {
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
+  gap: 25px;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 
-/* MOBILE */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -600,18 +627,33 @@ footer {
     width: min(100% - 36px, 1180px);
   }
 
-  .nav {
-    min-height: 70px;
-  }
+  /* NAVIGATION WIE INDEX.HTML */
 
-  .nav-links {
+  .nav {
+    min-height: auto;
+    padding: 18px 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
   }
 
-  .nav-links a:nth-child(2),
-  .nav-links a:nth-child(4) {
-    display: none;
+  .logo {
+    font-size: 17px;
   }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 10px;
+  }
+
+  /* HERO */
 
   .hero {
     padding: 70px 0;
@@ -626,6 +668,10 @@ footer {
     letter-spacing: -3px;
   }
 
+  .meta {
+    flex-wrap: wrap;
+  }
+
   .visual-card {
     padding: 30px;
   }
@@ -633,6 +679,8 @@ footer {
   .visual-card p {
     font-size: 24px;
   }
+
+  /* ARTICLE */
 
   .article-layout {
     grid-template-columns: 1fr;
@@ -656,6 +704,8 @@ footer {
     font-size: 21px;
   }
 
+  /* LIORA */
+
   .liora {
     padding: 80px 20px;
   }
@@ -664,6 +714,8 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
+  /* WEITERLESEN */
 
   .next-article {
     padding: 80px 20px;
@@ -674,11 +726,29 @@ footer {
     gap: 30px;
   }
 
+  /* FOOTER */
+
   .footer-bottom {
     flex-direction: column;
     gap: 12px;
   }
+}
 
+
+/* =========================================
+   KLEINE HANDYS
+========================================= */
+
+@media (max-width: 430px) {
+
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
 }
 
 </style>
@@ -688,7 +758,9 @@ footer {
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================================
+     NAVIGATION
+========================================= -->
 
 <header>
 
@@ -716,7 +788,9 @@ footer {
 <main>
 
 
-<!-- HERO -->
+<!-- =========================================
+     HERO
+========================================= -->
 
 <section class="hero">
 
@@ -760,7 +834,9 @@ footer {
 </section>
 
 
-<!-- VISUAL -->
+<!-- =========================================
+     VISUAL
+========================================= -->
 
 <section class="hero-visual">
 
@@ -789,7 +865,9 @@ footer {
 </section>
 
 
-<!-- ARTICLE -->
+<!-- =========================================
+     ARTICLE
+========================================= -->
 
 <div class="article-layout">
 
@@ -834,6 +912,7 @@ footer {
 
 
     <div class="highlight">
+
       <div class="highlight-label">
         Der Unterschied ✦
       </div>
@@ -842,15 +921,19 @@ footer {
         Content sagt: „Das könnten wir posten.“
         Strategie sagt: „Das posten wir aus diesem Grund.“
       </p>
+
     </div>
 
 
     <!-- 01 -->
 
     <h2 id="ziel">
+
       <span>01 / Ziel</span>
+
       Was soll dein Content
       eigentlich erreichen?
+
     </h2>
 
     <p>
@@ -873,35 +956,50 @@ footer {
     <div class="steps">
 
       <div class="step">
+
         <div class="step-number">01</div>
+
         <div>
           <h3>Aufmerksamkeit</h3>
           <p>Neue Menschen entdecken deine Marke oder dein Thema.</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">02</div>
+
         <div>
           <h3>Verständnis</h3>
           <p>Menschen verstehen, was du machst und warum es relevant ist.</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">03</div>
+
         <div>
           <h3>Vertrauen</h3>
           <p>Deine Inhalte zeigen Perspektive, Erfahrung und Kompetenz.</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">04</div>
+
         <div>
           <h3>Handlung</h3>
           <p>Menschen wissen, welchen nächsten Schritt sie gehen können.</p>
         </div>
+
       </div>
 
     </div>
@@ -910,9 +1008,12 @@ footer {
     <!-- 02 -->
 
     <h2 id="angebot">
+
       <span>02 / Angebot</span>
+
       Beginne nicht bei Instagram.
       Beginne bei dem, was du verkaufst.
+
     </h2>
 
     <p>
@@ -927,7 +1028,10 @@ footer {
 
 
     <div class="example">
-      <small>Beispiel</small>
+
+      <small>
+        Beispiel
+      </small>
 
       <p>
         Wenn du ein Organisationstool verkaufst,
@@ -935,6 +1039,7 @@ footer {
         Du kannst über Chaos, Prioritäten, Zeit,
         Überforderung und einfachere Arbeitsabläufe sprechen.
       </p>
+
     </div>
 
     <p>
@@ -947,9 +1052,12 @@ footer {
     <!-- 03 -->
 
     <h2 id="zielgruppe">
+
       <span>03 / Zielgruppe</span>
+
       Gute Inhalte beginnen
       bei echten Situationen.
+
     </h2>
 
     <p>
@@ -966,41 +1074,57 @@ footer {
     <div class="steps">
 
       <div class="step">
+
         <div class="step-number">01</div>
+
         <div>
           <h3>Was beschäftigt sie?</h3>
           <p>Welche Probleme oder Wünsche tauchen immer wieder auf?</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">02</div>
+
         <div>
           <h3>Was haben sie schon versucht?</h3>
           <p>Und warum hat es möglicherweise nicht funktioniert?</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">03</div>
+
         <div>
           <h3>Welche Fragen stellen sie?</h3>
           <p>Jede echte Frage kann Ausgangspunkt für Content sein.</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">04</div>
+
         <div>
           <h3>Was wünschen sie sich?</h3>
           <p>Welches Ergebnis oder Gefühl wollen sie erreichen?</p>
         </div>
+
       </div>
 
     </div>
 
 
     <div class="highlight">
+
       <div class="highlight-label">
         Merksatz
       </div>
@@ -1009,15 +1133,19 @@ footer {
         Je konkreter die Situation,
         desto leichter wird daraus ein konkreter Post.
       </p>
+
     </div>
 
 
     <!-- 04 -->
 
     <h2 id="themen">
+
       <span>04 / Content-Themen</span>
+
       Jetzt entstehen deine
       wiederkehrenden Themen.
+
     </h2>
 
     <p>
@@ -1077,9 +1205,12 @@ footer {
     <!-- 05 -->
 
     <h2 id="formate">
+
       <span>05 / Formate</span>
+
       Thema und Format
       sind nicht dasselbe.
+
     </h2>
 
     <p>
@@ -1099,47 +1230,66 @@ footer {
 
 
     <div class="example">
-      <small>Eine Idee</small>
+
+      <small>
+        Eine Idee
+      </small>
 
       <p>
         „Drei Fehler, die Menschen machen,
         bevor sie unser Produkt brauchen.“
       </p>
+
     </div>
 
 
     <div class="steps">
 
       <div class="step">
+
         <div class="step-number">01</div>
+
         <div>
           <h3>Als Reel</h3>
           <p>Drei kurze Szenen mit Text im Video.</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">02</div>
+
         <div>
           <h3>Als Carousel</h3>
           <p>Eine Folie pro Fehler plus Lösung.</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">03</div>
+
         <div>
           <h3>Als Story</h3>
           <p>Frage, Umfrage und anschließend deine Erklärung.</p>
         </div>
+
       </div>
 
+
       <div class="step">
+
         <div class="step-number">04</div>
+
         <div>
           <h3>Als kurzer Post</h3>
           <p>Ein starker Einstieg plus deine drei Punkte im Text.</p>
         </div>
+
       </div>
 
     </div>
@@ -1154,9 +1304,12 @@ footer {
     <!-- 06 -->
 
     <h2 id="system">
+
       <span>06 / Dein System</span>
+
       Aus Ideen wird jetzt
       eine Content-Strategie.
+
     </h2>
 
     <p>
@@ -1206,6 +1359,7 @@ footer {
 
 
     <div class="highlight">
+
       <div class="highlight-label">
         Das System ✦
       </div>
@@ -1214,6 +1368,7 @@ footer {
         Angebot → Positionierung → Themen →
         Ideen → Formate → Content.
       </p>
+
     </div>
 
     <p>
@@ -1231,7 +1386,9 @@ footer {
 </div>
 
 
-<!-- LIORA -->
+<!-- =========================================
+     LIORA
+========================================= -->
 
 <section class="liora">
 
@@ -1270,7 +1427,9 @@ footer {
 </section>
 
 
-<!-- WEITERLESEN -->
+<!-- =========================================
+     WEITERLESEN
+========================================= -->
 
 <section class="next-article">
 
@@ -1304,7 +1463,9 @@ footer {
 </section>
 
 
-<!-- BACK -->
+<!-- =========================================
+     BACK
+========================================= -->
 
 <section class="back">
 
@@ -1322,7 +1483,9 @@ footer {
 </main>
 
 
-<!-- FOOTER -->
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer>
 
