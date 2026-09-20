@@ -1,1 +1,1958 @@
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KI-Fotografie für Content: Realistische Bilder für Alltag, Reisen & Lifestyle | Creatorbase</title>
+
+<meta name="description"
+content="KI-Fotografie für Content: So entwickelst du realistische Bilder für Alltag, Reisen, Lifestyle, Kleidung und natürliche Werbekampagnen.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://lianmirror.github.io/artikel/ki-fotografie-fuer-content.html">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Creatorbase">
+
+<meta property="og:title"
+content="KI-Fotografie für Content: Realistische Bilder für Alltag, Reisen & Lifestyle">
+
+<meta property="og:description"
+content="Wie du mit KI natürliche Szenen, Emotionen und realistisch wirkende Visuals für Content und Kampagnen entwickelst.">
+
+<meta property="og:url"
+content="https://lianmirror.github.io/artikel/ki-fotografie-fuer-content.html">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title"
+content="KI-Fotografie für Content | Creatorbase">
+
+<meta name="twitter:description"
+content="Realistische KI-Bilder für Alltag, Reisen, Lifestyle und natürliche Kampagnen.">
+
+
+<style>
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+  --text: #665851;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+.article-container {
+  width: min(760px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: .2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  padding: 105px 0 90px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.12fr .88fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.mini-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 10px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 5.8vw, 80px);
+  line-height: .98;
+  letter-spacing: -3.5px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.hero h1 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.hero-intro {
+  max-width: 620px;
+  border-left: 2px solid var(--terracotta);
+  padding-left: 22px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.hero-meta {
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #8a7970;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-art {
+  min-height: 540px;
+  position: relative;
+  background: var(--brown);
+  overflow: hidden;
+}
+
+.hero-art img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+.hero-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(45,33,29,.50),
+    transparent 55%
+  );
+}
+
+.hero-sticker {
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+  bottom: 25px;
+  max-width: 285px;
+  background: var(--cream);
+  padding: 20px 22px;
+  transform: rotate(-2deg);
+}
+
+.hero-sticker small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.hero-sticker p {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   ARTICLE
+========================================= */
+
+.article-body {
+  background: var(--white);
+  padding: 100px 0;
+}
+
+.article-body p {
+  margin-bottom: 25px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.article-body strong {
+  color: var(--brown);
+}
+
+.article-body h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 5vw, 55px);
+  line-height: 1.08;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin: 85px 0 30px;
+}
+
+.article-body h2:first-of-type {
+  margin-top: 75px;
+}
+
+.article-body h2 em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.lead {
+  font-family: Georgia, serif;
+  font-size: 24px !important;
+  line-height: 1.55;
+  color: var(--brown) !important;
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.highlight {
+  background: var(--lavender-light);
+  margin: 55px 0;
+  padding: 40px;
+  border-left: 4px solid var(--lavender);
+}
+
+.highlight.terra {
+  background: var(--terracotta-light);
+  border-left-color: var(--terracotta);
+}
+
+.highlight small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.highlight p {
+  margin: 0;
+  color: var(--brown);
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   VISUAL SLIDER
+========================================= */
+
+.visual-section {
+  background: var(--brown);
+  color: var(--white);
+  padding: 95px 0 100px;
+  overflow: hidden;
+}
+
+.visual-head {
+  margin-bottom: 45px;
+  display: grid;
+  grid-template-columns: 1fr .7fr;
+  gap: 60px;
+  align-items: end;
+}
+
+.visual-section .mini-label {
+  color: var(--terracotta-light);
+}
+
+.visual-head h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.visual-head h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.visual-head p {
+  color: #d9cfca;
+  font-size: 14px;
+  max-width: 430px;
+}
+
+.swipe-note {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--terracotta-light);
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.visual-slider {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 max(24px, calc((100vw - 1180px) / 2));
+  padding-bottom: 25px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--terracotta) rgba(255,255,255,.12);
+}
+
+.visual-slider::-webkit-scrollbar {
+  height: 7px;
+}
+
+.visual-slider::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.10);
+}
+
+.visual-slider::-webkit-scrollbar-thumb {
+  background: var(--terracotta);
+}
+
+.visual-card {
+  flex: 0 0 min(390px, 78vw);
+  scroll-snap-align: start;
+}
+
+.visual-image {
+  width: 100%;
+  height: 530px;
+  background: #1c1512;
+  overflow: hidden;
+}
+
+.visual-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.visual-card:hover .visual-image img {
+  transform: scale(1.02);
+}
+
+.visual-caption {
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #cdbfba;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.visual-caption span:last-child {
+  color: var(--terracotta-light);
+}
+
+
+/* =========================================
+   IDEA CARDS
+========================================= */
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 45px 0;
+}
+
+.idea-card {
+  padding: 30px;
+  min-height: 230px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.idea-card:nth-child(2),
+.idea-card:nth-child(5) {
+  background: var(--lavender-light);
+}
+
+.idea-card:nth-child(3),
+.idea-card:nth-child(6) {
+  background: var(--terracotta-light);
+}
+
+.idea-card small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.idea-card h3 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.idea-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   SIMPLE LIST
+========================================= */
+
+.simple-list {
+  margin: 30px 0 45px;
+  border-top: 1px solid var(--line);
+}
+
+.simple-item {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.simple-item span {
+  color: var(--terracotta);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.simple-item p {
+  margin: 0;
+}
+
+
+/* =========================================
+   NANO BANANA
+========================================= */
+
+.tool-section {
+  background: var(--cream);
+  padding: 105px 0;
+}
+
+.tool-card {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  background: var(--brown);
+  color: var(--white);
+  overflow: hidden;
+}
+
+.tool-image {
+  min-height: 590px;
+  background: var(--cream-dark);
+}
+
+.tool-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+  object-fit: cover;
+}
+
+.tool-content {
+  padding: 70px 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tool-label {
+  color: var(--terracotta-light);
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.tool-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1;
+  letter-spacing: -2px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+.tool-content h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.tool-content p {
+  color: #d9cfca;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.tool-content strong {
+  color: var(--white);
+}
+
+.tool-button {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 10px;
+  background: var(--terracotta);
+  color: var(--white);
+  padding: 15px 22px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  transition: .2s ease;
+}
+
+.tool-button:hover {
+  background: var(--lavender);
+  color: var(--brown);
+}
+
+.affiliate-note {
+  margin-top: 22px !important;
+  margin-bottom: 0 !important;
+  color: #ad9f99 !important;
+  font-size: 10px !important;
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   NEXT
+========================================= */
+
+.next-section {
+  padding: 90px 0;
+  background: var(--lavender-light);
+}
+
+.next-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.next-section h2 {
+  max-width: 800px;
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.next-section p {
+  max-width: 650px;
+  color: var(--text);
+  margin-bottom: 28px;
+}
+
+.next-link {
+  color: var(--terracotta);
+  font-family: Georgia, serif;
+  font-style: italic;
+  border-bottom: 1px solid var(--terracotta);
+}
+
+
+/* =========================================
+   BACK
+========================================= */
+
+.back {
+  padding: 65px 0;
+  background: var(--cream);
+}
+
+.back-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.back small {
+  display: block;
+  color: #8a7970;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  margin-bottom: 8px;
+}
+
+.back h3 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.back-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.back-link {
+  border: 1px solid var(--brown);
+  padding: 12px 18px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.back-link:hover {
+  background: var(--brown);
+  color: var(--white);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 80px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 120px);
+  line-height: .9;
+  padding-bottom: 45px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legal-links {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .article-container {
+    width: min(100% - 36px, 760px);
+  }
+
+  .nav {
+    min-height: auto;
+    padding: 18px 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 65px 0 75px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 12vw, 64px);
+    letter-spacing: -2.5px;
+  }
+
+  .hero-art {
+    min-height: 470px;
+  }
+
+  .hero-art img {
+    height: 470px;
+  }
+
+  .visual-head {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .visual-slider {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .visual-card {
+    flex-basis: 82vw;
+  }
+
+  .visual-image {
+    height: 110vw;
+    max-height: 560px;
+  }
+
+  .article-body {
+    padding: 75px 0;
+  }
+
+  .article-body h2 {
+    margin-top: 65px;
+  }
+
+  .idea-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-section {
+    padding: 75px 0;
+  }
+
+  .tool-card {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-image {
+    min-height: 0;
+  }
+
+  .tool-image img {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .tool-content {
+    padding: 45px 32px;
+  }
+
+  .back-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .container,
+  .article-container {
+    width: calc(100% - 30px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-intro {
+    font-size: 19px;
+  }
+
+  .lead {
+    font-size: 21px !important;
+  }
+
+  .highlight {
+    padding: 28px;
+  }
+
+  .visual-card {
+    flex-basis: 84vw;
+  }
+
+  .tool-content {
+    padding: 38px 25px;
+  }
+
+  .tool-content h2 {
+    font-size: 40px;
+  }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="/" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="/blog.html">Blog</a>
+      <a href="/#start">Guides</a>
+      <a href="/pinterest.html">Pinterest</a>
+      <a href="/#liora">Liora</a>
+      <a href="/ueber-uns.html">Über uns</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="mini-label">
+        Visual Content · KI-Fotografie ✦
+      </div>
+
+      <h1>
+        KI-Fotografie für Content:
+        <em>Alltag, Reisen & Lifestyle.</em>
+      </h1>
+
+      <div class="hero-intro">
+        KI-Bilder müssen nicht spektakulär aussehen.
+        Sie können sich auch wie echte,
+        ruhige und beiläufig fotografierte Momente anfühlen.
+      </div>
+
+      <div class="hero-meta">
+        <span>Creatorbase Guide</span>
+        <span>·</span>
+        <span>Realistische KI-Fotografie</span>
+      </div>
+
+    </div>
+
+
+    <div class="hero-art">
+
+      <img
+        src="/bilder/NanoBanana/Nano_1.png"
+        alt="Realistisch wirkende KI-Fotografie für Lifestyle Content">
+
+      <div class="hero-sticker">
+
+        <small>
+          REALISTIC CONTENT
+        </small>
+
+        <p>
+          Weniger inszeniert.
+          Mehr echter Moment. ✦
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<article class="article-body">
+
+  <div class="article-container">
+
+    <p class="lead">
+      Nicht jedes Bild muss aussehen
+      wie eine große Fashion-Kampagne.
+      Manchmal soll ein Visual einfach wirken,
+      als wäre die Kamera im richtigen Moment dabei gewesen.
+    </p>
+
+    <p>
+      Ein Morgen im Café.
+      Eine Reise.
+      Ein Auto auf einer ruhigen Straße.
+      Eine Person in einem natürlichen Moment.
+      Kleidung, die nicht im Studio,
+      sondern mitten im Leben gezeigt wird.
+    </p>
+
+    <p>
+      Genau solche Bilder können für Content interessant sein,
+      weil sie nicht nur etwas zeigen —
+      sie vermitteln eine Situation.
+    </p>
+
+    <p>
+      Mit KI lassen sich solche Szenen heute
+      bewusst entwickeln.
+      Dabei geht es weniger um möglichst extreme Visuals
+      und mehr um <strong>Realismus, Stimmung und Emotion.</strong>
+    </p>
+
+
+    <div class="highlight">
+
+      <small>
+        DER GEDANKE
+      </small>
+
+      <p>
+        Ein gutes KI-Foto muss nicht schreien:
+        „Schau mich an.“
+        Es kann sich einfach wie ein echter Moment anfühlen.
+      </p>
+
+    </div>
+
+
+    <h2>
+      Was lässt ein KI-Bild
+      <em>realistischer wirken?</em>
+    </h2>
+
+    <p>
+      Realismus entsteht nicht nur dadurch,
+      dass Haut, Kleidung oder Umgebung
+      technisch möglichst perfekt aussehen.
+    </p>
+
+    <p>
+      Oft sind es die kleinen Dinge,
+      die ein Bild glaubwürdiger machen.
+    </p>
+
+    <p>
+      Eine Person muss beispielsweise
+      nicht immer direkt in die Kamera schauen.
+      Die Pose muss nicht perfekt sein.
+      Der Hintergrund darf leben.
+      Licht darf von einer Seite kommen.
+      Eine Szene darf aussehen,
+      als wäre sie gerade passiert.
+    </p>
+
+    <p>
+      Genau dadurch kann aus einem generierten Bild
+      etwas entstehen,
+      das eher nach Fotografie
+      als nach künstlicher Inszenierung wirkt.
+    </p>
+
+  </div>
+
+</article>
+
+
+<!-- VISUAL SLIDER -->
+
+<section class="visual-section">
+
+  <div class="container visual-head">
+
+    <div>
+
+      <div class="mini-label">
+        Visual Study 02 ✦
+      </div>
+
+      <h2>
+        Echte Momente.
+        <em>Künstlich entwickelt.</em>
+      </h2>
+
+    </div>
+
+    <div>
+
+      <p>
+        Alltag, Reisen, Menschen und Lifestyle:
+        Eine ruhige Bildwelt kann viele unterschiedliche
+        Situationen enthalten und trotzdem zusammenpassen.
+      </p>
+
+      <span class="swipe-note">
+        ← seitlich scrollen / wischen →
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="visual-slider" aria-label="Realistische KI-Fotografie Galerie">
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_1.png"
+        alt="Realistische KI-Fotografie Beispiel 1">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>01 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_2.png"
+        alt="Realistische KI-Fotografie Beispiel 2"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>02 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_3.png"
+        alt="Realistische KI-Fotografie Beispiel 3"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>03 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_4.png"
+        alt="Realistische KI-Fotografie Beispiel 4"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>04 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_5.png"
+        alt="Realistische KI-Fotografie Beispiel 5"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>05 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_6.jpg"
+        alt="Realistische KI-Fotografie Beispiel 6"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>06 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_7.png"
+        alt="Realistische KI-Fotografie Beispiel 7"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>07 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_8.png"
+        alt="Realistische KI-Fotografie Beispiel 8"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>08 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_9.png"
+        alt="Realistische KI-Fotografie Beispiel 9"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>09 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_10.png"
+        alt="Realistische KI-Fotografie Beispiel 10"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>10 / 11</span>
+      </figcaption>
+    </figure>
+
+    <figure class="visual-card">
+      <div class="visual-image">
+        <img src="/bilder/NanoBanana/Nano_11.png"
+        alt="Realistische KI-Fotografie Beispiel 11"
+        loading="lazy">
+      </div>
+      <figcaption class="visual-caption">
+        <span>Real Life Series</span><span>11 / 11</span>
+      </figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE CONTINUED -->
+
+<article class="article-body">
+
+  <div class="article-container">
+
+    <h2>
+      Realistisch heißt nicht
+      <em>langweilig.</em>
+    </h2>
+
+    <p>
+      Ruhige Fotografie kann genauso viel Charakter haben
+      wie ein auffälliges Editorial.
+    </p>
+
+    <p>
+      Der Unterschied liegt eher darin,
+      woher die Wirkung kommt.
+    </p>
+
+    <p>
+      Statt extremer Inszenierung
+      können bei realistischer KI-Fotografie
+      Situation, Emotion, Licht und Perspektive
+      die Hauptrolle übernehmen.
+    </p>
+
+
+    <div class="idea-grid">
+
+      <div class="idea-card">
+        <small>01 / ALLTAG</small>
+        <h3>Beobachtete Momente.</h3>
+        <p>
+          Kaffee trinken, arbeiten, warten,
+          laufen oder unterwegs sein:
+          einfache Situationen können sehr glaubwürdig wirken.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>02 / REISEN</small>
+        <h3>Ein Gefühl für den Ort.</h3>
+        <p>
+          Straßen, Hotels, Landschaften,
+          Flughäfen oder Cafés können einer Geschichte
+          sofort einen Kontext geben.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>03 / EMOTION</small>
+        <h3>Nicht nur posieren.</h3>
+        <p>
+          Ein Blick zur Seite,
+          Bewegung oder ein spontaner Ausdruck
+          kann natürlicher wirken als eine perfekte Pose.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>04 / KLEIDUNG</small>
+        <h3>Mode im echten Leben.</h3>
+        <p>
+          Kleidung kann in einer glaubwürdigen Situation
+          gezeigt werden statt ausschließlich
+          vor einem klassischen Studiohintergrund.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>05 / AUTOS</small>
+        <h3>Produkt plus Umgebung.</h3>
+        <p>
+          Ein Auto wirkt anders auf einer Stadtstraße,
+          an einer Küste oder in einer ruhigen Landschaft.
+          Die Umgebung erzählt mit.
+        </p>
+      </div>
+
+      <div class="idea-card">
+        <small>06 / KAMPAGNE</small>
+        <h3>Werbung mit Atmosphäre.</h3>
+        <p>
+          Eine Kampagne muss nicht immer laut sein.
+          Auch ruhige Szenen können ein Produkt
+          oder eine Marke in eine glaubwürdige Welt setzen.
+        </p>
+      </div>
+
+    </div>
+
+
+    <h2>
+      Beginne mit einer Situation.
+      Nicht mit einem <em>Gegenstand.</em>
+    </h2>
+
+    <p>
+      Wenn ein Bild natürlich wirken soll,
+      hilft es, nicht nur aufzuzählen,
+      was darauf zu sehen sein soll.
+    </p>
+
+    <p>
+      Stattdessen kannst du eine kleine Szene entwickeln.
+    </p>
+
+
+    <div class="highlight terra">
+
+      <small>
+        BEISPIEL
+      </small>
+
+      <p>
+        Nicht nur:
+        „Frau im Café.“
+        Sondern:
+        „Ein ruhiger Morgen im Café,
+        natürliches Fensterlicht,
+        sie schaut aus dem Fenster,
+        als wäre der Moment beiläufig fotografiert worden.“
+      </p>
+
+    </div>
+
+    <p>
+      Dadurch denkst du automatisch
+      über mehr als nur das Motiv nach.
+    </p>
+
+    <p>
+      Du denkst über Ort,
+      Licht, Handlung,
+      Emotion und Kamera nach.
+    </p>
+
+
+    <h2>
+      Die fünf Bausteine
+      eines <em>glaubwürdigen Moments.</em>
+    </h2>
+
+
+    <div class="simple-list">
+
+      <div class="simple-item">
+        <span>01</span>
+        <p>
+          <strong>Ort:</strong>
+          Wo passiert die Szene?
+          Café, Straße, Hotel, Auto,
+          Zuhause, Natur oder unterwegs?
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>02</span>
+        <p>
+          <strong>Handlung:</strong>
+          Was passiert gerade?
+          Die Person sollte nicht immer nur
+          still vor der Kamera stehen.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>03</span>
+        <p>
+          <strong>Emotion:</strong>
+          Ruhig, konzentriert,
+          nachdenklich, fröhlich,
+          neugierig oder entspannt?
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>04</span>
+        <p>
+          <strong>Licht:</strong>
+          Natürliches Fensterlicht,
+          bewölkter Tag,
+          Abendsonne oder vorhandenes Licht
+          können die Szene glaubwürdiger prägen.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>05</span>
+        <p>
+          <strong>Kamera:</strong>
+          Nahaufnahme, Ganzkörper,
+          Blick von der Seite oder eine Perspektive,
+          die sich beobachtet statt gestellt anfühlt.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="highlight">
+
+      <small>
+        MERKE
+      </small>
+
+      <p>
+        Je klarer die Situation,
+        desto weniger muss das Bild
+        wie eine künstliche Pose funktionieren.
+      </p>
+
+    </div>
+
+
+    <h2>
+      Ein Moment kann zu
+      einer ganzen <em>Serie</em> werden.
+    </h2>
+
+    <p>
+      Wenn du eine gute Situation gefunden hast,
+      musst du nicht sofort eine komplett neue Welt erfinden.
+    </p>
+
+    <p>
+      Bleib für mehrere Bilder
+      in derselben Szene.
+    </p>
+
+    <p>
+      So kann beispielsweise aus einem
+      einzigen Café-Moment eine kleine Serie entstehen.
+    </p>
+
+
+    <div class="simple-list">
+
+      <div class="simple-item">
+        <span>01</span>
+        <p>
+          Eine weite Aufnahme,
+          die den gesamten Ort zeigt.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>02</span>
+        <p>
+          Ein Portrait der Person
+          innerhalb derselben Situation.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>03</span>
+        <p>
+          Ein Detail:
+          Hände, Kleidung,
+          Kaffee oder ein Gegenstand.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>04</span>
+        <p>
+          Ein spontaner wirkender Moment
+          mit Bewegung.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>05</span>
+        <p>
+          Ein ruhigeres Motiv
+          mit freier Fläche für Text.
+        </p>
+      </div>
+
+    </div>
+
+    <p>
+      Damit entsteht nicht nur ein schönes Bild,
+      sondern Material,
+      das du unterschiedlich einsetzen kannst.
+    </p>
+
+
+    <h2>
+      Von Lifestyle zu
+      <em>Werbekampagne.</em>
+    </h2>
+
+    <p>
+      Derselbe Ansatz kann auch interessant werden,
+      wenn ein Produkt Teil der Szene ist.
+    </p>
+
+    <p>
+      Dabei muss das Produkt nicht automatisch
+      isoliert vor einem neutralen Hintergrund stehen.
+    </p>
+
+    <p>
+      Kleidung kann getragen werden.
+      Ein Auto kann Teil einer Reise sein.
+      Ein Accessoire kann in einer Alltagssituation auftauchen.
+      Ein Gegenstand kann beiläufig in einer Szene liegen.
+    </p>
+
+    <p>
+      So wird nicht nur das Produkt gezeigt,
+      sondern auch die Welt,
+      in der es stattfinden soll.
+    </p>
+
+
+    <div class="highlight terra">
+
+      <small>
+        KAMPAGNEN-DENKEN
+      </small>
+
+      <p>
+        Zeig nicht nur,
+        wie etwas aussieht.
+        Zeig die Situation,
+        in der Menschen es erleben könnten.
+      </p>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- NANO BANANA -->
+
+<section class="tool-section">
+
+  <div class="container">
+
+    <div class="tool-card">
+
+      <div class="tool-image">
+
+        <img
+          src="https://img.tentary.com/content/white-black-photo-collage-elegant-autumn-mood-instagram-post_10199653222106427605-1780868663.png"
+          alt="Nano Banana Studio Bot"
+          loading="lazy">
+
+      </div>
+
+
+      <div class="tool-content">
+
+        <div class="tool-label">
+          Tool & Inspiration ✦
+        </div>
+
+        <h2>
+          Du willst diese Richtung
+          <em>weiter erkunden?</em>
+        </h2>
+
+        <p>
+          Wenn dich besonders realistisch wirkende
+          KI-Fotografie für Alltag,
+          Lifestyle und visuelle Kampagnen interessiert,
+          kannst du dir den
+          <strong>Nano Banana Studio Bot</strong> ansehen.
+        </p>
+
+        <p>
+          Für diesen Creatorbase-Guide ist vor allem
+          die ruhigere visuelle Richtung interessant:
+          Bilder, bei denen Situation,
+          Person, Umgebung und Atmosphäre
+          gemeinsam einen glaubwürdigen Moment ergeben.
+        </p>
+
+        <a
+          href="https://deinebluetezeit.mytentary.com/p/ysFBT9?aref=80472"
+          class="tool-button"
+          target="_blank"
+          rel="sponsored noopener">
+          Nano Banana Studio Bot ansehen →
+        </a>
+
+        <p class="affiliate-note">
+          Affiliate-Link: Wenn du den Nano Banana Studio Bot
+          über diesen Link kaufst,
+          kann ich eine Provision erhalten.
+          Für dich ändert sich dadurch der Preis nicht.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE CONTINUED -->
+
+<article class="article-body">
+
+  <div class="article-container">
+
+    <h2>
+      Wo kannst du solche Bilder
+      <em>einsetzen?</em>
+    </h2>
+
+    <p>
+      Eine realistische Bildserie
+      kann für verschiedene Bereiche deines Contents
+      verwendet werden.
+    </p>
+
+
+    <div class="simple-list">
+
+      <div class="simple-item">
+        <span>01</span>
+        <p>
+          <strong>Instagram:</strong>
+          einzelne Posts,
+          Carousels, Storys und Reels-Cover.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>02</span>
+        <p>
+          <strong>Pinterest:</strong>
+          Lifestyle-Visuals,
+          Reisebilder und Motive
+          mit Platz für eine Überschrift.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>03</span>
+        <p>
+          <strong>Website:</strong>
+          Hero-Bilder,
+          Über-uns-Bereiche,
+          Blogartikel und Landingpages.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>04</span>
+        <p>
+          <strong>Werbekampagnen:</strong>
+          Produkte, Kleidung oder Fahrzeuge
+          innerhalb einer passenden visuellen Situation.
+        </p>
+      </div>
+
+      <div class="simple-item">
+        <span>05</span>
+        <p>
+          <strong>Content-Bibliothek:</strong>
+          eine Sammlung unterschiedlicher Bilder,
+          auf die du später immer wieder zurückgreifen kannst.
+        </p>
+      </div>
+
+    </div>
+
+
+    <h2>
+      Realistisch bedeutet auch:
+      <em>genau hinsehen.</em>
+    </h2>
+
+    <p>
+      Auch wenn ein KI-Bild
+      auf den ersten Blick wie eine Fotografie wirkt,
+      können kleine Fehler enthalten sein.
+    </p>
+
+    <p>
+      Hände, Finger, Spiegelungen,
+      Text, Logos, Kleidung,
+      Fahrzeugdetails oder Gegenstände
+      solltest du deshalb vor der Veröffentlichung prüfen.
+    </p>
+
+    <p>
+      Das gilt besonders,
+      wenn reale Produkte oder Marken
+      dargestellt werden sollen.
+    </p>
+
+    <p>
+      Ein KI-Visual sollte keine Eigenschaften
+      eines echten Produkts erfinden,
+      die es in Wirklichkeit nicht besitzt.
+    </p>
+
+
+    <div class="highlight">
+
+      <small>
+        VOR DEM POSTEN
+      </small>
+
+      <p>
+        Je realistischer ein KI-Bild aussieht,
+        desto wichtiger ist der zweite Blick auf die Details.
+      </p>
+
+    </div>
+
+
+    <h2>
+      Der einfachste Start:
+      eine <em>Alltagsszene.</em>
+    </h2>
+
+    <p>
+      Für deinen ersten Versuch
+      brauchst du keine riesige Kampagne.
+    </p>
+
+    <p>
+      Such dir eine einfache Situation,
+      die zu deinem Content passt.
+    </p>
+
+    <p>
+      Lege den Ort fest.
+      Überlege, was gerade passiert.
+      Bestimme eine Stimmung.
+      Entscheide dich für eine Lichtart.
+      Und entwickle anschließend
+      mehrere Perspektiven derselben Szene.
+    </p>
+
+    <p>
+      Genau daraus kann nach und nach
+      eine Content-Bibliothek entstehen,
+      die nicht wie eine Sammlung zufälliger KI-Bilder wirkt.
+    </p>
+
+  </div>
+
+</article>
+
+
+<!-- NEXT -->
+
+<section class="next-section">
+
+  <div class="container">
+
+    <div class="next-label">
+      Visual Content ✦
+    </div>
+
+    <h2>
+      Auffällig oder realistisch?
+      Beides kann Teil deiner Bildwelt sein.
+    </h2>
+
+    <p>
+      Im ersten Visual-Guide geht es stärker
+      um auffällige KI-Bildwelten und Editorials.
+      In diesem Guide stand dagegen
+      realistische KI-Fotografie im Mittelpunkt.
+    </p>
+
+    <a
+      href="/artikel/ki-bilder-fuer-social-media.html"
+      class="next-link">
+      Zum Guide über auffällige KI-Visuals →
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- BACK -->
+
+<section class="back">
+
+  <div class="container back-inner">
+
+    <div>
+
+      <small>
+        Creatorbase
+      </small>
+
+      <h3>
+        Mehr über Visuals & Content.
+      </h3>
+
+    </div>
+
+
+    <div class="back-links">
+
+      <a href="/blog.html" class="back-link">
+        Alle Artikel
+      </a>
+
+      <a
+        href="/artikel/ki-bilder-fuer-social-media.html"
+        class="back-link">
+        Visual Guide 01
+      </a>
+
+      <a href="/pinterest.html" class="back-link">
+        Pinterest
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+    <div class="legal-links">
+
+      <a href="/impressum.html">
+        Impressum
+      </a>
+
+      <span>·</span>
+
+      <a href="/datenschutz.html">
+        Datenschutz
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
