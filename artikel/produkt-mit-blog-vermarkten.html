@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Produkt mit einem Blog vermarkten: Content, der gefunden wird | Creatorbase</title>
+
+<meta name="description"
+content="Wie du dein Produkt mit Blogartikeln vermarktest, ohne ständig über dein Produkt zu schreiben – mit Themen, die bei echten Fragen deiner Zielgruppe beginnen.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://lianmirror.github.io/artikel/produkt-mit-blog-vermarkten.html">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Creatorbase">
+
+<meta property="og:title"
+content="Wie du dein Produkt mit einem Blog vermarktest">
+
+<meta property="og:description"
+content="Schreib nicht nur über dein Produkt. Schreib über die Fragen, die Menschen haben, bevor sie wissen, dass sie dein Produkt brauchen.">
+
+<meta property="og:url"
+content="https://lianmirror.github.io/artikel/produkt-mit-blog-vermarkten.html">
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:title"
+content="Wie du dein Produkt mit einem Blog vermarktest">
+
+<meta name="twitter:description"
+content="Wie Blogartikel Menschen über ihre Fragen zu deinem Angebot führen können.">
+
+
+<style>
+
+:root {
+  --cream: #f5f0ea;
+  --cream-dark: #ebe1da;
+  --brown: #2d211d;
+  --terracotta: #b57b67;
+  --terracotta-light: #d9b7aa;
+  --lavender: #c8b9e8;
+  --lavender-light: #e5ddf3;
+  --white: #fffdfb;
+  --line: #d9cec7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--terracotta);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  transition: .2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  padding: 110px 0 105px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+}
+
+.mini-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.hero h1 {
+  max-width: 900px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(54px, 7vw, 96px);
+  line-height: .94;
+  letter-spacing: -4px;
+  font-weight: 400;
+}
+
+.hero h1 em {
+  display: block;
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.hero-intro {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+  margin-top: 55px;
+}
+
+.hero-copy {
+  max-width: 650px;
+  border-left: 2px solid var(--terracotta);
+  padding-left: 23px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.hero-copy em {
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   BIG IDEA
+========================================= */
+
+.big-idea {
+  background: var(--brown);
+  color: var(--cream);
+  padding: 115px 0;
+}
+
+.big-idea-grid {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+}
+
+.big-idea .mini-label {
+  color: var(--terracotta-light);
+}
+
+.big-idea h2 {
+  max-width: 900px;
+  font-family: Georgia, serif;
+  font-size: clamp(46px, 6vw, 80px);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.big-idea h2 em {
+  display: block;
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.big-idea p {
+  max-width: 650px;
+  color: #d8cec8;
+  font-size: 15px;
+  margin-top: 35px;
+}
+
+
+/* =========================================
+   ARTICLE CONTENT
+========================================= */
+
+.article-section {
+  padding: 110px 0;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+}
+
+.side-label {
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.content {
+  max-width: 760px;
+}
+
+.content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 4.5vw, 58px);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.content h3 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 50px 0 18px;
+}
+
+.content p {
+  color: #5f534d;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.content strong {
+  color: var(--brown);
+}
+
+.content em {
+  color: var(--terracotta);
+}
+
+
+/* =========================================
+   QUESTION BOX
+========================================= */
+
+.question-box {
+  margin: 50px 0;
+  padding: 45px;
+  background: var(--lavender-light);
+  position: relative;
+}
+
+.question-box::before {
+  content: "✦";
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  color: var(--terracotta);
+  font-size: 20px;
+}
+
+.question-box small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 17px;
+}
+
+.question-box p {
+  max-width: 650px;
+  color: var(--brown);
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 3.5vw, 43px);
+  line-height: 1.15;
+  margin: 0;
+}
+
+
+/* =========================================
+   EXAMPLE
+========================================= */
+
+.example {
+  margin: 50px 0;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.example-top {
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--line);
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.example-content {
+  padding: 35px;
+}
+
+.example-wrong,
+.example-right {
+  padding: 28px;
+}
+
+.example-wrong {
+  background: var(--cream-dark);
+  margin-bottom: 15px;
+}
+
+.example-right {
+  background: var(--lavender-light);
+}
+
+.example-label {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.example-wrong .example-label {
+  color: #88776f;
+}
+
+.example-right .example-label {
+  color: var(--terracotta);
+}
+
+.example strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   FLOW
+========================================= */
+
+.flow {
+  padding: 105px 0;
+  background: var(--terracotta-light);
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+}
+
+.flow .mini-label {
+  color: var(--brown);
+}
+
+.flow h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.flow-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 35px;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid rgba(45,33,29,.25);
+}
+
+.flow-row:last-child {
+  border-bottom: 1px solid rgba(45,33,29,.25);
+}
+
+.flow-number {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.flow-name {
+  font-family: Georgia, serif;
+  font-size: 29px;
+}
+
+.flow-arrow {
+  font-size: 19px;
+}
+
+
+/* =========================================
+   IDEA CARDS
+========================================= */
+
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 45px 0;
+}
+
+.idea-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.idea-card small {
+  display: block;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 9px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.idea-card h3 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.idea-card p {
+  font-size: 13px;
+  margin: 0;
+}
+
+
+/* =========================================
+   REMINDER
+========================================= */
+
+.reminder {
+  background: var(--lavender);
+  padding: 105px 0;
+}
+
+.reminder-grid {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+}
+
+.reminder .mini-label {
+  color: var(--brown);
+}
+
+.reminder h2 {
+  max-width: 850px;
+  font-family: Georgia, serif;
+  font-size: clamp(44px, 5.5vw, 74px);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.reminder h2 em {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.reminder p {
+  max-width: 620px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   PINA
+========================================= */
+
+.pina {
+  background: var(--brown);
+  color: var(--cream);
+  padding: 115px 0;
+}
+
+.pina-grid {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+}
+
+.pina .mini-label {
+  color: var(--terracotta-light);
+}
+
+.pina h2 {
+  max-width: 850px;
+  font-family: Georgia, serif;
+  font-size: clamp(44px, 5.5vw, 74px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.pina h2 em {
+  color: var(--lavender);
+  font-weight: 400;
+}
+
+.pina p {
+  max-width: 620px;
+  color: #d8cec8;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.pina-button {
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--lavender);
+  color: var(--brown);
+  padding: 15px 23px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.pina-button:hover {
+  background: var(--terracotta-light);
+}
+
+.affiliate-note {
+  max-width: 620px;
+  margin-top: 18px;
+  color: #bfb3ac !important;
+  font-size: 10px !important;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   NEXT
+========================================= */
+
+.next {
+  padding: 105px 0;
+}
+
+.next-grid {
+  display: grid;
+  grid-template-columns: .62fr 1.38fr;
+  gap: 85px;
+}
+
+.next h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.next-links {
+  border-top: 1px solid var(--line);
+}
+
+.next-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 24px 5px;
+  border-bottom: 1px solid var(--line);
+  font-family: Georgia, serif;
+  font-size: 20px;
+  transition: .2s;
+}
+
+.next-link:hover {
+  color: var(--terracotta);
+  padding-left: 12px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 90px 0 30px;
+}
+
+.footer-logo {
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 9vw, 125px);
+  line-height: .9;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+}
+
+.footer-logo em {
+  color: var(--terracotta);
+  font-weight: 400;
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.legal-links {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--terracotta);
+}
+
+.legal-links a:hover {
+  color: var(--brown);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .nav {
+    min-height: auto;
+    padding: 18px 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 75px 0;
+  }
+
+  .hero-grid,
+  .hero-intro,
+  .big-idea-grid,
+  .article-grid,
+  .flow-grid,
+  .reminder-grid,
+  .pina-grid,
+  .next-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .hero-intro {
+    margin-top: 40px;
+  }
+
+  .big-idea,
+  .article-section,
+  .flow,
+  .reminder,
+  .pina,
+  .next {
+    padding: 80px 0;
+  }
+
+  .question-box {
+    padding: 32px 25px;
+  }
+
+  .idea-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .example-content {
+    padding: 20px;
+  }
+
+  .example-wrong,
+  .example-right {
+    padding: 22px;
+  }
+
+  .flow-name {
+    font-size: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
+@media (max-width: 430px) {
+
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
+  }
+
+  .hero h1 {
+    font-size: 49px;
+    letter-spacing: -2.5px;
+  }
+
+  .hero-copy {
+    font-size: 18px;
+  }
+
+  .question-box p {
+    font-size: 28px;
+  }
+
+  .flow-row {
+    grid-template-columns: 42px 1fr 25px;
+  }
+
+  .flow-name {
+    font-size: 21px;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="/" class="logo">
+      CREATORBASE <span>✦</span>
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="/blog.html">
+        Blog
+      </a>
+
+      <a href="/#start">
+        Guides
+      </a>
+
+      <a href="/pinterest.html" class="active">
+        Pinterest
+      </a>
+
+      <a href="/#liora">
+        Liora
+      </a>
+
+      <a href="/ueber-uns.html">
+        Über uns
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-grid">
+
+      <div class="mini-label">
+        Creatorbase / Pinterest & Blog
+      </div>
+
+      <h1>
+        Schreib über dein Produkt,
+        <em>ohne über dein Produkt zu schreiben.</em>
+      </h1>
+
+    </div>
+
+
+    <div class="hero-intro">
+
+      <div></div>
+
+      <div class="hero-copy">
+        Content muss nicht ausschließlich auf Instagram stattfinden.
+        Ein Blog kann Menschen über eine Frage zu dir bringen —
+        <em>lange bevor sie wissen, dass dein Produkt die nächste Lösung sein könnte.</em>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BIG IDEA -->
+
+<section class="big-idea">
+
+  <div class="container big-idea-grid">
+
+    <div class="mini-label">
+      Die Perspektive ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Fang nicht bei deinem Produkt an.
+        <em>Fang bei ihrer Frage an.</em>
+      </h2>
+
+      <p>
+        Wenn du etwas verkaufen möchtest, liegt es nahe,
+        Content direkt über dein Produkt zu machen.
+        Was es kann. Warum es gut ist. Warum jemand es braucht.
+        Aber Menschen suchen häufig nicht zuerst nach deinem Produkt.
+        Sie suchen nach einer Antwort auf ein Problem,
+        das sie gerade beschäftigt.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SECTION 01 -->
+
+<section class="article-section">
+
+  <div class="container article-grid">
+
+    <div class="side-label">
+      01 / Vor dem Produkt
+    </div>
+
+    <div class="content">
+
+      <h2>
+        Was passiert, bevor jemand dein Produkt braucht?
+      </h2>
+
+      <p>
+        Stell dir vor, du hast einen digitalen Guide,
+        einen Kurs, eine Dienstleistung oder ein anderes Angebot.
+        Natürlich könntest du einen Artikel darüber schreiben,
+        warum dieses Angebot hilfreich ist.
+      </p>
+
+      <p>
+        Interessanter wird es aber einen Schritt früher.
+      </p>
+
+      <p>
+        <strong>
+          Welche Frage beschäftigt deine Wunschkundin,
+          bevor sie überhaupt weiß,
+          dass dein Produkt für sie relevant sein könnte?
+        </strong>
+      </p>
+
+
+      <div class="question-box">
+
+        <small>
+          Die Leitfrage
+        </small>
+
+        <p>
+          Was würde jemand googeln,
+          bevor sie weiß,
+          dass sie mein Produkt braucht?
+        </p>
+
+      </div>
+
+
+      <p>
+        Genau dort können Blogthemen entstehen.
+      </p>
+
+      <p>
+        Dein Produkt ist dann nicht mehr der Ausgangspunkt
+        des Contents. Das Problem, die Situation oder die Frage
+        deiner Zielgruppe ist der Ausgangspunkt.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SECTION 02 -->
+
+<section class="article-section"
+style="background: var(--cream-dark);">
+
+  <div class="container article-grid">
+
+    <div class="side-label">
+      02 / Beispiel
+    </div>
+
+    <div class="content">
+
+      <h2>
+        Ein Story-Guide muss nicht der Titel deines Artikels sein.
+      </h2>
+
+      <p>
+        Angenommen, du verkaufst einen Guide,
+        der Menschen dabei hilft,
+        bessere Instagram Storys zu erstellen.
+      </p>
+
+      <p>
+        Dann könntest du natürlich einen Artikel schreiben,
+        der direkt dein Produkt in den Mittelpunkt stellt.
+      </p>
+
+
+      <div class="example">
+
+        <div class="example-top">
+          Zwei unterschiedliche Einstiege
+        </div>
+
+        <div class="example-content">
+
+          <div class="example-wrong">
+
+            <span class="example-label">
+              Produkt zuerst
+            </span>
+
+            <strong>
+              „Warum du meinen Story-Guide brauchst.“
+            </strong>
+
+          </div>
+
+
+          <div class="example-right">
+
+            <span class="example-label">
+              Frage zuerst
+            </span>
+
+            <strong>
+              „Was poste ich in meiner Story,
+              wenn ich nichts zu erzählen habe?“
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <p>
+        Beim zweiten Thema kommt die Person nicht,
+        weil sie bereits deinen Guide kaufen möchte.
+      </p>
+
+      <p>
+        Sie kommt, weil sie ein konkretes Problem hat.
+        Vielleicht sitzt sie morgens vor Instagram
+        und hat keine Ahnung, was sie in ihrer Story zeigen soll.
+      </p>
+
+      <p>
+        <strong>Dein Artikel beantwortet zuerst diese Frage.</strong>
+      </p>
+
+      <p>
+        Und wenn dein Produkt anschließend dabei hilft,
+        den nächsten Schritt zu gehen,
+        kannst du genau dort darauf hinweisen.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FLOW -->
+
+<section class="flow">
+
+  <div class="container flow-grid">
+
+    <div class="mini-label">
+      So entsteht der Weg ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Von der Frage zum Angebot.
+      </h2>
+
+
+      <div class="flow-row">
+        <span class="flow-number">01</span>
+        <span class="flow-name">Eine echte Frage</span>
+        <span class="flow-arrow">↓</span>
+      </div>
+
+      <div class="flow-row">
+        <span class="flow-number">02</span>
+        <span class="flow-name">Ein hilfreicher Blogartikel</span>
+        <span class="flow-arrow">↓</span>
+      </div>
+
+      <div class="flow-row">
+        <span class="flow-number">03</span>
+        <span class="flow-name">Verständnis & Vertrauen</span>
+        <span class="flow-arrow">↓</span>
+      </div>
+
+      <div class="flow-row">
+        <span class="flow-number">04</span>
+        <span class="flow-name">Der passende nächste Schritt</span>
+        <span class="flow-arrow">↓</span>
+      </div>
+
+      <div class="flow-row">
+        <span class="flow-number">05</span>
+        <span class="flow-name">Dein Angebot</span>
+        <span class="flow-arrow">✦</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SECTION 03 -->
+
+<section class="article-section">
+
+  <div class="container article-grid">
+
+    <div class="side-label">
+      03 / Themen finden
+    </div>
+
+    <div class="content">
+
+      <h2>
+        Dreh die Blickrichtung einmal um.
+      </h2>
+
+      <p>
+        Statt zu fragen:
+        <strong>„Was könnte ich über mein Produkt schreiben?“</strong>
+        kannst du dir überlegen:
+      </p>
+
+      <p>
+        <strong>
+          „Welche Situationen, Fragen und Probleme führen Menschen
+          irgendwann zu meinem Produkt?“
+        </strong>
+      </p>
+
+
+      <div class="idea-grid">
+
+        <div class="idea-card">
+
+          <small>
+            Digitaler Guide
+          </small>
+
+          <h3>
+            Story-Guide
+          </h3>
+
+          <p>
+            Statt nur über den Guide zu schreiben:
+            „Was kann ich täglich in meiner Instagram Story posten?“
+          </p>
+
+        </div>
+
+
+        <div class="idea-card">
+
+          <small>
+            Dienstleistung
+          </small>
+
+          <h3>
+            Social Media Service
+          </h3>
+
+          <p>
+            Zum Beispiel:
+            „Warum kostet mich Content jede Woche so viel Zeit?“
+          </p>
+
+        </div>
+
+
+        <div class="idea-card">
+
+          <small>
+            Physisches Produkt
+          </small>
+
+          <h3>
+            Kleidung
+          </h3>
+
+          <p>
+            Statt nur das Produkt vorzustellen:
+            „Wie kombiniere ich ein bestimmtes Kleidungsstück im Alltag?“
+          </p>
+
+        </div>
+
+
+        <div class="idea-card">
+
+          <small>
+            Content-Produkt
+          </small>
+
+          <h3>
+            KI-Tool oder Vorlage
+          </h3>
+
+          <p>
+            Zum Beispiel:
+            „Wie entwickle ich Content-Ideen,
+            wenn mir gerade nichts einfällt?“
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <p>
+        Das Produkt verschwindet dadurch nicht.
+        Es bekommt nur einen sinnvolleren Platz.
+      </p>
+
+      <p>
+        <strong>
+          Erst hilfst du bei der Frage.
+          Danach zeigst du den nächsten möglichen Schritt.
+        </strong>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SECTION 04 -->
+
+<section class="article-section"
+style="background: var(--white);">
+
+  <div class="container article-grid">
+
+    <div class="side-label">
+      04 / Verkaufen
+    </div>
+
+    <div class="content">
+
+      <h2>
+        Dein Artikel darf trotzdem verkaufen.
+      </h2>
+
+      <p>
+        Ein hilfreicher Blogartikel muss nicht so tun,
+        als gäbe es dein Produkt nicht.
+      </p>
+
+      <p>
+        Wenn dein Angebot tatsächlich zum Problem passt,
+        über das du gerade geschrieben hast,
+        ist es logisch, darauf hinzuweisen.
+      </p>
+
+      <p>
+        Der Unterschied liegt im Weg dorthin.
+      </p>
+
+
+      <div class="question-box">
+
+        <small>
+          Nicht nur
+        </small>
+
+        <p>
+          „Hier ist mein Produkt.
+          Kauf es.“
+        </p>
+
+      </div>
+
+
+      <div class="question-box"
+      style="background: var(--terracotta-light);">
+
+        <small style="color: var(--brown);">
+          Sondern
+        </small>
+
+        <p>
+          „Du bist wegen dieser Frage hier.
+          Hier ist eine Antwort.
+          Und wenn du weitergehen möchtest,
+          kann dir mein Produkt dabei helfen.“
+        </p>
+
+      </div>
+
+
+      <p>
+        So wird dein Produkt Teil eines hilfreichen
+        Zusammenhangs statt der einzige Grund,
+        warum der Content überhaupt existiert.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- REMINDER -->
+
+<section class="reminder">
+
+  <div class="container reminder-grid">
+
+    <div class="mini-label">
+      Kleiner Reminder ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Content muss nicht ausschließlich
+        <em>auf Instagram stattfinden.</em>
+      </h2>
+
+      <p>
+        Instagram kann ein wichtiger Teil deiner Sichtbarkeit sein.
+        Aber dein Content kann zusätzlich an Orten existieren,
+        an denen Menschen aktiv nach Antworten suchen
+        oder Inhalte später wiederfinden können.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SECTION 05 -->
+
+<section class="article-section">
+
+  <div class="container article-grid">
+
+    <div class="side-label">
+      05 / Blog + Pinterest
+    </div>
+
+    <div class="content">
+
+      <h2>
+        Und genau hier wird Pinterest interessant.
+      </h2>
+
+      <p>
+        Ein Blogartikel braucht natürlich einen Weg,
+        über den Menschen ihn entdecken können.
+      </p>
+
+      <p>
+        Einer dieser Wege kann Pinterest sein.
+      </p>
+
+      <p>
+        Ein Pin kann auf ein konkretes Thema aufmerksam machen.
+        Der Klick führt zum ausführlicheren Blogartikel.
+        Dort bekommt die Person eine hilfreiche Antwort
+        und kann anschließend dein Angebot kennenlernen.
+      </p>
+
+
+      <div class="question-box">
+
+        <small>
+          Das System
+        </small>
+
+        <p>
+          Pinterest → Blogartikel →
+          hilfreiche Antwort → Angebot.
+        </p>
+
+      </div>
+
+
+      <p>
+        Das bedeutet nicht,
+        dass jeder Blogartikel verkaufen muss.
+        Und auch nicht,
+        dass jeder Pin direkt auf ein Produkt führen sollte.
+      </p>
+
+      <p>
+        Spannend wird es,
+        wenn einzelne Inhalte miteinander verbunden sind
+        und Menschen einen nachvollziehbaren Weg
+        von ihrer ursprünglichen Frage
+        zu deinem Angebot bekommen.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SECTION 06 -->
+
+<section class="article-section"
+style="background: var(--cream-dark);">
+
+  <div class="container article-grid">
+
+    <div class="side-label">
+      06 / Deine Ideen
+    </div>
+
+    <div class="content">
+
+      <h2>
+        Finde deine ersten fünf Blogthemen.
+      </h2>
+
+      <p>
+        Nimm dein Produkt oder Angebot
+        und schreib zunächst nicht auf,
+        was es kann.
+      </p>
+
+      <p>
+        Schreib stattdessen fünf Fragen auf,
+        die eine Person haben könnte,
+        <strong>bevor sie nach deinem Produkt sucht.</strong>
+      </p>
+
+      <h3>
+        Frag dich:
+      </h3>
+
+      <p>
+        Was versucht diese Person gerade selbst zu lösen?
+      </p>
+
+      <p>
+        Was versteht sie noch nicht?
+      </p>
+
+      <p>
+        Wonach könnte sie suchen?
+      </p>
+
+      <p>
+        Welche kleine Frage taucht immer wieder auf?
+      </p>
+
+      <p>
+        Welches Problem wird durch mein Produkt
+        später leichter?
+      </p>
+
+
+      <div class="question-box">
+
+        <small>
+          Dein Ausgangspunkt
+        </small>
+
+        <p>
+          Was googelt meine Wunschkundin,
+          bevor sie weiß,
+          dass sie mein Produkt braucht?
+        </p>
+
+      </div>
+
+
+      <p>
+        Aus diesen Fragen können Artikel entstehen,
+        die nicht wie Produktwerbung beginnen —
+        aber trotzdem einen sinnvollen Weg
+        zu deinem Angebot schaffen.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PINA -->
+
+<section class="pina">
+
+  <div class="container pina-grid">
+
+    <div class="mini-label">
+      Pinterest + Blog ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Mach dein Angebot nicht nur sichtbar.
+        <em>Mach es auffindbar.</em>
+      </h2>
+
+      <p>
+        Wenn du dich intensiver damit beschäftigen möchtest,
+        Pinterest, Blog-Inhalte und dein Angebot
+        miteinander zu verbinden,
+        kannst du dir auch Pina ansehen.
+      </p>
+
+      <p>
+        Für Creatorbase ist dabei besonders der Gedanke interessant,
+        nicht nur einzelne Posts zu erstellen,
+        sondern Pinterest und Blog als verbundenes System
+        für Inhalte und Angebote zu betrachten.
+      </p>
+
+      <a
+        href="https://livcherry.mytentary.com/p/V4AgeW?aref=80472"
+        target="_blank"
+        rel="sponsored noopener"
+        class="pina-button">
+        Pina ansehen →
+      </a>
+
+      <p class="affiliate-note">
+        Affiliate-Link: Wenn du Pina über diesen Link kaufst,
+        kann ich eine Provision erhalten.
+        Für dich ändert sich dadurch der Preis nicht.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NEXT -->
+
+<section class="next">
+
+  <div class="container next-grid">
+
+    <div class="mini-label">
+      Weiterlesen ✦
+    </div>
+
+    <div>
+
+      <h2>
+        Mach aus einzelnen Inhalten
+        ein System.
+      </h2>
+
+      <div class="next-links">
+
+        <a
+          href="/artikel/pinterest-und-blog.html"
+          class="next-link">
+          <span>Pinterest und Blog verbinden</span>
+          <span>↗</span>
+        </a>
+
+        <a
+          href="/artikel/produkte-auf-pinterest-vermarkten.html"
+          class="next-link">
+          <span>Produkte auf Pinterest vermarkten</span>
+          <span>↗</span>
+        </a>
+
+        <a
+          href="/artikel/pinterest-marketing-fuer-anfaenger.html"
+          class="next-link">
+          <span>Pinterest Marketing für Anfänger</span>
+          <span>↗</span>
+        </a>
+
+        <a
+          href="/pinterest.html"
+          class="next-link">
+          <span>Alle Pinterest Guides</span>
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-logo">
+      Creatorbase<em>✦</em>
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        Marketing · Content · Wachstum
+      </span>
+
+      <span>
+        Für Ideen, die gesehen werden sollen.
+      </span>
+
+    </div>
+
+    <div class="legal-links">
+
+      <a href="/impressum.html">
+        Impressum
+      </a>
+
+      <span>·</span>
+
+      <a href="/datenschutz.html">
+        Datenschutz
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
