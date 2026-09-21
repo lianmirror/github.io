@@ -83,9 +83,7 @@
     }
 
 
-    /* =========================================
-       NAVIGATION
-    ========================================= */
+    /* NAVIGATION */
 
     header {
       border-bottom: 1px solid var(--line);
@@ -104,7 +102,6 @@
       font-size: 19px;
       font-weight: 800;
       letter-spacing: 2px;
-      text-decoration: none;
     }
 
     .logo span {
@@ -119,9 +116,7 @@
     }
 
     .nav-links a {
-      text-decoration: none;
       text-transform: uppercase;
-      font-family: Arial, Helvetica, sans-serif;
       font-size: 10px;
       font-weight: 400;
       letter-spacing: 1.4px;
@@ -134,9 +129,7 @@
     }
 
 
-    /* =========================================
-       ALLGEMEIN
-    ========================================= */
+    /* ALLGEMEIN */
 
     section {
       padding: 115px 0;
@@ -207,9 +200,7 @@
     }
 
 
-    /* =========================================
-       HERO
-    ========================================= */
+    /* HERO */
 
     .hero {
       padding: 110px 0 130px;
@@ -358,9 +349,7 @@
     }
 
 
-    /* =========================================
-       INTRO
-    ========================================= */
+    /* INTRO */
 
     .intro {
       background: var(--brown);
@@ -398,9 +387,7 @@
     }
 
 
-    /* =========================================
-       PINTEREST SUCHE
-    ========================================= */
+    /* PINTEREST SUCHE */
 
     .search-section {
       background: var(--white);
@@ -469,9 +456,7 @@
     }
 
 
-    /* =========================================
-       WAS KANNST DU VERMARKTEN?
-    ========================================= */
+    /* ANGEBOTE */
 
     .use-cases {
       background: var(--cream);
@@ -537,9 +522,7 @@
     }
 
 
-    /* =========================================
-       INSTAGRAM VS PINTEREST
-    ========================================= */
+    /* INSTAGRAM VS PINTEREST */
 
     .difference {
       background: var(--lavender);
@@ -603,9 +586,7 @@
     }
 
 
-    /* =========================================
-       SYSTEM
-    ========================================= */
+    /* SYSTEM */
 
     .system {
       background: var(--white);
@@ -650,9 +631,7 @@
     }
 
 
-    /* =========================================
-       PINTEREST + BLOG
-    ========================================= */
+    /* PINTEREST + BLOG */
 
     .blog-system {
       background: var(--cream-dark);
@@ -698,9 +677,7 @@
     }
 
 
-    /* =========================================
-       ARTIKEL
-    ========================================= */
+    /* ARTIKEL */
 
     .articles {
       background: var(--cream);
@@ -708,13 +685,13 @@
 
     .article-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 22px;
       margin-top: 55px;
     }
 
     .article-card {
-      min-height: 410px;
+      min-height: 390px;
       padding: 30px;
       border: 1px solid var(--line);
       background: var(--white);
@@ -735,6 +712,10 @@
 
     .article-card:nth-child(3) {
       background: var(--lavender-light);
+    }
+
+    .article-card:nth-child(4) {
+      background: var(--cream-dark);
     }
 
     .article-card small {
@@ -769,9 +750,7 @@
     }
 
 
-    /* =========================================
-       PINA
-    ========================================= */
+    /* PINA */
 
     .pina {
       background: var(--brown);
@@ -890,9 +869,7 @@
     }
 
 
-    /* =========================================
-       PHILOSOPHIE
-    ========================================= */
+    /* PHILOSOPHIE */
 
     .philosophy {
       background: var(--terracotta-light);
@@ -915,9 +892,7 @@
     }
 
 
-    /* =========================================
-       FINAL
-    ========================================= */
+    /* FINAL */
 
     .final {
       background: var(--cream);
@@ -943,9 +918,7 @@
     }
 
 
-    /* =========================================
-       FOOTER
-    ========================================= */
+    /* FOOTER */
 
     footer {
       padding: 90px 0 30px;
@@ -999,9 +972,7 @@
     }
 
 
-    /* =========================================
-       TABLET / HANDY
-    ========================================= */
+    /* TABLET */
 
     @media (max-width: 900px) {
 
@@ -1038,14 +1009,13 @@
     }
 
 
+    /* HANDY */
+
     @media (max-width: 800px) {
 
       .container {
         width: min(100% - 36px, 1180px);
       }
-
-
-      /* NAVIGATION */
 
       .nav {
         min-height: auto;
@@ -1071,9 +1041,6 @@
         font-size: 10px;
       }
 
-
-      /* HERO */
-
       .hero {
         padding: 65px 0 75px;
       }
@@ -1086,9 +1053,6 @@
       .hero-intro {
         font-size: 19px;
       }
-
-
-      /* HERO COLLAGE */
 
       .hero-art {
         min-height: auto;
@@ -1139,9 +1103,6 @@
         bottom: 3%;
       }
 
-
-      /* SECTIONS */
-
       section {
         padding: 80px 0;
       }
@@ -1170,9 +1131,6 @@
       .blog-paper {
         padding: 30px;
       }
-
-
-      /* PINA COLLAGE */
 
       .pina-art {
         min-height: auto;
@@ -1210,9 +1168,6 @@
       .pina-card p {
         font-size: 22px;
       }
-
-
-      /* FOOTER */
 
       .footer-bottom {
         flex-direction: column;
@@ -1264,9 +1219,7 @@
 <body>
 
 
-<!-- =========================================
-     NAVIGATION
-========================================= -->
+<!-- NAVIGATION -->
 
 <header>
 
@@ -1292,9 +1245,7 @@
 <main>
 
 
-<!-- =========================================
-     HERO
-========================================= -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -1347,9 +1298,7 @@
 
       <div class="hero-card card-one">
 
-        <small>
-          DU
-        </small>
+        <small>DU</small>
 
         <h3>
           „Muss ich wirklich jeden Tag posten,
@@ -1363,9 +1312,7 @@
 
       <div class="hero-card card-two">
 
-        <small>
-          PINTEREST
-        </small>
+        <small>PINTEREST</small>
 
         <h3>
           Was wäre, wenn dein Content
@@ -1385,9 +1332,7 @@
 </section>
 
 
-<!-- =========================================
-     INTRO
-========================================= -->
+<!-- INTRO -->
 
 <section class="intro" id="verstehen">
 
@@ -1437,9 +1382,7 @@
 </section>
 
 
-<!-- =========================================
-     SUCHE
-========================================= -->
+<!-- SUCHE -->
 
 <section class="search-section">
 
@@ -1486,21 +1429,10 @@
 
       <div class="search-results">
 
-        <div class="search-result result-one">
-          Guide
-        </div>
-
-        <div class="search-result result-two">
-          Produkt
-        </div>
-
-        <div class="search-result result-three">
-          Inspiration
-        </div>
-
-        <div class="search-result result-four">
-          Blogartikel
-        </div>
+        <div class="search-result result-one">Guide</div>
+        <div class="search-result result-two">Produkt</div>
+        <div class="search-result result-three">Inspiration</div>
+        <div class="search-result result-four">Blogartikel</div>
 
       </div>
 
@@ -1511,9 +1443,7 @@
 </section>
 
 
-<!-- =========================================
-     ANGEBOTE
-========================================= -->
+<!-- ANGEBOTE -->
 
 <section class="use-cases">
 
@@ -1547,7 +1477,6 @@
         <span class="case-number">01</span>
 
         <div>
-
           <h3>Digitale Produkte</h3>
 
           <p>
@@ -1555,7 +1484,6 @@
             digitale Downloads und andere Angebote
             können über passende Inhalte entdeckt werden.
           </p>
-
         </div>
 
       </article>
@@ -1566,7 +1494,6 @@
         <span class="case-number">02</span>
 
         <div>
-
           <h3>Physische Produkte</h3>
 
           <p>
@@ -1574,7 +1501,6 @@
             Anwendungsbeispiele und hilfreiche Inhalte
             eingebettet werden.
           </p>
-
         </div>
 
       </article>
@@ -1585,14 +1511,12 @@
         <span class="case-number">03</span>
 
         <div>
-
           <h3>Dienstleistungen</h3>
 
           <p>
             Expertise lässt sich über Guides,
             Tipps und suchbare Inhalte sichtbar machen.
           </p>
-
         </div>
 
       </article>
@@ -1603,7 +1527,6 @@
         <span class="case-number">04</span>
 
         <div>
-
           <h3>Marken & Unternehmen</h3>
 
           <p>
@@ -1611,7 +1534,6 @@
             über den Menschen deine Marke
             und deine Inhalte entdecken.
           </p>
-
         </div>
 
       </article>
@@ -1623,9 +1545,7 @@
 </section>
 
 
-<!-- =========================================
-     INSTAGRAM VS PINTEREST
-========================================= -->
+<!-- INSTAGRAM VS PINTEREST -->
 
 <section class="difference">
 
@@ -1695,9 +1615,7 @@
 </section>
 
 
-<!-- =========================================
-     SYSTEM
-========================================= -->
+<!-- SYSTEM -->
 
 <section class="system">
 
@@ -1764,9 +1682,7 @@
 </section>
 
 
-<!-- =========================================
-     PINTEREST + BLOG
-========================================= -->
+<!-- PINTEREST + BLOG -->
 
 <section class="blog-system">
 
@@ -1834,9 +1750,7 @@
 </section>
 
 
-<!-- =========================================
-     ARTIKEL
-========================================= -->
+<!-- ARTIKEL -->
 
 <section class="articles">
 
@@ -1854,10 +1768,10 @@
       </h2>
 
       <p>
-        Hier entsteht unsere Pinterest-Bibliothek.
-        Ohne kompliziertes Marketing-Gerede –
-        sondern mit konkreten Erklärungen
-        für dein Angebot und dein Business.
+        Hier findest du Guides dazu,
+        wie Pinterest, Blog-Inhalte
+        und dein Angebot zusammenspielen können.
+        Ohne kompliziertes Marketing-Gerede.
       </p>
 
     </div>
@@ -1865,6 +1779,8 @@
 
     <div class="article-grid">
 
+
+      <!-- GUIDE 01 -->
 
       <a
         href="/artikel/pinterest-marketing-fuer-anfaenger.html"
@@ -1896,64 +1812,104 @@
       </a>
 
 
-     <a
-  href="/artikel/produkte-auf-pinterest-vermarkten.html"
-  class="article-card"
-  style="text-decoration: none; color: inherit;">
+      <!-- GUIDE 02 -->
 
-  <div>
+      <a
+        href="/artikel/produkte-auf-pinterest-vermarkten.html"
+        class="article-card"
+      >
 
-    <small>
-      PINTEREST · PRODUKTE
-    </small>
+        <div>
 
-    <h3>
-      Produkte auf Pinterest vermarkten
-    </h3>
+          <small>
+            PINTEREST · PRODUKTE
+          </small>
 
-    <p>
-      Wie aus deinem Produkt Themen,
-      Suchideen und Inhalte entstehen können,
-      über die Menschen dein Angebot entdecken.
-    </p>
+          <h3>
+            Produkte auf Pinterest vermarkten
+          </h3>
 
-  </div>
+          <p>
+            Wie aus deinem Produkt Themen,
+            Suchideen und Inhalte entstehen können,
+            über die Menschen dein Angebot entdecken.
+          </p>
 
-  <div class="coming">
-    Guide lesen →
-  </div>
+        </div>
 
-</a>
+        <div class="coming">
+          Guide lesen →
+        </div>
+
+      </a>
 
 
-<a
-  href="/artikel/pinterest-und-blog.html"
-  class="article-card"
-  style="text-decoration: none; color: inherit;">
+      <!-- GUIDE 03 -->
 
-  <div>
+      <a
+        href="/artikel/pinterest-und-blog.html"
+        class="article-card"
+      >
 
-    <small>
-      PINTEREST · BLOG
-    </small>
+        <div>
 
-    <h3>
-      Pinterest + Blog: Wie funktioniert das?
-    </h3>
+          <small>
+            PINTEREST · BLOG
+          </small>
 
-    <p>
-      Warum Pinterest und hilfreiche Blogartikel
-      zusammen ein interessantes
-      Content-System bilden können.
-    </p>
+          <h3>
+            Pinterest + Blog:
+            Wie funktioniert das?
+          </h3>
 
-  </div>
+          <p>
+            Warum Pinterest und hilfreiche Blogartikel
+            zusammen ein interessantes
+            Content-System bilden können.
+          </p>
 
-  <div class="coming">
-    Guide lesen →
-  </div>
+        </div>
 
-</a>
+        <div class="coming">
+          Guide lesen →
+        </div>
+
+      </a>
+
+
+      <!-- GUIDE 04 -->
+
+      <a
+        href="/artikel/produkt-mit-blog-vermarkten.html"
+        class="article-card"
+      >
+
+        <div>
+
+          <small>
+            BLOG · PRODUKTVERMARKTUNG
+          </small>
+
+          <h3>
+            Schreib über dein Produkt,
+            ohne über dein Produkt zu schreiben.
+          </h3>
+
+          <p>
+            Wie du Blogthemen aus den Fragen entwickelst,
+            die Menschen haben,
+            bevor sie überhaupt wissen,
+            dass sie dein Produkt brauchen.
+          </p>
+
+        </div>
+
+        <div class="coming">
+          Guide lesen →
+        </div>
+
+      </a>
+
 
     </div>
 
@@ -1962,9 +1918,7 @@
 </section>
 
 
-<!-- =========================================
-     PINA
-========================================= -->
+<!-- PINA -->
 
 <section class="pina" id="pina">
 
@@ -2079,9 +2033,7 @@
 </section>
 
 
-<!-- =========================================
-     PHILOSOPHIE
-========================================= -->
+<!-- PHILOSOPHIE -->
 
 <section class="philosophy">
 
@@ -2112,9 +2064,7 @@
 </section>
 
 
-<!-- =========================================
-     FINAL
-========================================= -->
+<!-- FINAL -->
 
 <section class="final">
 
@@ -2162,9 +2112,7 @@
 </main>
 
 
-<!-- =========================================
-     FOOTER
-========================================= -->
+<!-- FOOTER -->
 
 <footer>
 
