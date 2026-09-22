@@ -2,6 +2,8 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- HAUPTSEITEN -->
+
   <url>
     <loc>https://lianmirror.github.io/</loc>
   </url>
@@ -42,7 +44,7 @@
   </url>
 
   <url>
-    <loc>https://lianmirror.github.io/artikel/zielgruppe-auf-instagram-finden.html</loc>
+    <loc>https://lianmirror.github.io/artikel/warum-gute-produkte-uebersehen-werden.html</loc>
   </url>
 
   <url>
@@ -54,15 +56,22 @@
   </url>
 
   <url>
-    <loc>https://lianmirror.github.io/artikel/warum-gute-produkte-uebersehen-werden.html</loc>
-  </url>
-
-  <url>
     <loc>https://lianmirror.github.io/artikel/ki-fuer-content-nutzen.html</loc>
   </url>
 
+  <url>
+    <loc>https://lianmirror.github.io/artikel/zielgruppe-auf-instagram-finden.html</loc>
+  </url>
 
-  <!-- PINTEREST / BLOG -->
+
+  <!-- NEU: VIRAL GEHEN -->
+
+  <url>
+    <loc>https://lianmirror.github.io/artikel/auf-instagram-viral-gehen.html</loc>
+  </url>
+
+
+  <!-- PINTEREST -->
 
   <url>
     <loc>https://lianmirror.github.io/artikel/pinterest-marketing-fuer-anfaenger.html</loc>
