@@ -95,7 +95,9 @@ button {
 }
 
 
-/* NAVIGATION */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 header {
   border-bottom: 1px solid var(--line);
@@ -144,7 +146,9 @@ header {
 }
 
 
-/* HERO */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
   padding: 115px 0 100px;
@@ -200,7 +204,9 @@ header {
 }
 
 
-/* KATEGORIEN */
+/* =========================================
+   KATEGORIEN
+========================================= */
 
 .categories {
   border-top: 1px solid var(--line);
@@ -237,7 +243,9 @@ header {
 }
 
 
-/* FEATURED */
+/* =========================================
+   FEATURED ARTIKEL
+========================================= */
 
 .featured {
   padding: 110px 0;
@@ -351,7 +359,9 @@ header {
 }
 
 
-/* ARTIKEL */
+/* =========================================
+   ARTIKEL
+========================================= */
 
 .articles-section {
   padding: 30px 0 130px;
@@ -389,6 +399,19 @@ header {
   display: flex;
   flex-direction: column;
   transition: .25s;
+  background: var(--white);
+}
+
+/* AUTOMATISCHES MUSTER:
+   01 weiss
+   02 flieder
+   03 weiss
+   04 flieder
+   usw.
+*/
+
+.article:nth-child(even) {
+  background: var(--lavender-light);
 }
 
 .article:nth-child(odd) {
@@ -396,11 +419,11 @@ header {
 }
 
 .article:hover {
-  background: var(--white);
+  background: var(--cream-dark);
 }
 
-.article.lavender:hover {
-  background: var(--lavender-light);
+.article:nth-child(even):hover {
+  background: var(--lavender);
 }
 
 .article-number {
@@ -440,7 +463,9 @@ header {
 }
 
 
-/* LIORA */
+/* =========================================
+   LIORA
+========================================= */
 
 .liora-break {
   background: var(--brown);
@@ -496,7 +521,9 @@ header {
 }
 
 
-/* PINTEREST */
+/* =========================================
+   PINTEREST
+========================================= */
 
 .pinterest-break {
   background: var(--terracotta-light);
@@ -552,7 +579,9 @@ header {
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
   padding: 90px 0 30px;
@@ -581,6 +610,11 @@ footer {
   letter-spacing: 1px;
 }
 
+
+/* =========================================
+   RECHTLICHE LINKS
+========================================= */
+
 .legal-links {
   margin-top: 25px;
   padding-top: 20px;
@@ -606,7 +640,9 @@ footer {
 }
 
 
-/* HANDY */
+/* =========================================
+   HANDY
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -729,7 +765,9 @@ footer {
 }
 
 
-/* EXTRA KLEINE HANDYS */
+/* =========================================
+   EXTRA KLEINE HANDYS
+========================================= */
 
 @media (max-width: 430px) {
 
@@ -1024,7 +1062,7 @@ footer {
 
       <a
         href="/artikel/content-strategie-entwickeln.html"
-        class="article lavender"
+        class="article"
         data-category="content positionierung">
 
         <div class="article-number">
@@ -1055,7 +1093,7 @@ footer {
 
       <a
         href="/artikel/warum-gute-produkte-uebersehen-werden.html"
-        class="article lavender"
+        class="article"
         data-category="produkte positionierung">
 
         <div class="article-number">
@@ -1147,7 +1185,7 @@ footer {
 
       <a
         href="/artikel/ki-fuer-content-nutzen.html"
-        class="article lavender"
+        class="article"
         data-category="content ki">
 
         <div class="article-number">
@@ -1210,7 +1248,7 @@ footer {
 
       <a
         href="/artikel/pinterest-marketing-fuer-anfaenger.html"
-        class="article lavender"
+        class="article"
         data-category="pinterest produkte">
 
         <div class="article-number">
@@ -1273,7 +1311,7 @@ footer {
 
       <a
         href="/artikel/ki-fotografie-fuer-content.html"
-        class="article lavender"
+        class="article"
         data-category="visuals ki content">
 
         <div class="article-number">
@@ -1301,7 +1339,7 @@ footer {
       </a>
 
 
-      <!-- 11 VIRAL GEHEN -->
+      <!-- 11 -->
 
       <a
         href="/artikel/auf-instagram-viral-gehen.html"
@@ -1332,11 +1370,11 @@ footer {
       </a>
 
 
-      <!-- 12 BLOG / PRODUKTVERMARKTUNG -->
+      <!-- 12 -->
 
       <a
         href="/artikel/produkt-mit-blog-vermarkten.html"
-        class="article lavender"
+        class="article"
         data-category="pinterest produkte content">
 
         <div class="article-number">
